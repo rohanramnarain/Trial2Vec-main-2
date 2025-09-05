@@ -1,0 +1,31 @@
+{
+    "max_seq_length": 128,
+    "logit_scale_init_value": 0.07,
+    "bert_name": "emilyalsentzer/Bio_ClinicalBERT",
+    "emb_dim": 128,
+    "epochs": 1,
+    "batch_size": 512,
+    "learning_rate": 2e-05,
+    "weight_decay": 0.0001,
+    "evaluation_steps": 100,
+    "num_workers": 0,
+    "device": [
+        0,
+        1,
+        2
+    ],
+    "use_amp": false,
+    "warmup_ratio": 0.1,
+    "tag_field": "nct_id",
+    "fields": [
+        "title",
+        "intervention_name",
+        "disease",
+        "keyword"
+    ],
+    "ctx_fields": [
+        "description",
+        "criteria"
+    ],
+    "num_worker": 8
+}
