@@ -127,3 +127,5 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+trial_search/pretrained_trial2vec/*.pth.tar
+trial_search/pretrained_trial2vec/*.zip
