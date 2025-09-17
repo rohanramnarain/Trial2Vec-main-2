@@ -9,7 +9,7 @@ RF + MDI + SHAP + fANOVA (guarded) with a robust fallback to permutation importa
 
 Changes vs original:
 - Added speed knobs (smaller Top-K, fewer trees/points/splits).
-- More robust fANOVA (skip degenerate features, optional ConfigSpace bounds, explicit logging).
+- More robust fANOVA (skip degenerate features, ConfigSpace bounds, explicit logging & column alignment).
 - Safer fallback (switches scorer if AUC is undefined).
 - Trimmed SHAP sampling to cut wall-time.
 """
@@ -29,7 +29,7 @@ OOF_TREES = 200               # was 300
 
 SHAP_SAMPLE = 200             # was 500
 SHAP_BG = 50                  # was 200
-USE_CONFIGSPACE = True 
+USE_CONFIGSPACE = True        # force explicit bounds + ordering for fANOVA
 
 
 # Limit thread over-subscription a bit (helps when pyrfr/BLAS is involved)
@@ -138,9 +138,14 @@ def oof_probas(X: np.ndarray, y: np.ndarray, n_splits: int = OOF_SPLITS) -> np.n
     oof = np.zeros(len(y), dtype=np.float64)
     for tr, va in skf.split(X, y):
         if HAS_IMBLEARN:
-            clf = BalancedRandomForestClassifier(n_estimators=OOF_TREES, random_state=RANDOM_STATE, n_jobs=-1)
+            clf = BalancedRandomForestClassifier(
+                n_estimators=OOF_TREES, random_state=RANDOM_STATE, n_jobs=-1,
+                sampling_strategy="all", replacement=True, bootstrap=False
+            )
         else:
-            clf = RandomForestClassifier(n_estimators=OOF_TREES, random_state=RANDOM_STATE, class_weight="balanced", n_jobs=-1)
+            clf = RandomForestClassifier(
+                n_estimators=OOF_TREES, random_state=RANDOM_STATE, class_weight="balanced", n_jobs=-1
+            )
         clf.fit(X[tr], y[tr])
         oof[va] = clf.predict_proba(X[va])[:, 1]
     return oof
@@ -184,7 +189,10 @@ print(f"Class balance in test  set: {np.bincount(y_test)}")
 print("\nTraining Random Forest…")
 t0 = time.time()
 if HAS_IMBLEARN:
-    rf = BalancedRandomForestClassifier(n_estimators=400, random_state=RANDOM_STATE, n_jobs=-1)
+    rf = BalancedRandomForestClassifier(
+        n_estimators=400, random_state=RANDOM_STATE, n_jobs=-1,
+        sampling_strategy="all", replacement=True, bootstrap=False
+    )
 else:
     rf = RandomForestClassifier(n_estimators=300, random_state=RANDOM_STATE, class_weight="balanced", n_jobs=-1)
 rf.fit(X_train, y_train)
@@ -358,24 +366,37 @@ else:
             kept_names.append(name)
             kept_cols.append(j)
             if cs is not None:
-                cs.add_hyperparameter(UniformFloatHyperparameter(name, lower=lo, upper=hi))
-
+                # pad bounds slightly to avoid boundary rejects from float rounding
+                lower = float(np.nextafter(lo, -np.inf))
+                upper = float(np.nextafter(hi,  np.inf))
+                cs.add_hyperparameter(UniformFloatHyperparameter(name, lower=lower, upper=upper))
 
         if len(kept_cols) == 0:
             raise RuntimeError("All top-K features had degenerate ranges for fANOVA.")
 
+        # Align X columns EXACTLY to ConfigSpace hyperparameter order
         X_for_fanova = np.ascontiguousarray(X_top_all[:, kept_cols], dtype=np.float64)
+        if cs is not None:
+            hp_names = [hp.name for hp in cs.get_hyperparameters()]
+            order_idx = [kept_names.index(n) for n in hp_names]
+            X_for_fanova = X_for_fanova[:, order_idx]
+            X_for_fanova_df = pd.DataFrame(X_for_fanova, columns=hp_names)
+            name_order = hp_names
+        else:
+            X_for_fanova_df = X_for_fanova
+            name_order = kept_names
+
         Y_for_fanova = np.ascontiguousarray(oof, dtype=np.float64)
 
         # Build fANOVA (smaller/faster settings)
         fan = fANOVA(
-            X_for_fanova, Y_for_fanova,
+            X_for_fanova_df, Y_for_fanova,
             config_space=cs,
             n_trees=FANOVA_TREES, seed=RANDOM_STATE, points_per_tree=FANOVA_POINTS_PER_TREE
         )
 
         # Compute 1D importances; guard against NaN/inf
-        for j, name in enumerate(kept_names):
+        for j, name in enumerate(name_order):
             try:
                 res = fan.quantify_importance((j,))
                 # Some versions return dict, some return float
@@ -396,6 +417,7 @@ else:
             .sort_values("importance", ascending=False)
             .reset_index(drop=True)
         )
+        print(f"fANOVA Top-K={len(top_feats)}; kept={len(name_order)}; rows={len(fan_df)}")
         if not fan_df.empty:
             save_importances(fan_df, prefix="fanova")
         else:
@@ -407,7 +429,7 @@ else:
 if fan_df.empty:
     if fanova_failed_msg:
         with open(os.path.join(OUTPUT_DIR, "fanova_skipped.txt"), "w") as f:
-            f.write(fanova_failed_msg + "\n")
+            f.write(fanova_failed_msg + "\\n")
 
     try:
         # Use the features we kept for fANOVA if any; else original Top-K
@@ -420,7 +442,10 @@ if fan_df.empty:
         X_train_perm, X_test_perm = X_train[:, perm_idx], X_test[:, perm_idx]
 
         if HAS_IMBLEARN:
-            rf_top = BalancedRandomForestClassifier(n_estimators=OOF_TREES, random_state=RANDOM_STATE, n_jobs=-1)
+            rf_top = BalancedRandomForestClassifier(
+                n_estimators=OOF_TREES, random_state=RANDOM_STATE, n_jobs=-1,
+                sampling_strategy="all", replacement=True, bootstrap=False
+            )
         else:
             rf_top = RandomForestClassifier(n_estimators=OOF_TREES, random_state=RANDOM_STATE, class_weight="balanced", n_jobs=-1)
         rf_top.fit(X_train_perm, y_train)
@@ -455,7 +480,7 @@ if fan_df.empty:
         safe_plot_save(os.path.join(OUTPUT_DIR, "permutation_topK_importances.png"))
     except Exception as e:
         with open(os.path.join(OUTPUT_DIR, "fanova_skipped.txt"), "a") as f:
-            f.write(f"Permutation-importance fallback failed: {e}\n")
+            f.write(f"Permutation-importance fallback failed: {e}\\n")
 
 print(f"fANOVA done in {time.time() - t0:.2f} s")
-print("\nAll analyses complete ✔")
+print("\\nAll analyses complete ✔")

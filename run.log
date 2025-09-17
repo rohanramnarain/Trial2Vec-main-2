@@ -1,0 +1,103 @@
+Loading data…
+
+Data preview:
+        nct_id  Study Status     emb_0  ...   emb_125   emb_126   emb_127
+0  NCT06012448             1  0.274257  ...  0.249799  0.170205  0.195001
+1  NCT05852548             1  0.040588  ...  0.181162  0.353406  0.049075
+2  NCT06375330             1 -0.011522  ...  0.061728  0.009812  0.310002
+3  NCT05712330             1  0.261840  ...  0.069185  0.078796  0.137354
+4  NCT05706857             1  0.169495  ...  0.000643  0.103810 -0.009925
+
+[5 rows x 130 columns]
+
+Shape: (11160, 130)
+
+Train size: 8928, Test size: 2232
+Class balance in train set: [ 485 8443]
+Class balance in test  set: [ 121 2111]
+
+Training Random Forest…
+Training done in 0.77 s
+
+Evaluation:
+Default 0.5 threshold metrics:
+              precision    recall  f1-score   support
+
+           0     0.0520    0.4876    0.0940       121
+           1     0.9435    0.4908    0.6457      2111
+
+    accuracy                         0.4906      2232
+   macro avg     0.4978    0.4892    0.3699      2232
+weighted avg     0.8952    0.4906    0.6158      2232
+
+Confusion matrix:
+ [[  59   62]
+ [1075 1036]]
+Accuracy: 0.4905913978494624
+ROC-AUC: 0.4843108314965686
+PR-AUC : 0.9435701298222262
+
+Best probability threshold (F1+): 0.3225
+Tuned-threshold metrics:
+              precision    recall  f1-score   support
+
+           0     0.0000    0.0000    0.0000       121
+           1     0.9458    1.0000    0.9721      2111
+
+    accuracy                         0.9458      2232
+   macro avg     0.4729    0.5000    0.4861      2232
+weighted avg     0.8945    0.9458    0.9194      2232
+
+Tuned Confusion matrix:
+ [[   0  121]
+ [   0 2111]]
+
+Running SHAP…
+SHAP shapes — full: (200, 128, 2), pos-class: (200, 128)
+SHAP done in 7.15 s
+
+Running fANOVA…
+OOF stats: min=0.2450, max=0.8250, std=0.069830, unique≈101
+fANOVA importance failed for emb_105: 'SwigPyObject' object has no attribute 'mean'
+fANOVA importance failed for emb_76: 'SwigPyObject' object has no attribute 'mean'
+fANOVA importance failed for emb_84: 'SwigPyObject' object has no attribute 'mean'
+fANOVA importance failed for emb_67: 'SwigPyObject' object has no attribute 'mean'
+fANOVA importance failed for emb_120: 'SwigPyObject' object has no attribute 'mean'
+fANOVA importance failed for emb_9: 'SwigPyObject' object has no attribute 'mean'
+fANOVA importance failed for emb_1: 'SwigPyObject' object has no attribute 'mean'
+fANOVA importance failed for emb_73: 'SwigPyObject' object has no attribute 'mean'
+fANOVA importance failed for emb_95: 'SwigPyObject' object has no attribute 'mean'
+fANOVA importance failed for emb_69: 'SwigPyObject' object has no attribute 'mean'
+fANOVA importance failed for emb_41: 'SwigPyObject' object has no attribute 'mean'
+fANOVA importance failed for emb_19: 'SwigPyObject' object has no attribute 'mean'
+fANOVA importance failed for emb_97: 'SwigPyObject' object has no attribute 'mean'
+fANOVA importance failed for emb_80: 'SwigPyObject' object has no attribute 'mean'
+fANOVA importance failed for emb_29: 'SwigPyObject' object has no attribute 'mean'
+fANOVA importance failed for emb_99: 'SwigPyObject' object has no attribute 'mean'
+fANOVA importance failed for emb_30: 'SwigPyObject' object has no attribute 'mean'
+fANOVA importance failed for emb_26: 'SwigPyObject' object has no attribute 'mean'
+fANOVA importance failed for emb_37: 'SwigPyObject' object has no attribute 'mean'
+fANOVA importance failed for emb_79: 'SwigPyObject' object has no attribute 'mean'
+fANOVA done in 22.52 s
+
+All analyses complete ✔
+swig/python detected a memory leak of type 'rfr::util::weighted_running_statistics< double > *', no destructor found.
+swig/python detected a memory leak of type 'rfr::util::weighted_running_statistics< double > *', no destructor found.
+swig/python detected a memory leak of type 'rfr::util::weighted_running_statistics< double > *', no destructor found.
+swig/python detected a memory leak of type 'rfr::util::weighted_running_statistics< double > *', no destructor found.
+swig/python detected a memory leak of type 'rfr::util::weighted_running_statistics< double > *', no destructor found.
+swig/python detected a memory leak of type 'rfr::util::weighted_running_statistics< double > *', no destructor found.
+swig/python detected a memory leak of type 'rfr::util::weighted_running_statistics< double > *', no destructor found.
+swig/python detected a memory leak of type 'rfr::util::weighted_running_statistics< double > *', no destructor found.
+swig/python detected a memory leak of type 'rfr::util::weighted_running_statistics< double > *', no destructor found.
+swig/python detected a memory leak of type 'rfr::util::weighted_running_statistics< double > *', no destructor found.
+swig/python detected a memory leak of type 'rfr::util::weighted_running_statistics< double > *', no destructor found.
+swig/python detected a memory leak of type 'rfr::util::weighted_running_statistics< double > *', no destructor found.
+swig/python detected a memory leak of type 'rfr::util::weighted_running_statistics< double > *', no destructor found.
+swig/python detected a memory leak of type 'rfr::util::weighted_running_statistics< double > *', no destructor found.
+swig/python detected a memory leak of type 'rfr::util::weighted_running_statistics< double > *', no destructor found.
+swig/python detected a memory leak of type 'rfr::util::weighted_running_statistics< double > *', no destructor found.
+swig/python detected a memory leak of type 'rfr::util::weighted_running_statistics< double > *', no destructor found.
+swig/python detected a memory leak of type 'rfr::util::weighted_running_statistics< double > *', no destructor found.
+swig/python detected a memory leak of type 'rfr::util::weighted_running_statistics< double > *', no destructor found.
+swig/python detected a memory leak of type 'rfr::util::weighted_running_statistics< double > *', no destructor found.

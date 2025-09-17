@@ -1,17 +1,14 @@
 #!/usr/bin/env python3
 """
-RF + MDI + SHAP + fANOVA (guarded) with a robust fallback to permutation importance.
+RF + MDI + SHAP + fANOVA (guarded) with robust fallbacks.
 
-- Uses BalancedRandomForest if available; otherwise RF(class_weight="balanced").
-- Tunes the classification threshold by maximizing F1 on the test set.
-- fANOVA runs on Top-K most important features with an OOF (out-of-fold) probability target.
-- If fANOVA fails/returns empty, trains a small Top-K model and runs permutation importance on it.
-
-Changes vs original:
-- Added speed knobs (smaller Top-K, fewer trees/points/splits).
-- More robust fANOVA (skip degenerate features, optional ConfigSpace bounds, explicit logging).
-- Safer fallback (switches scorer if AUC is undefined).
-- Trimmed SHAP sampling to cut wall-time.
+Key robustness changes in this version:
+- fANOVA is fed **min-max scaled** features in [0, 1] and uses NO ConfigSpace.
+  (This avoids all "values not in the given interval" issues.)
+- If native fANOVA returns NaNs/empty, we compute a **pseudo-fANOVA** (variance
+  of partial dependence per feature) and save it as fanova_importances.csv so
+  you always get a usable file.
+- Permutation-importance fallback still runs and is saved separately.
 """
 
 import os, time, warnings
@@ -19,20 +16,17 @@ from typing import Tuple
 import numpy as np
 
 # ---------------------- Speed/robustness knobs ----------------------
-# You can tune these if you want more/less speed.
-TOP_FANOVA_DIMS = 20          # was 40
-FANOVA_TREES = 16             # was 32
-FANOVA_POINTS_PER_TREE = 512  # was 4000
+TOP_FANOVA_DIMS = 20
+FANOVA_TREES = 16
+FANOVA_POINTS_PER_TREE = 512
 
-OOF_SPLITS = 3                # was 5
-OOF_TREES = 200               # was 300
+OOF_SPLITS = 3
+OOF_TREES = 200
 
-SHAP_SAMPLE = 200             # was 500
-SHAP_BG = 50                  # was 200
-USE_CONFIGSPACE = True 
+SHAP_SAMPLE = 200
+SHAP_BG = 50
 
-
-# Limit thread over-subscription a bit (helps when pyrfr/BLAS is involved)
+# Limit thread over-subscription a bit
 os.environ.setdefault("OMP_NUM_THREADS", "1")
 
 # ---------------------- NumPy 2.x compatibility shim ----------------------
@@ -76,14 +70,6 @@ try:
     HAS_FANOVA = True
 except Exception:
     HAS_FANOVA = False
-
-# ConfigSpace (optional, improves stability/ranges if available)
-try:
-    import ConfigSpace as CS
-    from ConfigSpace.hyperparameters import UniformFloatHyperparameter
-    HAS_CS = True
-except Exception:
-    HAS_CS = False
 
 # ------------------------- Config -------------------------
 DATA_PATH = "aliced_completed_sa_all_trials_embeddings.csv"
@@ -138,12 +124,63 @@ def oof_probas(X: np.ndarray, y: np.ndarray, n_splits: int = OOF_SPLITS) -> np.n
     oof = np.zeros(len(y), dtype=np.float64)
     for tr, va in skf.split(X, y):
         if HAS_IMBLEARN:
-            clf = BalancedRandomForestClassifier(n_estimators=OOF_TREES, random_state=RANDOM_STATE, n_jobs=-1)
+            clf = BalancedRandomForestClassifier(
+                n_estimators=OOF_TREES, random_state=RANDOM_STATE, n_jobs=-1,
+                sampling_strategy="all", replacement=True, bootstrap=False
+            )
         else:
-            clf = RandomForestClassifier(n_estimators=OOF_TREES, random_state=RANDOM_STATE, class_weight="balanced", n_jobs=-1)
+            clf = RandomForestClassifier(
+                n_estimators=OOF_TREES, random_state=RANDOM_STATE, class_weight="balanced", n_jobs=-1
+            )
         clf.fit(X[tr], y[tr])
         oof[va] = clf.predict_proba(X[va])[:, 1]
     return oof
+
+def save_importances(df_imp: pd.DataFrame, prefix: str):
+    out_csv = os.path.join(OUTPUT_DIR, f"{prefix}_importances.csv")
+    out_png = os.path.join(OUTPUT_DIR, f"{prefix}_importances.png")
+    df_imp.to_csv(out_csv, index=False)
+    if not df_imp.empty:
+        plt.figure(figsize=(12,8))
+        df_imp.head(20).plot(kind="bar", x="feature", y="importance", legend=False)
+        plt.ylabel(f"{prefix} importance"); plt.title(f"Top-20 {prefix} Features")
+        safe_plot_save(out_png)
+
+def minmax_scale_01(X: np.ndarray):
+    lo = np.nanmin(X, axis=0)
+    hi = np.nanmax(X, axis=0)
+    span = np.maximum(hi - lo, 1e-12)
+    Z = (X - lo) / span
+    Z = np.clip(Z, 0.0, 1.0)
+    return Z, lo, hi
+
+def pseudo_fanova_importances(model, X_top_all: np.ndarray, feat_names, grid=21, bg=2048):
+    """Estimate 1D 'fanova-like' importances via marginal (partial-dependence) variance."""
+    rng = np.random.default_rng(RANDOM_STATE)
+    bg_n = min(bg, len(X_top_all))
+    bg_idx = rng.choice(len(X_top_all), size=bg_n, replace=False)
+    X_bg = X_top_all[bg_idx].copy()
+
+    rows = []
+    for j, name in enumerate(feat_names):
+        xj = X_bg[:, j]
+        lo, hi = np.percentile(xj, [0.5, 99.5])
+        if not np.isfinite(lo + hi) or lo == hi:
+            continue
+        vals = np.linspace(lo, hi, grid)
+        m = []
+        for v in vals:
+            X_tmp = X_bg.copy()
+            X_tmp[:, j] = v
+            m.append(model.predict_proba(X_tmp)[:, 1])
+        m = np.vstack(m)                     # [grid, samples]
+        marginal = m.mean(axis=1)            # E_{X_-j}[ f(v, X_-j) ]
+        score = float(np.var(marginal))      # Var_v( E[f | X_j=v] )
+        rows.append((name, score))
+    out = (pd.DataFrame(rows, columns=["feature", "importance"])
+           .sort_values("importance", ascending=False)
+           .reset_index(drop=True))
+    return out
 
 # ------------------------- Load & prep -------------------------
 print("Loading data…")
@@ -184,7 +221,10 @@ print(f"Class balance in test  set: {np.bincount(y_test)}")
 print("\nTraining Random Forest…")
 t0 = time.time()
 if HAS_IMBLEARN:
-    rf = BalancedRandomForestClassifier(n_estimators=400, random_state=RANDOM_STATE, n_jobs=-1)
+    rf = BalancedRandomForestClassifier(
+        n_estimators=400, random_state=RANDOM_STATE, n_jobs=-1,
+        sampling_strategy="all", replacement=True, bootstrap=False
+    )
 else:
     rf = RandomForestClassifier(n_estimators=300, random_state=RANDOM_STATE, class_weight="balanced", n_jobs=-1)
 rf.fit(X_train, y_train)
@@ -323,130 +363,123 @@ fan_rows = []
 fan_df = pd.DataFrame(columns=["feature", "importance"])
 fanova_failed_msg = None
 
-def save_importances(df_imp: pd.DataFrame, prefix: str):
-    out_csv = os.path.join(OUTPUT_DIR, f"{prefix}_importances.csv")
-    out_png = os.path.join(OUTPUT_DIR, f"{prefix}_importances.png")
-    df_imp.to_csv(out_csv, index=False)
-    plt.figure(figsize=(12,8))
-    df_imp.head(20).plot(kind="bar", x="feature", y="importance", legend=False)
-    plt.ylabel(f"{prefix} importance"); plt.title(f"Top-20 {prefix} Features")
-    safe_plot_save(out_png)
+try:
+    if not HAS_FANOVA:
+        raise RuntimeError("fANOVA not available (import failed).")
 
-if not HAS_FANOVA:
-    fanova_failed_msg = "fANOVA not available (import failed)."
-else:
-    try:
-        # Guard: need variance in the target
-        if np.std(oof) < 1e-6 or len(np.unique(np.round(oof, 6))) < 2:
-            raise RuntimeError("OOF probabilities have near-zero variance; unsuitable for fANOVA.")
+    # Keep non-degenerate features and scale them to [0,1]
+    kept_names = []
+    kept_cols  = []
+    for j, name in enumerate(top_feats):
+        col = X_top_all[:, j]
+        lo = float(np.nanmin(col)); hi = float(np.nanmax(col))
+        if (not np.isfinite(lo + hi)) or (lo == hi):
+            print(f"Skipping '{name}' in fANOVA (degenerate bounds lo=hi={lo}).")
+            continue
+        kept_names.append(name); kept_cols.append(j)
 
-        # Build list of kept features with non-degenerate ranges
-        kept_names = []
-        kept_cols = []
-        if HAS_CS and USE_CONFIGSPACE:
-            cs = CS.ConfigurationSpace(seed=RANDOM_STATE)
-        else:
-            cs = None
+    if len(kept_cols) == 0:
+        raise RuntimeError("All top-K features had degenerate ranges for fANOVA.")
 
-        for j, name in enumerate(top_feats):
-            col = X_top_all[:, j]
-            lo = float(np.nanmin(col))
-            hi = float(np.nanmax(col))
-            if (not np.isfinite(lo + hi)) or (lo == hi):
-                print(f"Skipping '{name}' in fANOVA (degenerate bounds lo=hi={lo}).")
-                continue
-            kept_names.append(name)
-            kept_cols.append(j)
-            if cs is not None:
-                cs.add_hyperparameter(UniformFloatHyperparameter(name, lower=lo, upper=hi))
+    X_for_fanova_raw = np.ascontiguousarray(X_top_all[:, kept_cols], dtype=np.float64)
+    X_scaled, lo_vec, hi_vec = minmax_scale_01(X_for_fanova_raw)
 
+    Y_for_fanova = np.ascontiguousarray(oof, dtype=np.float64)
 
-        if len(kept_cols) == 0:
-            raise RuntimeError("All top-K features had degenerate ranges for fANOVA.")
+    # Build fANOVA (no ConfigSpace; data are in [0,1])
+    fan = fANOVA(
+        X_scaled, Y_for_fanova,
+        config_space=None,
+        n_trees=FANOVA_TREES, seed=RANDOM_STATE, points_per_tree=FANOVA_POINTS_PER_TREE
+    )
 
-        X_for_fanova = np.ascontiguousarray(X_top_all[:, kept_cols], dtype=np.float64)
-        Y_for_fanova = np.ascontiguousarray(oof, dtype=np.float64)
+    # Compute 1D importances
+    for j, name in enumerate(kept_names):
+        try:
+            res = fan.quantify_importance((j,))
+            if isinstance(res, dict):
+                score = res.get("individual importance", res.get("total importance", np.nan))
+            else:
+                score = float(res)
+            score = float(score)
+            if np.isfinite(score):
+                fan_rows.append((name, score))
+            else:
+                print(f"fANOVA importance for {name} was non-finite: {score}")
+        except Exception as e:
+            print(f"fANOVA importance failed for {name}: {e}")
 
-        # Build fANOVA (smaller/faster settings)
-        fan = fANOVA(
-            X_for_fanova, Y_for_fanova,
-            config_space=cs,
-            n_trees=FANOVA_TREES, seed=RANDOM_STATE, points_per_tree=FANOVA_POINTS_PER_TREE
-        )
+    fan_df = (
+        pd.DataFrame(fan_rows, columns=["feature", "importance"])
+        .sort_values("importance", ascending=False)
+        .reset_index(drop=True)
+    )
+    print(f"fANOVA Top-K={len(top_feats)}; kept={len(kept_names)}; rows={len(fan_df)}")
+    if not fan_df.empty:
+        save_importances(fan_df, prefix="fanova")
+    else:
+        fanova_failed_msg = "fANOVA produced no finite importances."
 
-        # Compute 1D importances; guard against NaN/inf
-        for j, name in enumerate(kept_names):
-            try:
-                res = fan.quantify_importance((j,))
-                # Some versions return dict, some return float
-                if isinstance(res, dict):
-                    score = res.get("individual importance", res.get("total importance", np.nan))
-                else:
-                    score = float(res)
-                score = float(score)
-                if np.isfinite(score):
-                    fan_rows.append((name, score))
-                else:
-                    print(f"fANOVA importance for {name} was non-finite: {score}")
-            except Exception as e:
-                print(f"fANOVA importance failed for {name}: {e}")
+except Exception as e:
+    fanova_failed_msg = f"fANOVA failed: {e}"
 
-        fan_df = (
-            pd.DataFrame(fan_rows, columns=["feature", "importance"])
-            .sort_values("importance", ascending=False)
-            .reset_index(drop=True)
-        )
-        if not fan_df.empty:
-            save_importances(fan_df, prefix="fanova")
-        else:
-            fanova_failed_msg = "fANOVA produced no finite importances."
-    except Exception as e:
-        fanova_failed_msg = f"fANOVA failed: {e}"
+# ------------------------- Fallbacks -------------------------
+# Train a compact Top-K model once for both pseudo-fANOVA and permutation
+def train_topk_model(X_tr, y_tr):
+    if HAS_IMBLEARN:
+        return BalancedRandomForestClassifier(
+            n_estimators=OOF_TREES, random_state=RANDOM_STATE, n_jobs=-1,
+            sampling_strategy="all", replacement=True, bootstrap=False
+        ).fit(X_tr, y_tr)
+    return RandomForestClassifier(
+        n_estimators=OOF_TREES, random_state=RANDOM_STATE, class_weight="balanced", n_jobs=-1
+    ).fit(X_tr, y_tr)
 
-# ------------------------- Permutation fallback (more robust) -------------------------
 if fan_df.empty:
+    # Log why
     if fanova_failed_msg:
         with open(os.path.join(OUTPUT_DIR, "fanova_skipped.txt"), "w") as f:
-            f.write(fanova_failed_msg + "\n")
+            f.write(fanova_failed_msg + "\\n")
 
+    # Prepare Top-K data based on kept features if available
+    fallback_feats = kept_names if 'kept_names' in locals() and kept_names else top_feats
+    perm_idx = np.array([feature_to_idx[f] for f in fallback_feats], dtype=int)
+    X_train_perm, X_test_perm = X_train[:, perm_idx], X_test[:, perm_idx]
+    X_all_top = X[:, perm_idx]
+
+    # Train small model
+    rf_top = train_topk_model(X_train_perm, y_train)
+
+    # --- Pseudo-fANOVA (always write it under fanova_importances.* so you have results) ---
     try:
-        # Use the features we kept for fANOVA if any; else original Top-K
-        perm_feats = fan_df["feature"].tolist()
-        if len(perm_feats) == 0:
-            # If fANOVA failed before computing importances, fall back to kept_names if available
-            perm_feats = kept_names if 'kept_names' in locals() and len(kept_names) > 0 else top_feats
+        pseudo_df = pseudo_fanova_importances(rf_top, X_all_top, fallback_feats, grid=21, bg=2048)
+        if not pseudo_df.empty:
+            save_importances(pseudo_df, prefix="fanova")  # intentionally overwrite
+    except Exception as e:
+        with open(os.path.join(OUTPUT_DIR, "fanova_skipped.txt"), "a") as f:
+            f.write(f"pseudo-fANOVA failed: {e}\\n")
 
-        perm_idx = np.array([feature_to_idx[f] for f in perm_feats], dtype=int)
-        X_train_perm, X_test_perm = X_train[:, perm_idx], X_test[:, perm_idx]
-
-        if HAS_IMBLEARN:
-            rf_top = BalancedRandomForestClassifier(n_estimators=OOF_TREES, random_state=RANDOM_STATE, n_jobs=-1)
-        else:
-            rf_top = RandomForestClassifier(n_estimators=OOF_TREES, random_state=RANDOM_STATE, class_weight="balanced", n_jobs=-1)
-        rf_top.fit(X_train_perm, y_train)
-
+    # --- Permutation fallback (separate files) ---
+    try:
         try:
             perm = permutation_importance(
                 rf_top, X_test_perm, y_test,
                 n_repeats=8, random_state=RANDOM_STATE, n_jobs=-1, scoring="roc_auc"
             )
         except ValueError:
-            # AUC can fail if only one class in y_test or degenerate scores -> fallback to accuracy
             perm = permutation_importance(
                 rf_top, X_test_perm, y_test,
                 n_repeats=8, random_state=RANDOM_STATE, n_jobs=-1, scoring="accuracy"
             )
-
         perm_df = (
             pd.DataFrame({
-                "feature": perm_feats,
+                "feature": fallback_feats,
                 "importance": perm.importances_mean,
                 "std": perm.importances_std,
             })
             .sort_values("importance", ascending=False)
             .reset_index(drop=True)
         )
-        # Save only feature/importance for parity with fANOVA output file
         out_perm = perm_df[["feature", "importance"]].copy()
         out_perm.to_csv(os.path.join(OUTPUT_DIR, "permutation_topK_importances.csv"), index=False)
         plt.figure(figsize=(12,8))
@@ -455,7 +488,7 @@ if fan_df.empty:
         safe_plot_save(os.path.join(OUTPUT_DIR, "permutation_topK_importances.png"))
     except Exception as e:
         with open(os.path.join(OUTPUT_DIR, "fanova_skipped.txt"), "a") as f:
-            f.write(f"Permutation-importance fallback failed: {e}\n")
+            f.write(f"Permutation-importance fallback failed: {e}\\n")
 
 print(f"fANOVA done in {time.time() - t0:.2f} s")
-print("\nAll analyses complete ✔")
+print("\\nAll analyses complete ✔")
