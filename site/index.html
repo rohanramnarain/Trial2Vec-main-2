@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Trial2Vec Model Explainability</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-inner">
+      <p class="eyebrow">Trial2Vec</p>
+      <h1>Model Explainability Gallery</h1>
+      <p class="lede">
+        A quick visual tour of how the model behaves, what drives predictions, and
+        how well it separates outcomes.
+      </p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="analysis" aria-label="Word association">
+      <div class="analysis-card">
+        <div class="analysis-head">
+          <p class="eyebrow">Interactive</p>
+          <h2>Word Association</h2>
+          <p class="lede">
+            Enter a single word to see how trials containing that word align with
+            success or failure in the labeled dataset.
+          </p>
+        </div>
+        <div class="analysis-input">
+          <label for="word-input">Single word</label>
+          <div class="input-row">
+            <input id="word-input" type="text" placeholder="e.g., oncology" autocomplete="off" />
+            <button id="word-button" type="button">Analyze</button>
+          </div>
+          <p class="hint">Powered by ctg-studies.csv and labeled embeddings.</p>
+        </div>
+        <div id="word-result" class="analysis-result" aria-live="polite">
+          <p class="placeholder">Type a word to see results.</p>
+        </div>
+      </div>
+    </section>
+    <section class="gallery">
+      <figure class="card">
+        <img src="../model_explainability_outputs/feature_importances.png" alt="Feature importances chart" />
+        <figcaption>
+          <strong>Feature Importances.</strong> Shows which input features contribute most to model
+          decisions, ranked by overall impact.
+        </figcaption>
+      </figure>
+
+      <figure class="card">
+        <img src="../model_explainability_outputs/permutation_topK_importances.png" alt="Permutation importance plot" />
+        <figcaption>
+          <strong>Permutation Importance.</strong> Estimates how performance drops when each feature
+          is shuffled, highlighting robust drivers.
+        </figcaption>
+      </figure>
+
+      <figure class="card">
+        <img src="../model_explainability_outputs/fanova_importances.png" alt="fANOVA importances" />
+        <figcaption>
+          <strong>fANOVA Importances.</strong> Quantifies main-effect contribution per feature, useful
+          for ranking dominant signals.
+        </figcaption>
+      </figure>
+
+      <figure class="card">
+        <img src="../model_explainability_outputs/shap_summary.png" alt="SHAP summary plot" />
+        <figcaption>
+          <strong>SHAP Summary.</strong> Global view of feature effects; color indicates feature value
+          while position indicates impact on prediction.
+        </figcaption>
+      </figure>
+
+      <figure class="card">
+        <img src="../model_explainability_outputs/shap_waterfall.png" alt="SHAP waterfall plot" />
+        <figcaption>
+          <strong>SHAP Waterfall.</strong> Breaks down one prediction into additive feature
+          contributions from baseline to final score.
+        </figcaption>
+      </figure>
+
+      <figure class="card">
+        <img src="../model_explainability_outputs/probe_coefficients.png" alt="Probe coefficients" />
+        <figcaption>
+          <strong>Probe Coefficients.</strong> Linear probe weights indicating which latent dimensions
+          align with outcomes.
+        </figcaption>
+      </figure>
+
+      <figure class="card">
+        <img src="../model_explainability_outputs/roc_curve.png" alt="ROC curve" />
+        <figcaption>
+          <strong>ROC Curve.</strong> Separability across thresholds; higher curve indicates better
+          true-positive vs false-positive tradeoff.
+        </figcaption>
+      </figure>
+
+      <figure class="card">
+        <img src="../model_explainability_outputs/pr_curve.png" alt="Precision-recall curve" />
+        <figcaption>
+          <strong>Precision-Recall Curve.</strong> Precision vs recall across thresholds; especially
+          informative for class-imbalanced settings.
+        </figcaption>
+      </figure>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Images loaded from model_explainability_outputs.</p>
+  </footer>
+  <script src="app.js"></script>
+</body>
+</html>

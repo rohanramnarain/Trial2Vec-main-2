@@ -1,0 +1,7925 @@
+{
+  "data": {
+    "abdominal": {
+      "assoc_score": 0.077402,
+      "count": 13,
+      "lift": 0.115385,
+      "success_rate": 0.615385
+    },
+    "ability": {
+      "assoc_score": 0.014195,
+      "count": 40,
+      "lift": 0.125,
+      "success_rate": 0.625
+    },
+    "able": {
+      "assoc_score": 0.032157,
+      "count": 16,
+      "lift": 0.0625,
+      "success_rate": 0.5625
+    },
+    "abnormal": {
+      "assoc_score": -0.037693,
+      "count": 21,
+      "lift": -0.166667,
+      "success_rate": 0.333333
+    },
+    "abnormalities": {
+      "assoc_score": -0.048382,
+      "count": 18,
+      "lift": -0.166667,
+      "success_rate": 0.333333
+    },
+    "above": {
+      "assoc_score": -0.014815,
+      "count": 16,
+      "lift": 0.125,
+      "success_rate": 0.625
+    },
+    "absence": {
+      "assoc_score": 0.019318,
+      "count": 26,
+      "lift": 0.076923,
+      "success_rate": 0.576923
+    },
+    "absolute": {
+      "assoc_score": -0.029014,
+      "count": 13,
+      "lift": -0.192308,
+      "success_rate": 0.307692
+    },
+    "acceptability": {
+      "assoc_score": -9.1e-05,
+      "count": 13,
+      "lift": -0.192308,
+      "success_rate": 0.307692
+    },
+    "according": {
+      "assoc_score": -0.011124,
+      "count": 78,
+      "lift": -0.115385,
+      "success_rate": 0.384615
+    },
+    "accuracy": {
+      "assoc_score": 0.069405,
+      "count": 15,
+      "lift": 0.3,
+      "success_rate": 0.8
+    },
+    "achieve": {
+      "assoc_score": -0.015072,
+      "count": 31,
+      "lift": -0.145161,
+      "success_rate": 0.354839
+    },
+    "achieved": {
+      "assoc_score": -0.001839,
+      "count": 12,
+      "lift": -0.333333,
+      "success_rate": 0.166667
+    },
+    "achieving": {
+      "assoc_score": -0.047899,
+      "count": 17,
+      "lift": -0.147059,
+      "success_rate": 0.352941
+    },
+    "acid": {
+      "assoc_score": -0.010285,
+      "count": 15,
+      "lift": 0.166667,
+      "success_rate": 0.666667
+    },
+    "across": {
+      "assoc_score": 0.01042,
+      "count": 26,
+      "lift": -0.038462,
+      "success_rate": 0.461538
+    },
+    "action": {
+      "assoc_score": -0.009589,
+      "count": 14,
+      "lift": 0.071429,
+      "success_rate": 0.571429
+    },
+    "active": {
+      "assoc_score": 0.013043,
+      "count": 50,
+      "lift": -0.02,
+      "success_rate": 0.48
+    },
+    "activities": {
+      "assoc_score": 0.044397,
+      "count": 38,
+      "lift": 0.184211,
+      "success_rate": 0.684211
+    },
+    "activity": {
+      "assoc_score": 0.019134,
+      "count": 79,
+      "lift": 0.044304,
+      "success_rate": 0.544304
+    },
+    "acute": {
+      "assoc_score": -0.002664,
+      "count": 58,
+      "lift": -0.034483,
+      "success_rate": 0.465517
+    },
+    "ada": {
+      "assoc_score": -0.078565,
+      "count": 14,
+      "lift": -0.428571,
+      "success_rate": 0.071429
+    },
+    "added": {
+      "assoc_score": 0.071451,
+      "count": 11,
+      "lift": 0.318182,
+      "success_rate": 0.818182
+    },
+    "adding": {
+      "assoc_score": 0.017704,
+      "count": 10,
+      "lift": 0.1,
+      "success_rate": 0.6
+    },
+    "addition": {
+      "assoc_score": 0.024146,
+      "count": 31,
+      "lift": 0.016129,
+      "success_rate": 0.516129
+    },
+    "additional": {
+      "assoc_score": 0.020242,
+      "count": 32,
+      "lift": 0.0625,
+      "success_rate": 0.5625
+    },
+    "additionally": {
+      "assoc_score": 0.019496,
+      "count": 12,
+      "lift": 0.25,
+      "success_rate": 0.75
+    },
+    "addressing": {
+      "assoc_score": 0.08015,
+      "count": 10,
+      "lift": 0.4,
+      "success_rate": 0.9
+    },
+    "adherence": {
+      "assoc_score": 0.019308,
+      "count": 15,
+      "lift": -0.033333,
+      "success_rate": 0.466667
+    },
+    "administered": {
+      "assoc_score": -0.028856,
+      "count": 57,
+      "lift": -0.026316,
+      "success_rate": 0.473684
+    },
+    "administration": {
+      "assoc_score": -0.047341,
+      "count": 53,
+      "lift": -0.160377,
+      "success_rate": 0.339623
+    },
+    "adult": {
+      "assoc_score": -0.027856,
+      "count": 39,
+      "lift": 0.115385,
+      "success_rate": 0.615385
+    },
+    "adults": {
+      "assoc_score": 0.003995,
+      "count": 65,
+      "lift": 0.084615,
+      "success_rate": 0.584615
+    },
+    "advanced": {
+      "assoc_score": -0.071596,
+      "count": 48,
+      "lift": -0.3125,
+      "success_rate": 0.1875
+    },
+    "adverse": {
+      "assoc_score": -0.050174,
+      "count": 195,
+      "lift": -0.248718,
+      "success_rate": 0.251282
+    },
+    "aes": {
+      "assoc_score": -0.073239,
+      "count": 67,
+      "lift": -0.276119,
+      "success_rate": 0.223881
+    },
+    "affect": {
+      "assoc_score": 0.040217,
+      "count": 18,
+      "lift": 0.222222,
+      "success_rate": 0.722222
+    },
+    "affected": {
+      "assoc_score": 0.063885,
+      "count": 15,
+      "lift": 0.033333,
+      "success_rate": 0.533333
+    },
+    "affects": {
+      "assoc_score": 0.03586,
+      "count": 11,
+      "lift": 0.227273,
+      "success_rate": 0.727273
+    },
+    "against": {
+      "assoc_score": 0.002348,
+      "count": 20,
+      "lift": -0.05,
+      "success_rate": 0.45
+    },
+    "age": {
+      "assoc_score": 0.032595,
+      "count": 63,
+      "lift": 0.087302,
+      "success_rate": 0.587302
+    },
+    "aged": {
+      "assoc_score": 0.035522,
+      "count": 23,
+      "lift": 0.152174,
+      "success_rate": 0.652174
+    },
+    "agent": {
+      "assoc_score": -0.064697,
+      "count": 12,
+      "lift": -0.416667,
+      "success_rate": 0.083333
+    },
+    "agree": {
+      "assoc_score": 0.036149,
+      "count": 14,
+      "lift": 0.142857,
+      "success_rate": 0.642857
+    },
+    "aim": {
+      "assoc_score": 0.045757,
+      "count": 76,
+      "lift": 0.171053,
+      "success_rate": 0.671053
+    },
+    "aimed": {
+      "assoc_score": 0.08853,
+      "count": 12,
+      "lift": 0.416667,
+      "success_rate": 0.916667
+    },
+    "aims": {
+      "assoc_score": 0.027139,
+      "count": 89,
+      "lift": 0.117978,
+      "success_rate": 0.617978
+    },
+    "allocation": {
+      "assoc_score": -0.008043,
+      "count": 454,
+      "lift": -0.046256,
+      "success_rate": 0.453744
+    },
+    "allow": {
+      "assoc_score": 0.027916,
+      "count": 10,
+      "lift": 0.1,
+      "success_rate": 0.6
+    },
+    "allows": {
+      "assoc_score": 0.07792,
+      "count": 11,
+      "lift": 0.318182,
+      "success_rate": 0.818182
+    },
+    "alone": {
+      "assoc_score": -0.055948,
+      "count": 37,
+      "lift": -0.202703,
+      "success_rate": 0.297297
+    },
+    "along": {
+      "assoc_score": 0.059524,
+      "count": 18,
+      "lift": 0.055556,
+      "success_rate": 0.555556
+    },
+    "alpha": {
+      "assoc_score": -0.00648,
+      "count": 16,
+      "lift": -0.125,
+      "success_rate": 0.375
+    },
+    "already": {
+      "assoc_score": 0.0052,
+      "count": 10,
+      "lift": 0.1,
+      "success_rate": 0.6
+    },
+    "alternative": {
+      "assoc_score": 0.005285,
+      "count": 11,
+      "lift": 0.045455,
+      "success_rate": 0.545455
+    },
+    "american": {
+      "assoc_score": -0.016992,
+      "count": 13,
+      "lift": -0.115385,
+      "success_rate": 0.384615
+    },
+    "among": {
+      "assoc_score": 0.032137,
+      "count": 55,
+      "lift": 0.172727,
+      "success_rate": 0.672727
+    },
+    "amount": {
+      "assoc_score": 0.025183,
+      "count": 34,
+      "lift": 0.117647,
+      "success_rate": 0.617647
+    },
+    "analgesic": {
+      "assoc_score": 0.052859,
+      "count": 13,
+      "lift": 0.269231,
+      "success_rate": 0.769231
+    },
+    "analog": {
+      "assoc_score": 0.064252,
+      "count": 18,
+      "lift": 0.166667,
+      "success_rate": 0.666667
+    },
+    "analogue": {
+      "assoc_score": 0.046751,
+      "count": 27,
+      "lift": 0.092593,
+      "success_rate": 0.592593
+    },
+    "analyses": {
+      "assoc_score": 0.043101,
+      "count": 16,
+      "lift": 0.375,
+      "success_rate": 0.875
+    },
+    "analysis": {
+      "assoc_score": 0.026711,
+      "count": 76,
+      "lift": 0.078947,
+      "success_rate": 0.578947
+    },
+    "analyzed": {
+      "assoc_score": 0.012249,
+      "count": 32,
+      "lift": 0.25,
+      "success_rate": 0.75
+    },
+    "anderson": {
+      "assoc_score": -0.077205,
+      "count": 16,
+      "lift": -0.375,
+      "success_rate": 0.125
+    },
+    "anesthesia": {
+      "assoc_score": 0.060426,
+      "count": 20,
+      "lift": 0.35,
+      "success_rate": 0.85
+    },
+    "angle": {
+      "assoc_score": 0.122785,
+      "count": 16,
+      "lift": 0.25,
+      "success_rate": 0.75
+    },
+    "another": {
+      "assoc_score": 0.009094,
+      "count": 13,
+      "lift": 0.192308,
+      "success_rate": 0.692308
+    },
+    "answer": {
+      "assoc_score": 0.029614,
+      "count": 41,
+      "lift": 0.207317,
+      "success_rate": 0.707317
+    },
+    "anterior": {
+      "assoc_score": 0.07774,
+      "count": 13,
+      "lift": 0.192308,
+      "success_rate": 0.692308
+    },
+    "anti": {
+      "assoc_score": -0.070093,
+      "count": 44,
+      "lift": -0.363636,
+      "success_rate": 0.136364
+    },
+    "antibodies": {
+      "assoc_score": -0.085207,
+      "count": 26,
+      "lift": -0.307692,
+      "success_rate": 0.192308
+    },
+    "antibody": {
+      "assoc_score": -0.08997,
+      "count": 11,
+      "lift": -0.136364,
+      "success_rate": 0.363636
+    },
+    "anxiety": {
+      "assoc_score": 0.032201,
+      "count": 38,
+      "lift": 0.105263,
+      "success_rate": 0.605263
+    },
+    "apparent": {
+      "assoc_score": -0.062066,
+      "count": 20,
+      "lift": 0.15,
+      "success_rate": 0.65
+    },
+    "application": {
+      "assoc_score": 0.07743,
+      "count": 27,
+      "lift": 0.351852,
+      "success_rate": 0.851852
+    },
+    "applied": {
+      "assoc_score": 0.083672,
+      "count": 22,
+      "lift": 0.318182,
+      "success_rate": 0.818182
+    },
+    "approach": {
+      "assoc_score": 0.058646,
+      "count": 13,
+      "lift": 0.269231,
+      "success_rate": 0.769231
+    },
+    "appropriate": {
+      "assoc_score": 0.000841,
+      "count": 15,
+      "lift": 0.033333,
+      "success_rate": 0.533333
+    },
+    "approved": {
+      "assoc_score": -0.024876,
+      "count": 17,
+      "lift": -0.029412,
+      "success_rate": 0.470588
+    },
+    "approximately": {
+      "assoc_score": -0.041185,
+      "count": 59,
+      "lift": -0.194915,
+      "success_rate": 0.305085
+    },
+    "area": {
+      "assoc_score": -0.045302,
+      "count": 88,
+      "lift": -0.056818,
+      "success_rate": 0.443182
+    },
+    "areas": {
+      "assoc_score": 0.068386,
+      "count": 11,
+      "lift": 0.136364,
+      "success_rate": 0.636364
+    },
+    "arm": {
+      "assoc_score": -0.000821,
+      "count": 57,
+      "lift": 0.008772,
+      "success_rate": 0.508772
+    },
+    "arms": {
+      "assoc_score": 0.013924,
+      "count": 19,
+      "lift": -0.131579,
+      "success_rate": 0.368421
+    },
+    "around": {
+      "assoc_score": 0.073169,
+      "count": 12,
+      "lift": 0.166667,
+      "success_rate": 0.666667
+    },
+    "arterial": {
+      "assoc_score": 0.034934,
+      "count": 14,
+      "lift": 0.142857,
+      "success_rate": 0.642857
+    },
+    "asked": {
+      "assoc_score": 0.07939,
+      "count": 47,
+      "lift": 0.308511,
+      "success_rate": 0.808511
+    },
+    "aspects": {
+      "assoc_score": 0.036501,
+      "count": 10,
+      "lift": 0.0,
+      "success_rate": 0.5
+    },
+    "assess": {
+      "assoc_score": 0.014738,
+      "count": 144,
+      "lift": 0.020833,
+      "success_rate": 0.520833
+    },
+    "assessed": {
+      "assoc_score": -0.002064,
+      "count": 169,
+      "lift": -0.050296,
+      "success_rate": 0.449704
+    },
+    "assesses": {
+      "assoc_score": 0.037358,
+      "count": 33,
+      "lift": 0.106061,
+      "success_rate": 0.606061
+    },
+    "assessing": {
+      "assoc_score": 0.043175,
+      "count": 33,
+      "lift": 0.136364,
+      "success_rate": 0.636364
+    },
+    "assessment": {
+      "assoc_score": 0.011536,
+      "count": 143,
+      "lift": -0.01049,
+      "success_rate": 0.48951
+    },
+    "assessments": {
+      "assoc_score": -0.004221,
+      "count": 35,
+      "lift": 0.071429,
+      "success_rate": 0.571429
+    },
+    "assessor": {
+      "assoc_score": 0.023286,
+      "count": 118,
+      "lift": 0.09322,
+      "success_rate": 0.59322
+    },
+    "assigned": {
+      "assoc_score": 0.020708,
+      "count": 25,
+      "lift": 0.1,
+      "success_rate": 0.6
+    },
+    "associated": {
+      "assoc_score": 0.006316,
+      "count": 77,
+      "lift": 0.019481,
+      "success_rate": 0.519481
+    },
+    "association": {
+      "assoc_score": 0.020142,
+      "count": 15,
+      "lift": 0.033333,
+      "success_rate": 0.533333
+    },
+    "attend": {
+      "assoc_score": -0.012741,
+      "count": 10,
+      "lift": -0.1,
+      "success_rate": 0.4
+    },
+    "attention": {
+      "assoc_score": 0.04768,
+      "count": 12,
+      "lift": 0.25,
+      "success_rate": 0.75
+    },
+    "auc": {
+      "assoc_score": -0.067714,
+      "count": 46,
+      "lift": -0.130435,
+      "success_rate": 0.369565
+    },
+    "auc0": {
+      "assoc_score": -0.048776,
+      "count": 21,
+      "lift": 0.166667,
+      "success_rate": 0.666667
+    },
+    "autologous": {
+      "assoc_score": -0.068328,
+      "count": 10,
+      "lift": -0.4,
+      "success_rate": 0.1
+    },
+    "available": {
+      "assoc_score": 0.007576,
+      "count": 20,
+      "lift": -0.1,
+      "success_rate": 0.4
+    },
+    "average": {
+      "assoc_score": 0.028309,
+      "count": 65,
+      "lift": 0.084615,
+      "success_rate": 0.584615
+    },
+    "awareness": {
+      "assoc_score": 0.046939,
+      "count": 12,
+      "lift": 0.25,
+      "success_rate": 0.75
+    },
+    "back": {
+      "assoc_score": 0.068197,
+      "count": 24,
+      "lift": 0.125,
+      "success_rate": 0.625
+    },
+    "background": {
+      "assoc_score": 0.056873,
+      "count": 10,
+      "lift": 0.2,
+      "success_rate": 0.7
+    },
+    "bad": {
+      "assoc_score": 0.031603,
+      "count": 12,
+      "lift": -0.083333,
+      "success_rate": 0.416667
+    },
+    "balance": {
+      "assoc_score": 0.093725,
+      "count": 15,
+      "lift": 0.366667,
+      "success_rate": 0.866667
+    },
+    "based": {
+      "assoc_score": -0.004854,
+      "count": 128,
+      "lift": 0.015625,
+      "success_rate": 0.515625
+    },
+    "baseline": {
+      "assoc_score": -0.008311,
+      "count": 220,
+      "lift": -0.059091,
+      "success_rate": 0.440909
+    },
+    "basic": {
+      "assoc_score": 0.031627,
+      "count": 23,
+      "lift": 0.23913,
+      "success_rate": 0.73913
+    },
+    "basis": {
+      "assoc_score": 0.012509,
+      "count": 10,
+      "lift": -0.1,
+      "success_rate": 0.4
+    },
+    "beginning": {
+      "assoc_score": 0.017844,
+      "count": 16,
+      "lift": 0.1875,
+      "success_rate": 0.6875
+    },
+    "behavior": {
+      "assoc_score": 0.032237,
+      "count": 15,
+      "lift": 0.166667,
+      "success_rate": 0.666667
+    },
+    "behavioral": {
+      "assoc_score": 0.038571,
+      "count": 61,
+      "lift": 0.155738,
+      "success_rate": 0.655738
+    },
+    "being": {
+      "assoc_score": 0.023452,
+      "count": 55,
+      "lift": 0.027273,
+      "success_rate": 0.527273
+    },
+    "below": {
+      "assoc_score": 0.017095,
+      "count": 14,
+      "lift": 0.0,
+      "success_rate": 0.5
+    },
+    "benefit": {
+      "assoc_score": -0.062625,
+      "count": 17,
+      "lift": -0.323529,
+      "success_rate": 0.176471
+    },
+    "benefits": {
+      "assoc_score": 0.041479,
+      "count": 11,
+      "lift": 0.045455,
+      "success_rate": 0.545455
+    },
+    "best": {
+      "assoc_score": -0.028469,
+      "count": 58,
+      "lift": -0.189655,
+      "success_rate": 0.310345
+    },
+    "better": {
+      "assoc_score": 0.008838,
+      "count": 71,
+      "lift": -0.007042,
+      "success_rate": 0.492958
+    },
+    "biological": {
+      "assoc_score": -0.062157,
+      "count": 40,
+      "lift": -0.3,
+      "success_rate": 0.2
+    },
+    "biomarkers": {
+      "assoc_score": -0.023708,
+      "count": 14,
+      "lift": -0.071429,
+      "success_rate": 0.428571
+    },
+    "biopsy": {
+      "assoc_score": -0.05484,
+      "count": 11,
+      "lift": -0.318182,
+      "success_rate": 0.181818
+    },
+    "birth": {
+      "assoc_score": 0.025744,
+      "count": 13,
+      "lift": 0.115385,
+      "success_rate": 0.615385
+    },
+    "bleeding": {
+      "assoc_score": 0.021891,
+      "count": 24,
+      "lift": 0.208333,
+      "success_rate": 0.708333
+    },
+    "blind": {
+      "assoc_score": -0.003463,
+      "count": 35,
+      "lift": -0.128571,
+      "success_rate": 0.371429
+    },
+    "blinded": {
+      "assoc_score": -0.001539,
+      "count": 17,
+      "lift": -0.147059,
+      "success_rate": 0.352941
+    },
+    "block": {
+      "assoc_score": 0.037406,
+      "count": 15,
+      "lift": 0.033333,
+      "success_rate": 0.533333
+    },
+    "blood": {
+      "assoc_score": -0.017371,
+      "count": 124,
+      "lift": -0.008065,
+      "success_rate": 0.491935
+    },
+    "bmi": {
+      "assoc_score": 0.053785,
+      "count": 12,
+      "lift": 0.25,
+      "success_rate": 0.75
+    },
+    "body": {
+      "assoc_score": -0.001186,
+      "count": 91,
+      "lift": -0.016484,
+      "success_rate": 0.483516
+    },
+    "boehringer": {
+      "assoc_score": -0.037145,
+      "count": 10,
+      "lift": 0.2,
+      "success_rate": 0.7
+    },
+    "bone": {
+      "assoc_score": 0.022853,
+      "count": 22,
+      "lift": -0.090909,
+      "success_rate": 0.409091
+    },
+    "bowel": {
+      "assoc_score": 0.057045,
+      "count": 11,
+      "lift": 0.136364,
+      "success_rate": 0.636364
+    },
+    "brain": {
+      "assoc_score": 0.008893,
+      "count": 27,
+      "lift": -0.240741,
+      "success_rate": 0.259259
+    },
+    "breast": {
+      "assoc_score": -0.051873,
+      "count": 15,
+      "lift": -0.166667,
+      "success_rate": 0.333333
+    },
+    "brief": {
+      "assoc_score": 0.035451,
+      "count": 17,
+      "lift": -0.029412,
+      "success_rate": 0.470588
+    },
+    "burden": {
+      "assoc_score": -0.005491,
+      "count": 21,
+      "lift": -0.071429,
+      "success_rate": 0.428571
+    },
+    "calculated": {
+      "assoc_score": 0.030483,
+      "count": 64,
+      "lift": 0.046875,
+      "success_rate": 0.546875
+    },
+    "calculation": {
+      "assoc_score": 0.046745,
+      "count": 11,
+      "lift": -0.045455,
+      "success_rate": 0.454545
+    },
+    "called": {
+      "assoc_score": -0.002608,
+      "count": 30,
+      "lift": 0.066667,
+      "success_rate": 0.566667
+    },
+    "cancer": {
+      "assoc_score": -0.068841,
+      "count": 99,
+      "lift": -0.29798,
+      "success_rate": 0.20202
+    },
+    "cancers": {
+      "assoc_score": -0.08995,
+      "count": 15,
+      "lift": -0.366667,
+      "success_rate": 0.133333
+    },
+    "capacity": {
+      "assoc_score": 0.043411,
+      "count": 23,
+      "lift": 0.021739,
+      "success_rate": 0.521739
+    },
+    "carcinoma": {
+      "assoc_score": -0.092602,
+      "count": 24,
+      "lift": -0.416667,
+      "success_rate": 0.083333
+    },
+    "cardiac": {
+      "assoc_score": -0.003856,
+      "count": 21,
+      "lift": -0.02381,
+      "success_rate": 0.47619
+    },
+    "cardiovascular": {
+      "assoc_score": 0.008005,
+      "count": 17,
+      "lift": 0.147059,
+      "success_rate": 0.647059
+    },
+    "care": {
+      "assoc_score": 0.010944,
+      "count": 174,
+      "lift": 0.057471,
+      "success_rate": 0.557471
+    },
+    "case": {
+      "assoc_score": 0.005596,
+      "count": 13,
+      "lift": 0.192308,
+      "success_rate": 0.692308
+    },
+    "cases": {
+      "assoc_score": -0.000457,
+      "count": 15,
+      "lift": 0.233333,
+      "success_rate": 0.733333
+    },
+    "categories": {
+      "assoc_score": 0.009008,
+      "count": 10,
+      "lift": 0.0,
+      "success_rate": 0.5
+    },
+    "categorized": {
+      "assoc_score": 0.020038,
+      "count": 14,
+      "lift": -0.071429,
+      "success_rate": 0.428571
+    },
+    "catheter": {
+      "assoc_score": 0.027776,
+      "count": 12,
+      "lift": 0.166667,
+      "success_rate": 0.666667
+    },
+    "cause": {
+      "assoc_score": -0.048312,
+      "count": 62,
+      "lift": -0.225806,
+      "success_rate": 0.274194
+    },
+    "caused": {
+      "assoc_score": 0.04418,
+      "count": 11,
+      "lift": -0.136364,
+      "success_rate": 0.363636
+    },
+    "causes": {
+      "assoc_score": -0.010381,
+      "count": 18,
+      "lift": 0.0,
+      "success_rate": 0.5
+    },
+    "cell": {
+      "assoc_score": -0.088536,
+      "count": 53,
+      "lift": -0.367925,
+      "success_rate": 0.132075
+    },
+    "cells": {
+      "assoc_score": -0.075734,
+      "count": 38,
+      "lift": -0.289474,
+      "success_rate": 0.210526
+    },
+    "center": {
+      "assoc_score": -0.00225,
+      "count": 77,
+      "lift": -0.097403,
+      "success_rate": 0.402597
+    },
+    "central": {
+      "assoc_score": -0.005748,
+      "count": 25,
+      "lift": 0.02,
+      "success_rate": 0.52
+    },
+    "centre": {
+      "assoc_score": -0.021534,
+      "count": 17,
+      "lift": -0.264706,
+      "success_rate": 0.235294
+    },
+    "cerebral": {
+      "assoc_score": 0.047705,
+      "count": 11,
+      "lift": 0.318182,
+      "success_rate": 0.818182
+    },
+    "certain": {
+      "assoc_score": 0.028609,
+      "count": 19,
+      "lift": 0.184211,
+      "success_rate": 0.684211
+    },
+    "cervical": {
+      "assoc_score": 0.106069,
+      "count": 13,
+      "lift": 0.346154,
+      "success_rate": 0.846154
+    },
+    "chair": {
+      "assoc_score": 0.113829,
+      "count": 10,
+      "lift": 0.4,
+      "success_rate": 0.9
+    },
+    "change": {
+      "assoc_score": -0.006085,
+      "count": 188,
+      "lift": -0.090426,
+      "success_rate": 0.409574
+    },
+    "changes": {
+      "assoc_score": 0.002562,
+      "count": 89,
+      "lift": -0.039326,
+      "success_rate": 0.460674
+    },
+    "characteristics": {
+      "assoc_score": -0.004042,
+      "count": 27,
+      "lift": 0.018519,
+      "success_rate": 0.518519
+    },
+    "characterize": {
+      "assoc_score": -0.0488,
+      "count": 16,
+      "lift": -0.1875,
+      "success_rate": 0.3125
+    },
+    "characterized": {
+      "assoc_score": 0.01908,
+      "count": 12,
+      "lift": 0.0,
+      "success_rate": 0.5
+    },
+    "check": {
+      "assoc_score": -0.017816,
+      "count": 20,
+      "lift": 0.1,
+      "success_rate": 0.6
+    },
+    "chemotherapy": {
+      "assoc_score": -0.080229,
+      "count": 24,
+      "lift": -0.333333,
+      "success_rate": 0.166667
+    },
+    "chest": {
+      "assoc_score": 0.078864,
+      "count": 12,
+      "lift": 0.166667,
+      "success_rate": 0.666667
+    },
+    "child": {
+      "assoc_score": 0.02318,
+      "count": 13,
+      "lift": -0.115385,
+      "success_rate": 0.384615
+    },
+    "children": {
+      "assoc_score": 0.018785,
+      "count": 40,
+      "lift": -0.1,
+      "success_rate": 0.4
+    },
+    "cholesterol": {
+      "assoc_score": 0.026299,
+      "count": 12,
+      "lift": 0.166667,
+      "success_rate": 0.666667
+    },
+    "chronic": {
+      "assoc_score": 0.011074,
+      "count": 57,
+      "lift": 0.096491,
+      "success_rate": 0.596491
+    },
+    "circumference": {
+      "assoc_score": 0.032799,
+      "count": 10,
+      "lift": -0.2,
+      "success_rate": 0.3
+    },
+    "city": {
+      "assoc_score": 0.020338,
+      "count": 12,
+      "lift": 0.083333,
+      "success_rate": 0.583333
+    },
+    "class": {
+      "assoc_score": -0.010151,
+      "count": 10,
+      "lift": -0.1,
+      "success_rate": 0.4
+    },
+    "classification": {
+      "assoc_score": 0.001064,
+      "count": 19,
+      "lift": -0.131579,
+      "success_rate": 0.368421
+    },
+    "clear": {
+      "assoc_score": 0.011653,
+      "count": 10,
+      "lift": -0.1,
+      "success_rate": 0.4
+    },
+    "clearance": {
+      "assoc_score": -0.07222,
+      "count": 26,
+      "lift": -0.038462,
+      "success_rate": 0.461538
+    },
+    "clinic": {
+      "assoc_score": -0.004751,
+      "count": 21,
+      "lift": 0.119048,
+      "success_rate": 0.619048
+    },
+    "clinical": {
+      "assoc_score": -0.005993,
+      "count": 206,
+      "lift": -0.038835,
+      "success_rate": 0.461165
+    },
+    "clinically": {
+      "assoc_score": -0.031196,
+      "count": 46,
+      "lift": -0.130435,
+      "success_rate": 0.369565
+    },
+    "clinician": {
+      "assoc_score": 0.024975,
+      "count": 13,
+      "lift": 0.038462,
+      "success_rate": 0.538462
+    },
+    "cmax": {
+      "assoc_score": -0.070552,
+      "count": 63,
+      "lift": -0.087302,
+      "success_rate": 0.412698
+    },
+    "cognitive": {
+      "assoc_score": 0.043922,
+      "count": 25,
+      "lift": 0.14,
+      "success_rate": 0.64
+    },
+    "cohort": {
+      "assoc_score": -0.04685,
+      "count": 32,
+      "lift": -0.15625,
+      "success_rate": 0.34375
+    },
+    "collect": {
+      "assoc_score": 0.036807,
+      "count": 25,
+      "lift": 0.06,
+      "success_rate": 0.56
+    },
+    "collected": {
+      "assoc_score": 0.01173,
+      "count": 45,
+      "lift": -0.011111,
+      "success_rate": 0.488889
+    },
+    "collection": {
+      "assoc_score": 0.013276,
+      "count": 25,
+      "lift": 0.18,
+      "success_rate": 0.68
+    },
+    "college": {
+      "assoc_score": -0.026558,
+      "count": 17,
+      "lift": -0.205882,
+      "success_rate": 0.294118
+    },
+    "combination": {
+      "assoc_score": -0.069065,
+      "count": 59,
+      "lift": -0.228814,
+      "success_rate": 0.271186
+    },
+    "combined": {
+      "assoc_score": -0.00848,
+      "count": 28,
+      "lift": -0.035714,
+      "success_rate": 0.464286
+    },
+    "committee": {
+      "assoc_score": -0.032164,
+      "count": 11,
+      "lift": 0.045455,
+      "success_rate": 0.545455
+    },
+    "common": {
+      "assoc_score": -0.033701,
+      "count": 42,
+      "lift": -0.190476,
+      "success_rate": 0.309524
+    },
+    "commonly": {
+      "assoc_score": 0.092628,
+      "count": 20,
+      "lift": 0.35,
+      "success_rate": 0.85
+    },
+    "compare": {
+      "assoc_score": 0.022036,
+      "count": 66,
+      "lift": 0.030303,
+      "success_rate": 0.530303
+    },
+    "compared": {
+      "assoc_score": 0.010929,
+      "count": 109,
+      "lift": -0.004587,
+      "success_rate": 0.495413
+    },
+    "comparing": {
+      "assoc_score": 0.033018,
+      "count": 21,
+      "lift": 0.214286,
+      "success_rate": 0.714286
+    },
+    "comparison": {
+      "assoc_score": 0.041113,
+      "count": 38,
+      "lift": 0.026316,
+      "success_rate": 0.526316
+    },
+    "complete": {
+      "assoc_score": -0.038771,
+      "count": 92,
+      "lift": -0.184783,
+      "success_rate": 0.315217
+    },
+    "completed": {
+      "assoc_score": 0.005095,
+      "count": 38,
+      "lift": -0.105263,
+      "success_rate": 0.394737
+    },
+    "completely": {
+      "assoc_score": 0.03941,
+      "count": 16,
+      "lift": 0.1875,
+      "success_rate": 0.6875
+    },
+    "completing": {
+      "assoc_score": 0.029811,
+      "count": 11,
+      "lift": 0.227273,
+      "success_rate": 0.727273
+    },
+    "completion": {
+      "assoc_score": -0.021094,
+      "count": 53,
+      "lift": -0.028302,
+      "success_rate": 0.471698
+    },
+    "complex": {
+      "assoc_score": 0.04922,
+      "count": 10,
+      "lift": 0.1,
+      "success_rate": 0.6
+    },
+    "compliance": {
+      "assoc_score": 0.025526,
+      "count": 11,
+      "lift": 0.136364,
+      "success_rate": 0.636364
+    },
+    "complication": {
+      "assoc_score": 0.003807,
+      "count": 14,
+      "lift": -0.142857,
+      "success_rate": 0.357143
+    },
+    "complications": {
+      "assoc_score": 0.034637,
+      "count": 37,
+      "lift": 0.040541,
+      "success_rate": 0.540541
+    },
+    "component": {
+      "assoc_score": 0.052768,
+      "count": 21,
+      "lift": 0.071429,
+      "success_rate": 0.571429
+    },
+    "components": {
+      "assoc_score": 0.019653,
+      "count": 13,
+      "lift": 0.115385,
+      "success_rate": 0.615385
+    },
+    "composite": {
+      "assoc_score": -0.019023,
+      "count": 22,
+      "lift": -0.136364,
+      "success_rate": 0.363636
+    },
+    "comprehensive": {
+      "assoc_score": 0.030426,
+      "count": 17,
+      "lift": 0.088235,
+      "success_rate": 0.588235
+    },
+    "computed": {
+      "assoc_score": -0.041903,
+      "count": 19,
+      "lift": -0.184211,
+      "success_rate": 0.315789
+    },
+    "concentration": {
+      "assoc_score": -0.049702,
+      "count": 92,
+      "lift": 0.0,
+      "success_rate": 0.5
+    },
+    "concentrations": {
+      "assoc_score": -0.050566,
+      "count": 29,
+      "lift": -0.189655,
+      "success_rate": 0.310345
+    },
+    "concomitant": {
+      "assoc_score": -0.069154,
+      "count": 12,
+      "lift": -0.416667,
+      "success_rate": 0.083333
+    },
+    "condition": {
+      "assoc_score": 0.019064,
+      "count": 38,
+      "lift": 0.184211,
+      "success_rate": 0.684211
+    },
+    "conditions": {
+      "assoc_score": 0.038573,
+      "count": 32,
+      "lift": 0.25,
+      "success_rate": 0.75
+    },
+    "conducted": {
+      "assoc_score": 0.029443,
+      "count": 57,
+      "lift": 0.184211,
+      "success_rate": 0.684211
+    },
+    "confidence": {
+      "assoc_score": 0.016843,
+      "count": 17,
+      "lift": 0.088235,
+      "success_rate": 0.588235
+    },
+    "confirmed": {
+      "assoc_score": -0.049752,
+      "count": 27,
+      "lift": -0.203704,
+      "success_rate": 0.296296
+    },
+    "congenital": {
+      "assoc_score": -0.026803,
+      "count": 11,
+      "lift": -0.227273,
+      "success_rate": 0.272727
+    },
+    "consecutive": {
+      "assoc_score": 0.005922,
+      "count": 13,
+      "lift": 0.115385,
+      "success_rate": 0.615385
+    },
+    "consent": {
+      "assoc_score": -0.013661,
+      "count": 20,
+      "lift": 0.0,
+      "success_rate": 0.5
+    },
+    "considered": {
+      "assoc_score": 0.004349,
+      "count": 44,
+      "lift": -0.113636,
+      "success_rate": 0.386364
+    },
+    "consist": {
+      "assoc_score": 0.036815,
+      "count": 15,
+      "lift": 0.3,
+      "success_rate": 0.8
+    },
+    "consistency": {
+      "assoc_score": 0.029447,
+      "count": 11,
+      "lift": 0.136364,
+      "success_rate": 0.636364
+    },
+    "consisting": {
+      "assoc_score": 0.074819,
+      "count": 14,
+      "lift": 0.357143,
+      "success_rate": 0.857143
+    },
+    "consists": {
+      "assoc_score": 0.047951,
+      "count": 53,
+      "lift": 0.103774,
+      "success_rate": 0.603774
+    },
+    "constant": {
+      "assoc_score": -0.034552,
+      "count": 11,
+      "lift": 0.136364,
+      "success_rate": 0.636364
+    },
+    "consumed": {
+      "assoc_score": 0.041076,
+      "count": 11,
+      "lift": 0.045455,
+      "success_rate": 0.545455
+    },
+    "consumption": {
+      "assoc_score": 0.025736,
+      "count": 18,
+      "lift": 0.111111,
+      "success_rate": 0.611111
+    },
+    "contains": {
+      "assoc_score": 0.001509,
+      "count": 15,
+      "lift": 0.033333,
+      "success_rate": 0.533333
+    },
+    "content": {
+      "assoc_score": 0.00851,
+      "count": 11,
+      "lift": 0.227273,
+      "success_rate": 0.727273
+    },
+    "continue": {
+      "assoc_score": -0.00865,
+      "count": 11,
+      "lift": 0.227273,
+      "success_rate": 0.727273
+    },
+    "continuous": {
+      "assoc_score": 0.031759,
+      "count": 16,
+      "lift": 0.25,
+      "success_rate": 0.75
+    },
+    "control": {
+      "assoc_score": 0.008024,
+      "count": 96,
+      "lift": 0.052083,
+      "success_rate": 0.552083
+    },
+    "controlled": {
+      "assoc_score": 0.007629,
+      "count": 66,
+      "lift": -0.136364,
+      "success_rate": 0.363636
+    },
+    "controls": {
+      "assoc_score": 0.008809,
+      "count": 11,
+      "lift": 0.227273,
+      "success_rate": 0.727273
+    },
+    "conventional": {
+      "assoc_score": 0.030781,
+      "count": 17,
+      "lift": 0.147059,
+      "success_rate": 0.647059
+    },
+    "core": {
+      "assoc_score": 0.009659,
+      "count": 18,
+      "lift": -0.166667,
+      "success_rate": 0.333333
+    },
+    "correct": {
+      "assoc_score": 0.066248,
+      "count": 12,
+      "lift": 0.25,
+      "success_rate": 0.75
+    },
+    "corrected": {
+      "assoc_score": -0.017523,
+      "count": 11,
+      "lift": -0.227273,
+      "success_rate": 0.272727
+    },
+    "correlation": {
+      "assoc_score": 0.059513,
+      "count": 23,
+      "lift": 0.108696,
+      "success_rate": 0.608696
+    },
+    "cost": {
+      "assoc_score": 0.012945,
+      "count": 12,
+      "lift": 0.0,
+      "success_rate": 0.5
+    },
+    "count": {
+      "assoc_score": -0.034912,
+      "count": 18,
+      "lift": -0.111111,
+      "success_rate": 0.388889
+    },
+    "course": {
+      "assoc_score": 0.008165,
+      "count": 26,
+      "lift": 0.038462,
+      "success_rate": 0.538462
+    },
+    "creatinine": {
+      "assoc_score": -0.013469,
+      "count": 11,
+      "lift": -0.045455,
+      "success_rate": 0.454545
+    },
+    "criteria": {
+      "assoc_score": -0.060966,
+      "count": 82,
+      "lift": -0.268293,
+      "success_rate": 0.231707
+    },
+    "cross": {
+      "assoc_score": 0.069879,
+      "count": 14,
+      "lift": 0.142857,
+      "success_rate": 0.642857
+    },
+    "crossover": {
+      "assoc_score": 0.003574,
+      "count": 38,
+      "lift": 0.236842,
+      "success_rate": 0.736842
+    },
+    "crp": {
+      "assoc_score": -0.014569,
+      "count": 10,
+      "lift": -0.3,
+      "success_rate": 0.2
+    },
+    "ctcae": {
+      "assoc_score": -0.090898,
+      "count": 37,
+      "lift": -0.472973,
+      "success_rate": 0.027027
+    },
+    "ctrough": {
+      "assoc_score": -0.068825,
+      "count": 11,
+      "lift": -0.318182,
+      "success_rate": 0.181818
+    },
+    "cumulative": {
+      "assoc_score": -0.014144,
+      "count": 18,
+      "lift": -0.166667,
+      "success_rate": 0.333333
+    },
+    "current": {
+      "assoc_score": 0.018984,
+      "count": 38,
+      "lift": 0.026316,
+      "success_rate": 0.526316
+    },
+    "currently": {
+      "assoc_score": -0.004466,
+      "count": 15,
+      "lift": -0.1,
+      "success_rate": 0.4
+    },
+    "curve": {
+      "assoc_score": -0.053283,
+      "count": 70,
+      "lift": -0.028571,
+      "success_rate": 0.471429
+    },
+    "cut": {
+      "assoc_score": 0.049724,
+      "count": 10,
+      "lift": -0.1,
+      "success_rate": 0.4
+    },
+    "cycle": {
+      "assoc_score": -0.095715,
+      "count": 39,
+      "lift": -0.371795,
+      "success_rate": 0.128205
+    },
+    "cycles": {
+      "assoc_score": -0.084643,
+      "count": 17,
+      "lift": -0.323529,
+      "success_rate": 0.176471
+    },
+    "daily": {
+      "assoc_score": 0.021939,
+      "count": 71,
+      "lift": 0.035211,
+      "success_rate": 0.535211
+    },
+    "data": {
+      "assoc_score": 0.017912,
+      "count": 95,
+      "lift": 0.078947,
+      "success_rate": 0.578947
+    },
+    "date": {
+      "assoc_score": -0.049195,
+      "count": 51,
+      "lift": -0.22549,
+      "success_rate": 0.27451
+    },
+    "day": {
+      "assoc_score": -0.012923,
+      "count": 170,
+      "lift": -0.005882,
+      "success_rate": 0.494118
+    },
+    "days": {
+      "assoc_score": -0.032834,
+      "count": 177,
+      "lift": -0.115819,
+      "success_rate": 0.384181
+    },
+    "dcr": {
+      "assoc_score": -0.111341,
+      "count": 17,
+      "lift": -0.441176,
+      "success_rate": 0.058824
+    },
+    "death": {
+      "assoc_score": -0.070916,
+      "count": 77,
+      "lift": -0.292208,
+      "success_rate": 0.207792
+    },
+    "decrease": {
+      "assoc_score": 0.010058,
+      "count": 22,
+      "lift": 0.0,
+      "success_rate": 0.5
+    },
+    "decreased": {
+      "assoc_score": 0.035844,
+      "count": 10,
+      "lift": -0.1,
+      "success_rate": 0.4
+    },
+    "deep": {
+      "assoc_score": 0.047499,
+      "count": 11,
+      "lift": 0.136364,
+      "success_rate": 0.636364
+    },
+    "defined": {
+      "assoc_score": -0.030369,
+      "count": 113,
+      "lift": -0.216814,
+      "success_rate": 0.283186
+    },
+    "degree": {
+      "assoc_score": 0.055701,
+      "count": 30,
+      "lift": 0.066667,
+      "success_rate": 0.566667
+    },
+    "delivery": {
+      "assoc_score": 0.024724,
+      "count": 13,
+      "lift": -0.192308,
+      "success_rate": 0.307692
+    },
+    "demographic": {
+      "assoc_score": 0.025648,
+      "count": 15,
+      "lift": 0.233333,
+      "success_rate": 0.733333
+    },
+    "demonstrate": {
+      "assoc_score": 0.024559,
+      "count": 14,
+      "lift": 0.0,
+      "success_rate": 0.5
+    },
+    "demonstrated": {
+      "assoc_score": 0.053615,
+      "count": 12,
+      "lift": 0.166667,
+      "success_rate": 0.666667
+    },
+    "density": {
+      "assoc_score": -0.0067,
+      "count": 12,
+      "lift": 0.166667,
+      "success_rate": 0.666667
+    },
+    "dental": {
+      "assoc_score": 0.078413,
+      "count": 10,
+      "lift": 0.3,
+      "success_rate": 0.8
+    },
+    "department": {
+      "assoc_score": 0.024692,
+      "count": 19,
+      "lift": 0.184211,
+      "success_rate": 0.684211
+    },
+    "dependent": {
+      "assoc_score": 0.014252,
+      "count": 17,
+      "lift": 0.029412,
+      "success_rate": 0.529412
+    },
+    "depending": {
+      "assoc_score": 0.03272,
+      "count": 11,
+      "lift": 0.136364,
+      "success_rate": 0.636364
+    },
+    "depression": {
+      "assoc_score": 0.025752,
+      "count": 34,
+      "lift": -0.029412,
+      "success_rate": 0.470588
+    },
+    "depth": {
+      "assoc_score": 0.028023,
+      "count": 11,
+      "lift": 0.227273,
+      "success_rate": 0.727273
+    },
+    "derived": {
+      "assoc_score": -0.011472,
+      "count": 21,
+      "lift": -0.071429,
+      "success_rate": 0.428571
+    },
+    "describe": {
+      "assoc_score": 0.004004,
+      "count": 16,
+      "lift": 0.125,
+      "success_rate": 0.625
+    },
+    "descriptive": {
+      "assoc_score": -0.042111,
+      "count": 13,
+      "lift": -0.038462,
+      "success_rate": 0.461538
+    },
+    "design": {
+      "assoc_score": 0.018155,
+      "count": 26,
+      "lift": 0.038462,
+      "success_rate": 0.538462
+    },
+    "designed": {
+      "assoc_score": 0.04374,
+      "count": 37,
+      "lift": 0.148649,
+      "success_rate": 0.648649
+    },
+    "despite": {
+      "assoc_score": 0.037514,
+      "count": 17,
+      "lift": 0.088235,
+      "success_rate": 0.588235
+    },
+    "detect": {
+      "assoc_score": 0.021864,
+      "count": 13,
+      "lift": 0.192308,
+      "success_rate": 0.692308
+    },
+    "detection": {
+      "assoc_score": -0.027602,
+      "count": 16,
+      "lift": 0.0625,
+      "success_rate": 0.5625
+    },
+    "determine": {
+      "assoc_score": -0.001949,
+      "count": 104,
+      "lift": -0.019231,
+      "success_rate": 0.480769
+    },
+    "determined": {
+      "assoc_score": -0.014446,
+      "count": 57,
+      "lift": -0.04386,
+      "success_rate": 0.45614
+    },
+    "determining": {
+      "assoc_score": 0.071483,
+      "count": 10,
+      "lift": 0.2,
+      "success_rate": 0.7
+    },
+    "develop": {
+      "assoc_score": 0.024228,
+      "count": 15,
+      "lift": 0.1,
+      "success_rate": 0.6
+    },
+    "developed": {
+      "assoc_score": 0.040494,
+      "count": 36,
+      "lift": 0.222222,
+      "success_rate": 0.722222
+    },
+    "development": {
+      "assoc_score": 0.014775,
+      "count": 37,
+      "lift": -0.040541,
+      "success_rate": 0.459459
+    },
+    "device": {
+      "assoc_score": 0.043249,
+      "count": 102,
+      "lift": 0.058824,
+      "success_rate": 0.558824
+    },
+    "devices": {
+      "assoc_score": 0.044905,
+      "count": 10,
+      "lift": 0.0,
+      "success_rate": 0.5
+    },
+    "diabetes": {
+      "assoc_score": 0.011482,
+      "count": 34,
+      "lift": 0.176471,
+      "success_rate": 0.676471
+    },
+    "diabetic": {
+      "assoc_score": 0.020257,
+      "count": 10,
+      "lift": 0.1,
+      "success_rate": 0.6
+    },
+    "diagnosed": {
+      "assoc_score": -0.007226,
+      "count": 32,
+      "lift": 0.03125,
+      "success_rate": 0.53125
+    },
+    "diagnosis": {
+      "assoc_score": 0.01709,
+      "count": 22,
+      "lift": 0.181818,
+      "success_rate": 0.681818
+    },
+    "diagnostic": {
+      "assoc_score": 0.023276,
+      "count": 41,
+      "lift": 0.036585,
+      "success_rate": 0.536585
+    },
+    "diary": {
+      "assoc_score": 0.000833,
+      "count": 13,
+      "lift": 0.038462,
+      "success_rate": 0.538462
+    },
+    "diastolic": {
+      "assoc_score": 0.027562,
+      "count": 11,
+      "lift": 0.045455,
+      "success_rate": 0.545455
+    },
+    "diet": {
+      "assoc_score": 0.037927,
+      "count": 15,
+      "lift": 0.366667,
+      "success_rate": 0.866667
+    },
+    "dietary": {
+      "assoc_score": 0.036742,
+      "count": 21,
+      "lift": 0.166667,
+      "success_rate": 0.666667
+    },
+    "difference": {
+      "assoc_score": 0.031937,
+      "count": 35,
+      "lift": 0.042857,
+      "success_rate": 0.542857
+    },
+    "differences": {
+      "assoc_score": 0.037454,
+      "count": 12,
+      "lift": 0.25,
+      "success_rate": 0.75
+    },
+    "different": {
+      "assoc_score": 0.027543,
+      "count": 61,
+      "lift": 0.155738,
+      "success_rate": 0.655738
+    },
+    "difficult": {
+      "assoc_score": 0.016242,
+      "count": 10,
+      "lift": 0.1,
+      "success_rate": 0.6
+    },
+    "difficulty": {
+      "assoc_score": 0.08216,
+      "count": 10,
+      "lift": 0.3,
+      "success_rate": 0.8
+    },
+    "digital": {
+      "assoc_score": 0.085811,
+      "count": 15,
+      "lift": 0.3,
+      "success_rate": 0.8
+    },
+    "dimensions": {
+      "assoc_score": 0.030094,
+      "count": 18,
+      "lift": 0.0,
+      "success_rate": 0.5
+    },
+    "disability": {
+      "assoc_score": 0.059502,
+      "count": 35,
+      "lift": 0.128571,
+      "success_rate": 0.628571
+    },
+    "disagree": {
+      "assoc_score": 0.042406,
+      "count": 12,
+      "lift": 0.166667,
+      "success_rate": 0.666667
+    },
+    "discharge": {
+      "assoc_score": 0.021814,
+      "count": 25,
+      "lift": 0.06,
+      "success_rate": 0.56
+    },
+    "discomfort": {
+      "assoc_score": 0.037627,
+      "count": 19,
+      "lift": -0.078947,
+      "success_rate": 0.421053
+    },
+    "discontinuation": {
+      "assoc_score": -0.069961,
+      "count": 16,
+      "lift": -0.125,
+      "success_rate": 0.375
+    },
+    "disease": {
+      "assoc_score": -0.044418,
+      "count": 158,
+      "lift": -0.170886,
+      "success_rate": 0.329114
+    },
+    "diseases": {
+      "assoc_score": 0.014155,
+      "count": 35,
+      "lift": 0.185714,
+      "success_rate": 0.685714
+    },
+    "disorder": {
+      "assoc_score": 0.008859,
+      "count": 29,
+      "lift": -0.155172,
+      "success_rate": 0.344828
+    },
+    "disorders": {
+      "assoc_score": 0.051199,
+      "count": 30,
+      "lift": 0.233333,
+      "success_rate": 0.733333
+    },
+    "distance": {
+      "assoc_score": 0.069145,
+      "count": 29,
+      "lift": 0.051724,
+      "success_rate": 0.551724
+    },
+    "distress": {
+      "assoc_score": 0.033642,
+      "count": 16,
+      "lift": 0.0625,
+      "success_rate": 0.5625
+    },
+    "distribution": {
+      "assoc_score": -0.051587,
+      "count": 36,
+      "lift": 0.0,
+      "success_rate": 0.5
+    },
+    "divided": {
+      "assoc_score": 0.052345,
+      "count": 33,
+      "lift": 0.19697,
+      "success_rate": 0.69697
+    },
+    "dlt": {
+      "assoc_score": -0.108971,
+      "count": 20,
+      "lift": -0.5,
+      "success_rate": 0.0
+    },
+    "dlts": {
+      "assoc_score": -0.108018,
+      "count": 19,
+      "lift": -0.5,
+      "success_rate": 0.0
+    },
+    "doctors": {
+      "assoc_score": -0.037457,
+      "count": 10,
+      "lift": 0.1,
+      "success_rate": 0.6
+    },
+    "documented": {
+      "assoc_score": -0.077126,
+      "count": 25,
+      "lift": -0.26,
+      "success_rate": 0.24
+    },
+    "domain": {
+      "assoc_score": -0.0131,
+      "count": 19,
+      "lift": -0.184211,
+      "success_rate": 0.315789
+    },
+    "domains": {
+      "assoc_score": 0.028441,
+      "count": 22,
+      "lift": 0.0,
+      "success_rate": 0.5
+    },
+    "done": {
+      "assoc_score": 0.023669,
+      "count": 23,
+      "lift": 0.108696,
+      "success_rate": 0.608696
+    },
+    "dor": {
+      "assoc_score": -0.106208,
+      "count": 27,
+      "lift": -0.462963,
+      "success_rate": 0.037037
+    },
+    "dose": {
+      "assoc_score": -0.058703,
+      "count": 146,
+      "lift": -0.184932,
+      "success_rate": 0.315068
+    },
+    "doses": {
+      "assoc_score": -0.043772,
+      "count": 25,
+      "lift": -0.02,
+      "success_rate": 0.48
+    },
+    "dosing": {
+      "assoc_score": -0.064733,
+      "count": 27,
+      "lift": -0.166667,
+      "success_rate": 0.333333
+    },
+    "double": {
+      "assoc_score": 0.006136,
+      "count": 86,
+      "lift": 0.011628,
+      "success_rate": 0.511628
+    },
+    "down": {
+      "assoc_score": 0.096324,
+      "count": 10,
+      "lift": 0.4,
+      "success_rate": 0.9
+    },
+    "drug": {
+      "assoc_score": -0.051237,
+      "count": 253,
+      "lift": -0.195652,
+      "success_rate": 0.304348
+    },
+    "drugs": {
+      "assoc_score": -0.073913,
+      "count": 14,
+      "lift": -0.142857,
+      "success_rate": 0.357143
+    },
+    "due": {
+      "assoc_score": -0.013682,
+      "count": 63,
+      "lift": -0.02381,
+      "success_rate": 0.47619
+    },
+    "duration": {
+      "assoc_score": -0.038119,
+      "count": 98,
+      "lift": -0.132653,
+      "success_rate": 0.367347
+    },
+    "during": {
+      "assoc_score": 0.016065,
+      "count": 192,
+      "lift": 0.03125,
+      "success_rate": 0.53125
+    },
+    "dysfunction": {
+      "assoc_score": 0.054922,
+      "count": 22,
+      "lift": 0.136364,
+      "success_rate": 0.636364
+    },
+    "each": {
+      "assoc_score": 0.013579,
+      "count": 190,
+      "lift": 0.042105,
+      "success_rate": 0.542105
+    },
+    "early": {
+      "assoc_score": 0.007648,
+      "count": 44,
+      "lift": -0.113636,
+      "success_rate": 0.386364
+    },
+    "easy": {
+      "assoc_score": 0.062576,
+      "count": 12,
+      "lift": 0.166667,
+      "success_rate": 0.666667
+    },
+    "ecg": {
+      "assoc_score": -0.035346,
+      "count": 21,
+      "lift": 0.02381,
+      "success_rate": 0.52381
+    },
+    "education": {
+      "assoc_score": 0.057967,
+      "count": 29,
+      "lift": 0.293103,
+      "success_rate": 0.793103
+    },
+    "effect": {
+      "assoc_score": 0.025376,
+      "count": 99,
+      "lift": 0.106061,
+      "success_rate": 0.606061
+    },
+    "effective": {
+      "assoc_score": 0.026644,
+      "count": 28,
+      "lift": 0.142857,
+      "success_rate": 0.642857
+    },
+    "effectiveness": {
+      "assoc_score": 0.034152,
+      "count": 55,
+      "lift": 0.154545,
+      "success_rate": 0.654545
+    },
+    "effects": {
+      "assoc_score": 0.001436,
+      "count": 110,
+      "lift": -0.009091,
+      "success_rate": 0.490909
+    },
+    "efficacy": {
+      "assoc_score": -0.024205,
+      "count": 136,
+      "lift": -0.176471,
+      "success_rate": 0.323529
+    },
+    "eight": {
+      "assoc_score": 0.065937,
+      "count": 10,
+      "lift": 0.1,
+      "success_rate": 0.6
+    },
+    "either": {
+      "assoc_score": -0.011257,
+      "count": 61,
+      "lift": -0.02459,
+      "success_rate": 0.47541
+    },
+    "elderly": {
+      "assoc_score": 0.065654,
+      "count": 13,
+      "lift": 0.346154,
+      "success_rate": 0.846154
+    },
+    "electrocardiogram": {
+      "assoc_score": -0.043464,
+      "count": 10,
+      "lift": 0.0,
+      "success_rate": 0.5
+    },
+    "electronic": {
+      "assoc_score": 0.036674,
+      "count": 19,
+      "lift": 0.236842,
+      "success_rate": 0.736842
+    },
+    "eligibility": {
+      "assoc_score": 0.01376,
+      "count": 16,
+      "lift": 0.0,
+      "success_rate": 0.5
+    },
+    "eligible": {
+      "assoc_score": -0.015578,
+      "count": 21,
+      "lift": -0.02381,
+      "success_rate": 0.47619
+    },
+    "elimination": {
+      "assoc_score": -0.056246,
+      "count": 23,
+      "lift": 0.152174,
+      "success_rate": 0.652174
+    },
+    "emergency": {
+      "assoc_score": 0.005138,
+      "count": 17,
+      "lift": 0.088235,
+      "success_rate": 0.588235
+    },
+    "emergent": {
+      "assoc_score": -0.059962,
+      "count": 58,
+      "lift": -0.224138,
+      "success_rate": 0.275862
+    },
+    "emotional": {
+      "assoc_score": 0.041773,
+      "count": 17,
+      "lift": 0.147059,
+      "success_rate": 0.647059
+    },
+    "end": {
+      "assoc_score": 0.000476,
+      "count": 105,
+      "lift": 0.014286,
+      "success_rate": 0.514286
+    },
+    "endpoint": {
+      "assoc_score": -0.007276,
+      "count": 22,
+      "lift": -0.318182,
+      "success_rate": 0.181818
+    },
+    "endpoints": {
+      "assoc_score": -0.04048,
+      "count": 11,
+      "lift": -0.227273,
+      "success_rate": 0.272727
+    },
+    "energy": {
+      "assoc_score": 0.037646,
+      "count": 16,
+      "lift": 0.125,
+      "success_rate": 0.625
+    },
+    "enrolled": {
+      "assoc_score": -0.04052,
+      "count": 27,
+      "lift": -0.12963,
+      "success_rate": 0.37037
+    },
+    "enrollment": {
+      "assoc_score": -0.031118,
+      "count": 33,
+      "lift": -0.015152,
+      "success_rate": 0.484848
+    },
+    "environment": {
+      "assoc_score": 0.046125,
+      "count": 11,
+      "lift": 0.045455,
+      "success_rate": 0.545455
+    },
+    "equal": {
+      "assoc_score": 0.012145,
+      "count": 12,
+      "lift": 0.0,
+      "success_rate": 0.5
+    },
+    "equivalent": {
+      "assoc_score": 0.001502,
+      "count": 13,
+      "lift": -0.038462,
+      "success_rate": 0.461538
+    },
+    "escalation": {
+      "assoc_score": -0.105239,
+      "count": 18,
+      "lift": -0.444444,
+      "success_rate": 0.055556
+    },
+    "establish": {
+      "assoc_score": -0.039205,
+      "count": 12,
+      "lift": -0.166667,
+      "success_rate": 0.333333
+    },
+    "established": {
+      "assoc_score": 0.055335,
+      "count": 12,
+      "lift": 0.166667,
+      "success_rate": 0.666667
+    },
+    "estimate": {
+      "assoc_score": -0.006828,
+      "count": 14,
+      "lift": -0.214286,
+      "success_rate": 0.285714
+    },
+    "estimated": {
+      "assoc_score": -0.027723,
+      "count": 26,
+      "lift": -0.153846,
+      "success_rate": 0.346154
+    },
+    "etc": {
+      "assoc_score": 0.066641,
+      "count": 17,
+      "lift": 0.323529,
+      "success_rate": 0.823529
+    },
+    "european": {
+      "assoc_score": -0.051211,
+      "count": 15,
+      "lift": -0.166667,
+      "success_rate": 0.333333
+    },
+    "evaluate": {
+      "assoc_score": -0.002393,
+      "count": 189,
+      "lift": -0.02381,
+      "success_rate": 0.47619
+    },
+    "evaluated": {
+      "assoc_score": 0.026361,
+      "count": 94,
+      "lift": 0.085106,
+      "success_rate": 0.585106
+    },
+    "evaluates": {
+      "assoc_score": 0.050486,
+      "count": 31,
+      "lift": 0.177419,
+      "success_rate": 0.677419
+    },
+    "evaluating": {
+      "assoc_score": 0.027476,
+      "count": 23,
+      "lift": 0.195652,
+      "success_rate": 0.695652
+    },
+    "evaluation": {
+      "assoc_score": -0.006125,
+      "count": 87,
+      "lift": -0.086207,
+      "success_rate": 0.413793
+    },
+    "event": {
+      "assoc_score": -0.038792,
+      "count": 49,
+      "lift": -0.295918,
+      "success_rate": 0.204082
+    },
+    "events": {
+      "assoc_score": -0.054268,
+      "count": 187,
+      "lift": -0.248663,
+      "success_rate": 0.251337
+    },
+    "every": {
+      "assoc_score": -0.025974,
+      "count": 45,
+      "lift": -0.077778,
+      "success_rate": 0.422222
+    },
+    "evidence": {
+      "assoc_score": 0.013873,
+      "count": 22,
+      "lift": 0.045455,
+      "success_rate": 0.545455
+    },
+    "examination": {
+      "assoc_score": 0.023004,
+      "count": 23,
+      "lift": 0.195652,
+      "success_rate": 0.695652
+    },
+    "examine": {
+      "assoc_score": 0.015592,
+      "count": 21,
+      "lift": 0.02381,
+      "success_rate": 0.52381
+    },
+    "exercise": {
+      "assoc_score": 0.068829,
+      "count": 36,
+      "lift": 0.25,
+      "success_rate": 0.75
+    },
+    "exercises": {
+      "assoc_score": 0.108729,
+      "count": 21,
+      "lift": 0.5,
+      "success_rate": 1.0
+    },
+    "existing": {
+      "assoc_score": -0.027117,
+      "count": 19,
+      "lift": -0.026316,
+      "success_rate": 0.473684
+    },
+    "expansion": {
+      "assoc_score": -0.098758,
+      "count": 20,
+      "lift": -0.45,
+      "success_rate": 0.05
+    },
+    "expected": {
+      "assoc_score": 0.049081,
+      "count": 11,
+      "lift": 0.409091,
+      "success_rate": 0.909091
+    },
+    "experience": {
+      "assoc_score": 0.003874,
+      "count": 36,
+      "lift": 0.027778,
+      "success_rate": 0.527778
+    },
+    "experienced": {
+      "assoc_score": 0.043075,
+      "count": 23,
+      "lift": -0.065217,
+      "success_rate": 0.434783
+    },
+    "experiences": {
+      "assoc_score": 0.017924,
+      "count": 11,
+      "lift": -0.136364,
+      "success_rate": 0.363636
+    },
+    "experiencing": {
+      "assoc_score": -0.014891,
+      "count": 20,
+      "lift": -0.2,
+      "success_rate": 0.3
+    },
+    "experimental": {
+      "assoc_score": 0.042328,
+      "count": 20,
+      "lift": 0.2,
+      "success_rate": 0.7
+    },
+    "explore": {
+      "assoc_score": 0.002222,
+      "count": 17,
+      "lift": -0.029412,
+      "success_rate": 0.470588
+    },
+    "exposure": {
+      "assoc_score": -0.026094,
+      "count": 21,
+      "lift": 0.02381,
+      "success_rate": 0.52381
+    },
+    "expression": {
+      "assoc_score": -0.021268,
+      "count": 20,
+      "lift": 0.1,
+      "success_rate": 0.6
+    },
+    "extended": {
+      "assoc_score": 0.038855,
+      "count": 14,
+      "lift": 0.0,
+      "success_rate": 0.5
+    },
+    "extension": {
+      "assoc_score": 0.022921,
+      "count": 33,
+      "lift": -0.166667,
+      "success_rate": 0.333333
+    },
+    "extent": {
+      "assoc_score": 0.044246,
+      "count": 12,
+      "lift": 0.166667,
+      "success_rate": 0.666667
+    },
+    "external": {
+      "assoc_score": 0.078996,
+      "count": 12,
+      "lift": 0.25,
+      "success_rate": 0.75
+    },
+    "extreme": {
+      "assoc_score": 0.028582,
+      "count": 13,
+      "lift": -0.115385,
+      "success_rate": 0.384615
+    },
+    "extremely": {
+      "assoc_score": 0.027609,
+      "count": 18,
+      "lift": 0.055556,
+      "success_rate": 0.555556
+    },
+    "extremity": {
+      "assoc_score": 0.109516,
+      "count": 18,
+      "lift": 0.388889,
+      "success_rate": 0.888889
+    },
+    "eye": {
+      "assoc_score": 0.025029,
+      "count": 10,
+      "lift": 0.2,
+      "success_rate": 0.7
+    },
+    "factor": {
+      "assoc_score": -0.003608,
+      "count": 26,
+      "lift": 0.0,
+      "success_rate": 0.5
+    },
+    "factors": {
+      "assoc_score": 0.024905,
+      "count": 40,
+      "lift": 0.2,
+      "success_rate": 0.7
+    },
+    "failure": {
+      "assoc_score": -0.022565,
+      "count": 36,
+      "lift": -0.166667,
+      "success_rate": 0.333333
+    },
+    "family": {
+      "assoc_score": 0.016772,
+      "count": 12,
+      "lift": -0.083333,
+      "success_rate": 0.416667
+    },
+    "fasting": {
+      "assoc_score": 0.008786,
+      "count": 15,
+      "lift": 0.3,
+      "success_rate": 0.8
+    },
+    "fat": {
+      "assoc_score": 0.062958,
+      "count": 10,
+      "lift": 0.2,
+      "success_rate": 0.7
+    },
+    "fatigue": {
+      "assoc_score": 0.046339,
+      "count": 21,
+      "lift": 0.166667,
+      "success_rate": 0.666667
+    },
+    "feasibility": {
+      "assoc_score": -0.002875,
+      "count": 32,
+      "lift": -0.0625,
+      "success_rate": 0.4375
+    },
+    "feedback": {
+      "assoc_score": 0.035173,
+      "count": 10,
+      "lift": 0.2,
+      "success_rate": 0.7
+    },
+    "feel": {
+      "assoc_score": 0.069633,
+      "count": 10,
+      "lift": 0.4,
+      "success_rate": 0.9
+    },
+    "female": {
+      "assoc_score": 0.040201,
+      "count": 15,
+      "lift": 0.033333,
+      "success_rate": 0.533333
+    },
+    "fibrosis": {
+      "assoc_score": 0.014154,
+      "count": 10,
+      "lift": 0.1,
+      "success_rate": 0.6
+    },
+    "field": {
+      "assoc_score": 0.042764,
+      "count": 11,
+      "lift": 0.045455,
+      "success_rate": 0.545455
+    },
+    "fill": {
+      "assoc_score": 0.049108,
+      "count": 15,
+      "lift": 0.166667,
+      "success_rate": 0.666667
+    },
+    "filled": {
+      "assoc_score": 0.054693,
+      "count": 10,
+      "lift": 0.5,
+      "success_rate": 1.0
+    },
+    "final": {
+      "assoc_score": 0.002722,
+      "count": 14,
+      "lift": 0.071429,
+      "success_rate": 0.571429
+    },
+    "find": {
+      "assoc_score": -0.018137,
+      "count": 23,
+      "lift": -0.021739,
+      "success_rate": 0.478261
+    },
+    "findings": {
+      "assoc_score": 0.010301,
+      "count": 23,
+      "lift": 0.195652,
+      "success_rate": 0.695652
+    },
+    "first": {
+      "assoc_score": -0.023545,
+      "count": 142,
+      "lift": -0.056338,
+      "success_rate": 0.443662
+    },
+    "five": {
+      "assoc_score": 0.04342,
+      "count": 27,
+      "lift": 0.12963,
+      "success_rate": 0.62963
+    },
+    "flexion": {
+      "assoc_score": 0.127539,
+      "count": 14,
+      "lift": 0.428571,
+      "success_rate": 0.928571
+    },
+    "flow": {
+      "assoc_score": 0.02495,
+      "count": 18,
+      "lift": 0.0,
+      "success_rate": 0.5
+    },
+    "fluid": {
+      "assoc_score": 0.041309,
+      "count": 22,
+      "lift": 0.0,
+      "success_rate": 0.5
+    },
+    "focus": {
+      "assoc_score": -0.001762,
+      "count": 10,
+      "lift": 0.1,
+      "success_rate": 0.6
+    },
+    "follow": {
+      "assoc_score": -0.008455,
+      "count": 97,
+      "lift": -0.06701,
+      "success_rate": 0.43299
+    },
+    "followed": {
+      "assoc_score": -0.03139,
+      "count": 29,
+      "lift": -0.189655,
+      "success_rate": 0.310345
+    },
+    "following": {
+      "assoc_score": 0.002554,
+      "count": 106,
+      "lift": 0.075472,
+      "success_rate": 0.575472
+    },
+    "food": {
+      "assoc_score": 7.1e-05,
+      "count": 23,
+      "lift": 0.065217,
+      "success_rate": 0.565217
+    },
+    "forced": {
+      "assoc_score": 0.022836,
+      "count": 11,
+      "lift": -0.136364,
+      "success_rate": 0.363636
+    },
+    "form": {
+      "assoc_score": 0.049433,
+      "count": 63,
+      "lift": 0.246032,
+      "success_rate": 0.746032
+    },
+    "forward": {
+      "assoc_score": 0.10372,
+      "count": 10,
+      "lift": 0.5,
+      "success_rate": 1.0
+    },
+    "found": {
+      "assoc_score": 0.046578,
+      "count": 15,
+      "lift": 0.166667,
+      "success_rate": 0.666667
+    },
+    "foundation": {
+      "assoc_score": -0.005543,
+      "count": 14,
+      "lift": -0.142857,
+      "success_rate": 0.357143
+    },
+    "four": {
+      "assoc_score": 0.032072,
+      "count": 37,
+      "lift": 0.040541,
+      "success_rate": 0.540541
+    },
+    "fraction": {
+      "assoc_score": -0.027403,
+      "count": 11,
+      "lift": -0.318182,
+      "success_rate": 0.181818
+    },
+    "free": {
+      "assoc_score": -0.068176,
+      "count": 89,
+      "lift": -0.320225,
+      "success_rate": 0.179775
+    },
+    "frequency": {
+      "assoc_score": 0.002356,
+      "count": 66,
+      "lift": -0.060606,
+      "success_rate": 0.439394
+    },
+    "full": {
+      "assoc_score": 0.052642,
+      "count": 16,
+      "lift": 0.0,
+      "success_rate": 0.5
+    },
+    "function": {
+      "assoc_score": 0.038383,
+      "count": 77,
+      "lift": 0.006494,
+      "success_rate": 0.506494
+    },
+    "functional": {
+      "assoc_score": 0.039563,
+      "count": 58,
+      "lift": 0.051724,
+      "success_rate": 0.551724
+    },
+    "functioning": {
+      "assoc_score": 0.023398,
+      "count": 24,
+      "lift": 0.0,
+      "success_rate": 0.5
+    },
+    "functions": {
+      "assoc_score": 0.087393,
+      "count": 10,
+      "lift": 0.3,
+      "success_rate": 0.8
+    },
+    "further": {
+      "assoc_score": -0.010788,
+      "count": 32,
+      "lift": -0.15625,
+      "success_rate": 0.34375
+    },
+    "gastrointestinal": {
+      "assoc_score": 0.042467,
+      "count": 14,
+      "lift": -0.071429,
+      "success_rate": 0.428571
+    },
+    "gender": {
+      "assoc_score": 0.071257,
+      "count": 15,
+      "lift": 0.233333,
+      "success_rate": 0.733333
+    },
+    "gene": {
+      "assoc_score": -0.064081,
+      "count": 17,
+      "lift": -0.088235,
+      "success_rate": 0.411765
+    },
+    "general": {
+      "assoc_score": 0.043574,
+      "count": 46,
+      "lift": 0.195652,
+      "success_rate": 0.695652
+    },
+    "genetic": {
+      "assoc_score": -0.025841,
+      "count": 11,
+      "lift": 0.045455,
+      "success_rate": 0.545455
+    },
+    "get": {
+      "assoc_score": -0.015518,
+      "count": 15,
+      "lift": 0.033333,
+      "success_rate": 0.533333
+    },
+    "given": {
+      "assoc_score": 0.016267,
+      "count": 65,
+      "lift": 0.007692,
+      "success_rate": 0.507692
+    },
+    "giving": {
+      "assoc_score": -0.092176,
+      "count": 13,
+      "lift": -0.269231,
+      "success_rate": 0.230769
+    },
+    "global": {
+      "assoc_score": -0.000682,
+      "count": 54,
+      "lift": -0.185185,
+      "success_rate": 0.314815
+    },
+    "glucose": {
+      "assoc_score": 0.023706,
+      "count": 26,
+      "lift": 0.230769,
+      "success_rate": 0.730769
+    },
+    "goal": {
+      "assoc_score": 0.012077,
+      "count": 56,
+      "lift": 0.035714,
+      "success_rate": 0.535714
+    },
+    "gold": {
+      "assoc_score": 0.045693,
+      "count": 10,
+      "lift": 0.1,
+      "success_rate": 0.6
+    },
+    "good": {
+      "assoc_score": 0.027489,
+      "count": 27,
+      "lift": 0.018519,
+      "success_rate": 0.518519
+    },
+    "gov": {
+      "assoc_score": 0.044256,
+      "count": 16,
+      "lift": 0.25,
+      "success_rate": 0.75
+    },
+    "grade": {
+      "assoc_score": -0.058555,
+      "count": 37,
+      "lift": -0.256757,
+      "success_rate": 0.243243
+    },
+    "graded": {
+      "assoc_score": -0.024399,
+      "count": 21,
+      "lift": -0.261905,
+      "success_rate": 0.238095
+    },
+    "greater": {
+      "assoc_score": 0.032828,
+      "count": 55,
+      "lift": 0.1,
+      "success_rate": 0.6
+    },
+    "grip": {
+      "assoc_score": 0.108387,
+      "count": 10,
+      "lift": 0.2,
+      "success_rate": 0.7
+    },
+    "group": {
+      "assoc_score": -0.004548,
+      "count": 211,
+      "lift": -0.016588,
+      "success_rate": 0.483412
+    },
+    "groups": {
+      "assoc_score": 0.047941,
+      "count": 48,
+      "lift": 0.1875,
+      "success_rate": 0.6875
+    },
+    "growth": {
+      "assoc_score": -0.064127,
+      "count": 18,
+      "lift": -0.388889,
+      "success_rate": 0.111111
+    },
+    "guidelines": {
+      "assoc_score": 0.006341,
+      "count": 21,
+      "lift": 0.071429,
+      "success_rate": 0.571429
+    },
+    "habits": {
+      "assoc_score": 0.087965,
+      "count": 10,
+      "lift": 0.4,
+      "success_rate": 0.9
+    },
+    "half": {
+      "assoc_score": -0.053777,
+      "count": 40,
+      "lift": 0.0,
+      "success_rate": 0.5
+    },
+    "hand": {
+      "assoc_score": 0.112554,
+      "count": 27,
+      "lift": 0.351852,
+      "success_rate": 0.851852
+    },
+    "hands": {
+      "assoc_score": 0.113118,
+      "count": 11,
+      "lift": 0.409091,
+      "success_rate": 0.909091
+    },
+    "having": {
+      "assoc_score": -0.017803,
+      "count": 23,
+      "lift": -0.326087,
+      "success_rate": 0.173913
+    },
+    "hba1c": {
+      "assoc_score": 0.004281,
+      "count": 14,
+      "lift": 0.285714,
+      "success_rate": 0.785714
+    },
+    "head": {
+      "assoc_score": 0.004676,
+      "count": 23,
+      "lift": -0.065217,
+      "success_rate": 0.434783
+    },
+    "health": {
+      "assoc_score": 0.013362,
+      "count": 142,
+      "lift": -0.021127,
+      "success_rate": 0.478873
+    },
+    "healthcare": {
+      "assoc_score": 0.063347,
+      "count": 12,
+      "lift": 0.166667,
+      "success_rate": 0.666667
+    },
+    "healthy": {
+      "assoc_score": 0.000899,
+      "count": 63,
+      "lift": 0.309524,
+      "success_rate": 0.809524
+    },
+    "heart": {
+      "assoc_score": 0.013474,
+      "count": 38,
+      "lift": 0.026316,
+      "success_rate": 0.526316
+    },
+    "height": {
+      "assoc_score": 0.082377,
+      "count": 22,
+      "lift": 0.090909,
+      "success_rate": 0.590909
+    },
+    "help": {
+      "assoc_score": 0.001623,
+      "count": 38,
+      "lift": 0.052632,
+      "success_rate": 0.552632
+    },
+    "helps": {
+      "assoc_score": -0.00809,
+      "count": 10,
+      "lift": 0.2,
+      "success_rate": 0.7
+    },
+    "hemoglobin": {
+      "assoc_score": -0.017874,
+      "count": 13,
+      "lift": 0.038462,
+      "success_rate": 0.538462
+    },
+    "high": {
+      "assoc_score": 0.022131,
+      "count": 88,
+      "lift": 0.034091,
+      "success_rate": 0.534091
+    },
+    "higher": {
+      "assoc_score": 0.026186,
+      "count": 126,
+      "lift": 0.039683,
+      "success_rate": 0.539683
+    },
+    "highest": {
+      "assoc_score": -0.006936,
+      "count": 22,
+      "lift": 0.045455,
+      "success_rate": 0.545455
+    },
+    "hip": {
+      "assoc_score": 0.091911,
+      "count": 10,
+      "lift": 0.3,
+      "success_rate": 0.8
+    },
+    "history": {
+      "assoc_score": -0.015782,
+      "count": 11,
+      "lift": 0.045455,
+      "success_rate": 0.545455
+    },
+    "home": {
+      "assoc_score": 0.029805,
+      "count": 21,
+      "lift": 0.166667,
+      "success_rate": 0.666667
+    },
+    "horizontal": {
+      "assoc_score": 0.09682,
+      "count": 10,
+      "lift": 0.3,
+      "success_rate": 0.8
+    },
+    "hospital": {
+      "assoc_score": 0.02129,
+      "count": 100,
+      "lift": 0.08,
+      "success_rate": 0.58
+    },
+    "hospitalization": {
+      "assoc_score": -0.030513,
+      "count": 16,
+      "lift": -0.125,
+      "success_rate": 0.375
+    },
+    "hour": {
+      "assoc_score": 0.018167,
+      "count": 32,
+      "lift": 0.09375,
+      "success_rate": 0.59375
+    },
+    "hours": {
+      "assoc_score": 0.007976,
+      "count": 95,
+      "lift": 0.121053,
+      "success_rate": 0.621053
+    },
+    "however": {
+      "assoc_score": 0.067839,
+      "count": 33,
+      "lift": 0.257576,
+      "success_rate": 0.757576
+    },
+    "human": {
+      "assoc_score": -0.025474,
+      "count": 24,
+      "lift": 0.0,
+      "success_rate": 0.5
+    },
+    "hypothesis": {
+      "assoc_score": 0.041662,
+      "count": 14,
+      "lift": 0.142857,
+      "success_rate": 0.642857
+    },
+    "identified": {
+      "assoc_score": 0.006028,
+      "count": 16,
+      "lift": 0.0625,
+      "success_rate": 0.5625
+    },
+    "identify": {
+      "assoc_score": 0.033884,
+      "count": 29,
+      "lift": 0.224138,
+      "success_rate": 0.724138
+    },
+    "iii": {
+      "assoc_score": -0.036629,
+      "count": 17,
+      "lift": -0.205882,
+      "success_rate": 0.294118
+    },
+    "illness": {
+      "assoc_score": -0.053986,
+      "count": 12,
+      "lift": -0.333333,
+      "success_rate": 0.166667
+    },
+    "images": {
+      "assoc_score": 0.07535,
+      "count": 10,
+      "lift": 0.1,
+      "success_rate": 0.6
+    },
+    "imaginable": {
+      "assoc_score": 0.030699,
+      "count": 13,
+      "lift": 0.038462,
+      "success_rate": 0.538462
+    },
+    "imaging": {
+      "assoc_score": -0.011864,
+      "count": 45,
+      "lift": -0.166667,
+      "success_rate": 0.333333
+    },
+    "immediate": {
+      "assoc_score": 0.011254,
+      "count": 13,
+      "lift": -0.038462,
+      "success_rate": 0.461538
+    },
+    "immediately": {
+      "assoc_score": 0.02298,
+      "count": 30,
+      "lift": 0.133333,
+      "success_rate": 0.633333
+    },
+    "immune": {
+      "assoc_score": -0.064294,
+      "count": 31,
+      "lift": -0.274194,
+      "success_rate": 0.225806
+    },
+    "immunogenicity": {
+      "assoc_score": -0.08402,
+      "count": 15,
+      "lift": -0.3,
+      "success_rate": 0.2
+    },
+    "immunotherapy": {
+      "assoc_score": -0.091817,
+      "count": 14,
+      "lift": -0.5,
+      "success_rate": 0.0
+    },
+    "impact": {
+      "assoc_score": 0.03469,
+      "count": 60,
+      "lift": 0.116667,
+      "success_rate": 0.616667
+    },
+    "impairment": {
+      "assoc_score": 0.036556,
+      "count": 24,
+      "lift": 0.125,
+      "success_rate": 0.625
+    },
+    "implementation": {
+      "assoc_score": 0.035338,
+      "count": 11,
+      "lift": 0.136364,
+      "success_rate": 0.636364
+    },
+    "important": {
+      "assoc_score": 0.037314,
+      "count": 26,
+      "lift": 0.153846,
+      "success_rate": 0.653846
+    },
+    "impression": {
+      "assoc_score": 0.010544,
+      "count": 13,
+      "lift": -0.115385,
+      "success_rate": 0.384615
+    },
+    "improve": {
+      "assoc_score": 0.039489,
+      "count": 43,
+      "lift": 0.104651,
+      "success_rate": 0.604651
+    },
+    "improved": {
+      "assoc_score": 0.050622,
+      "count": 20,
+      "lift": 0.1,
+      "success_rate": 0.6
+    },
+    "improvement": {
+      "assoc_score": -0.000543,
+      "count": 50,
+      "lift": -0.1,
+      "success_rate": 0.4
+    },
+    "improvements": {
+      "assoc_score": 0.057453,
+      "count": 13,
+      "lift": 0.346154,
+      "success_rate": 0.846154
+    },
+    "improves": {
+      "assoc_score": 0.019577,
+      "count": 13,
+      "lift": 0.038462,
+      "success_rate": 0.538462
+    },
+    "improving": {
+      "assoc_score": 0.030813,
+      "count": 25,
+      "lift": 0.22,
+      "success_rate": 0.72
+    },
+    "inc": {
+      "assoc_score": -0.0365,
+      "count": 70,
+      "lift": -0.2,
+      "success_rate": 0.3
+    },
+    "incidence": {
+      "assoc_score": -0.046909,
+      "count": 95,
+      "lift": -0.257895,
+      "success_rate": 0.242105
+    },
+    "include": {
+      "assoc_score": 0.0262,
+      "count": 64,
+      "lift": 0.046875,
+      "success_rate": 0.546875
+    },
+    "included": {
+      "assoc_score": 0.056021,
+      "count": 26,
+      "lift": 0.230769,
+      "success_rate": 0.730769
+    },
+    "includes": {
+      "assoc_score": 0.025862,
+      "count": 41,
+      "lift": 0.109756,
+      "success_rate": 0.609756
+    },
+    "including": {
+      "assoc_score": -0.007142,
+      "count": 95,
+      "lift": -0.057895,
+      "success_rate": 0.442105
+    },
+    "inclusion": {
+      "assoc_score": 0.027815,
+      "count": 16,
+      "lift": 0.0625,
+      "success_rate": 0.5625
+    },
+    "incomplete": {
+      "assoc_score": -0.010572,
+      "count": 13,
+      "lift": -0.038462,
+      "success_rate": 0.461538
+    },
+    "increase": {
+      "assoc_score": 0.018862,
+      "count": 47,
+      "lift": 0.095745,
+      "success_rate": 0.595745
+    },
+    "increased": {
+      "assoc_score": 0.047092,
+      "count": 28,
+      "lift": 0.142857,
+      "success_rate": 0.642857
+    },
+    "increases": {
+      "assoc_score": 0.044549,
+      "count": 21,
+      "lift": 0.214286,
+      "success_rate": 0.714286
+    },
+    "increasing": {
+      "assoc_score": 0.034946,
+      "count": 15,
+      "lift": -0.033333,
+      "success_rate": 0.466667
+    },
+    "independence": {
+      "assoc_score": 0.023831,
+      "count": 10,
+      "lift": 0.0,
+      "success_rate": 0.5
+    },
+    "independent": {
+      "assoc_score": -0.011429,
+      "count": 22,
+      "lift": -0.181818,
+      "success_rate": 0.318182
+    },
+    "index": {
+      "assoc_score": 0.035108,
+      "count": 98,
+      "lift": 0.030612,
+      "success_rate": 0.530612
+    },
+    "indicate": {
+      "assoc_score": 0.039307,
+      "count": 50,
+      "lift": 0.2,
+      "success_rate": 0.7
+    },
+    "indicated": {
+      "assoc_score": 0.015871,
+      "count": 19,
+      "lift": 0.078947,
+      "success_rate": 0.578947
+    },
+    "indicates": {
+      "assoc_score": 0.057913,
+      "count": 48,
+      "lift": 0.208333,
+      "success_rate": 0.708333
+    },
+    "indicating": {
+      "assoc_score": 0.04485,
+      "count": 49,
+      "lift": 0.091837,
+      "success_rate": 0.591837
+    },
+    "individual": {
+      "assoc_score": 0.03761,
+      "count": 40,
+      "lift": 0.1,
+      "success_rate": 0.6
+    },
+    "individuals": {
+      "assoc_score": 0.067381,
+      "count": 40,
+      "lift": 0.25,
+      "success_rate": 0.75
+    },
+    "induced": {
+      "assoc_score": -0.010157,
+      "count": 19,
+      "lift": 0.131579,
+      "success_rate": 0.631579
+    },
+    "industry": {
+      "assoc_score": -0.040588,
+      "count": 200,
+      "lift": -0.155,
+      "success_rate": 0.345
+    },
+    "infection": {
+      "assoc_score": -0.009668,
+      "count": 27,
+      "lift": 0.018519,
+      "success_rate": 0.518519
+    },
+    "infections": {
+      "assoc_score": 0.007983,
+      "count": 17,
+      "lift": -0.147059,
+      "success_rate": 0.352941
+    },
+    "infectious": {
+      "assoc_score": -0.042741,
+      "count": 11,
+      "lift": -0.045455,
+      "success_rate": 0.454545
+    },
+    "infinity": {
+      "assoc_score": -0.056185,
+      "count": 17,
+      "lift": 0.264706,
+      "success_rate": 0.764706
+    },
+    "inflammation": {
+      "assoc_score": 0.0271,
+      "count": 17,
+      "lift": 0.147059,
+      "success_rate": 0.647059
+    },
+    "inflammatory": {
+      "assoc_score": 0.01974,
+      "count": 22,
+      "lift": 0.0,
+      "success_rate": 0.5
+    },
+    "information": {
+      "assoc_score": 0.033692,
+      "count": 43,
+      "lift": 0.174419,
+      "success_rate": 0.674419
+    },
+    "informed": {
+      "assoc_score": 0.019186,
+      "count": 17,
+      "lift": 0.029412,
+      "success_rate": 0.529412
+    },
+    "infusion": {
+      "assoc_score": -0.058225,
+      "count": 20,
+      "lift": -0.2,
+      "success_rate": 0.3
+    },
+    "ingelheim": {
+      "assoc_score": -0.037145,
+      "count": 10,
+      "lift": 0.2,
+      "success_rate": 0.7
+    },
+    "inhibitor": {
+      "assoc_score": -0.089951,
+      "count": 14,
+      "lift": -0.5,
+      "success_rate": 0.0
+    },
+    "initial": {
+      "assoc_score": -0.009693,
+      "count": 26,
+      "lift": -0.153846,
+      "success_rate": 0.346154
+    },
+    "initiation": {
+      "assoc_score": -0.06385,
+      "count": 18,
+      "lift": -0.166667,
+      "success_rate": 0.333333
+    },
+    "injection": {
+      "assoc_score": -0.02953,
+      "count": 24,
+      "lift": -0.083333,
+      "success_rate": 0.416667
+    },
+    "injury": {
+      "assoc_score": 0.0384,
+      "count": 23,
+      "lift": 0.065217,
+      "success_rate": 0.565217
+    },
+    "inpatient": {
+      "assoc_score": -0.008354,
+      "count": 11,
+      "lift": -0.045455,
+      "success_rate": 0.454545
+    },
+    "institute": {
+      "assoc_score": -0.038891,
+      "count": 70,
+      "lift": -0.1,
+      "success_rate": 0.4
+    },
+    "instructions": {
+      "assoc_score": 0.099814,
+      "count": 12,
+      "lift": 0.25,
+      "success_rate": 0.75
+    },
+    "instrument": {
+      "assoc_score": 0.036714,
+      "count": 24,
+      "lift": -0.041667,
+      "success_rate": 0.458333
+    },
+    "insulin": {
+      "assoc_score": 0.022539,
+      "count": 13,
+      "lift": -0.038462,
+      "success_rate": 0.461538
+    },
+    "intake": {
+      "assoc_score": 0.005193,
+      "count": 15,
+      "lift": 0.233333,
+      "success_rate": 0.733333
+    },
+    "intensity": {
+      "assoc_score": 0.0375,
+      "count": 38,
+      "lift": 0.105263,
+      "success_rate": 0.605263
+    },
+    "intensive": {
+      "assoc_score": 0.003435,
+      "count": 10,
+      "lift": 0.1,
+      "success_rate": 0.6
+    },
+    "interest": {
+      "assoc_score": -0.022741,
+      "count": 22,
+      "lift": -0.318182,
+      "success_rate": 0.181818
+    },
+    "interference": {
+      "assoc_score": 0.027784,
+      "count": 12,
+      "lift": -0.166667,
+      "success_rate": 0.333333
+    },
+    "internal": {
+      "assoc_score": 0.052883,
+      "count": 10,
+      "lift": 0.2,
+      "success_rate": 0.7
+    },
+    "international": {
+      "assoc_score": 0.033175,
+      "count": 32,
+      "lift": 0.0,
+      "success_rate": 0.5
+    },
+    "interval": {
+      "assoc_score": -0.055836,
+      "count": 28,
+      "lift": -0.107143,
+      "success_rate": 0.392857
+    },
+    "intervals": {
+      "assoc_score": -0.013089,
+      "count": 16,
+      "lift": -0.125,
+      "success_rate": 0.375
+    },
+    "intervention": {
+      "assoc_score": -0.007935,
+      "count": 464,
+      "lift": -0.040948,
+      "success_rate": 0.459052
+    },
+    "interventional": {
+      "assoc_score": -0.00798,
+      "count": 457,
+      "lift": -0.044858,
+      "success_rate": 0.455142
+    },
+    "interventions": {
+      "assoc_score": 0.04605,
+      "count": 26,
+      "lift": 0.153846,
+      "success_rate": 0.653846
+    },
+    "interviews": {
+      "assoc_score": 0.035314,
+      "count": 10,
+      "lift": 0.2,
+      "success_rate": 0.7
+    },
+    "intra": {
+      "assoc_score": 0.024411,
+      "count": 15,
+      "lift": -0.033333,
+      "success_rate": 0.466667
+    },
+    "intravenous": {
+      "assoc_score": -0.045785,
+      "count": 15,
+      "lift": -0.233333,
+      "success_rate": 0.266667
+    },
+    "invasive": {
+      "assoc_score": 0.031101,
+      "count": 26,
+      "lift": -0.038462,
+      "success_rate": 0.461538
+    },
+    "inventory": {
+      "assoc_score": 0.025996,
+      "count": 22,
+      "lift": 0.0,
+      "success_rate": 0.5
+    },
+    "investigate": {
+      "assoc_score": 0.016374,
+      "count": 51,
+      "lift": 0.205882,
+      "success_rate": 0.705882
+    },
+    "investigates": {
+      "assoc_score": -0.00649,
+      "count": 10,
+      "lift": 0.2,
+      "success_rate": 0.7
+    },
+    "investigation": {
+      "assoc_score": 0.000993,
+      "count": 15,
+      "lift": 0.033333,
+      "success_rate": 0.533333
+    },
+    "investigational": {
+      "assoc_score": -0.040025,
+      "count": 17,
+      "lift": -0.264706,
+      "success_rate": 0.235294
+    },
+    "investigator": {
+      "assoc_score": -0.017735,
+      "count": 147,
+      "lift": -0.071429,
+      "success_rate": 0.428571
+    },
+    "investigators": {
+      "assoc_score": 0.004765,
+      "count": 38,
+      "lift": 0.105263,
+      "success_rate": 0.605263
+    },
+    "involved": {
+      "assoc_score": -0.013257,
+      "count": 10,
+      "lift": 0.1,
+      "success_rate": 0.6
+    },
+    "involves": {
+      "assoc_score": 0.059156,
+      "count": 14,
+      "lift": 0.214286,
+      "success_rate": 0.714286
+    },
+    "item": {
+      "assoc_score": 0.02403,
+      "count": 69,
+      "lift": 0.007246,
+      "success_rate": 0.507246
+    },
+    "items": {
+      "assoc_score": 0.03558,
+      "count": 72,
+      "lift": 0.111111,
+      "success_rate": 0.611111
+    },
+    "joint": {
+      "assoc_score": 0.061746,
+      "count": 26,
+      "lift": 0.192308,
+      "success_rate": 0.692308
+    },
+    "kaplan": {
+      "assoc_score": -0.09032,
+      "count": 10,
+      "lift": -0.4,
+      "success_rate": 0.1
+    },
+    "keep": {
+      "assoc_score": 0.021277,
+      "count": 10,
+      "lift": 0.2,
+      "success_rate": 0.7
+    },
+    "key": {
+      "assoc_score": 0.046239,
+      "count": 13,
+      "lift": 0.038462,
+      "success_rate": 0.538462
+    },
+    "kidney": {
+      "assoc_score": -0.013623,
+      "count": 17,
+      "lift": 0.029412,
+      "success_rate": 0.529412
+    },
+    "knee": {
+      "assoc_score": 0.107265,
+      "count": 14,
+      "lift": 0.357143,
+      "success_rate": 0.857143
+    },
+    "knowledge": {
+      "assoc_score": 0.039164,
+      "count": 18,
+      "lift": 0.222222,
+      "success_rate": 0.722222
+    },
+    "known": {
+      "assoc_score": 0.026873,
+      "count": 25,
+      "lift": 0.1,
+      "success_rate": 0.6
+    },
+    "label": {
+      "assoc_score": -0.05654,
+      "count": 46,
+      "lift": -0.282609,
+      "success_rate": 0.217391
+    },
+    "laboratory": {
+      "assoc_score": -0.05531,
+      "count": 49,
+      "lift": -0.173469,
+      "success_rate": 0.326531
+    },
+    "lactate": {
+      "assoc_score": -0.022572,
+      "count": 11,
+      "lift": 0.045455,
+      "success_rate": 0.545455
+    },
+    "large": {
+      "assoc_score": 0.011678,
+      "count": 16,
+      "lift": -0.125,
+      "success_rate": 0.375
+    },
+    "last": {
+      "assoc_score": -0.036766,
+      "count": 95,
+      "lift": -0.068421,
+      "success_rate": 0.431579
+    },
+    "later": {
+      "assoc_score": 0.074298,
+      "count": 11,
+      "lift": 0.318182,
+      "success_rate": 0.818182
+    },
+    "lateral": {
+      "assoc_score": 0.113252,
+      "count": 14,
+      "lift": 0.142857,
+      "success_rate": 0.642857
+    },
+    "lead": {
+      "assoc_score": 0.01753,
+      "count": 30,
+      "lift": 0.133333,
+      "success_rate": 0.633333
+    },
+    "leading": {
+      "assoc_score": 0.006236,
+      "count": 18,
+      "lift": 0.222222,
+      "success_rate": 0.722222
+    },
+    "learn": {
+      "assoc_score": -0.003305,
+      "count": 20,
+      "lift": 0.0,
+      "success_rate": 0.5
+    },
+    "learning": {
+      "assoc_score": 0.075394,
+      "count": 12,
+      "lift": 0.25,
+      "success_rate": 0.75
+    },
+    "least": {
+      "assoc_score": -0.011661,
+      "count": 67,
+      "lift": -0.156716,
+      "success_rate": 0.343284
+    },
+    "left": {
+      "assoc_score": 0.064101,
+      "count": 25,
+      "lift": 0.06,
+      "success_rate": 0.56
+    },
+    "length": {
+      "assoc_score": 0.047458,
+      "count": 35,
+      "lift": 0.071429,
+      "success_rate": 0.571429
+    },
+    "lesion": {
+      "assoc_score": -0.020596,
+      "count": 17,
+      "lift": -0.147059,
+      "success_rate": 0.352941
+    },
+    "lesions": {
+      "assoc_score": -0.024941,
+      "count": 13,
+      "lift": -0.115385,
+      "success_rate": 0.384615
+    },
+    "less": {
+      "assoc_score": 0.013549,
+      "count": 39,
+      "lift": 0.064103,
+      "success_rate": 0.564103
+    },
+    "leukemia": {
+      "assoc_score": -0.095457,
+      "count": 11,
+      "lift": -0.409091,
+      "success_rate": 0.090909
+    },
+    "level": {
+      "assoc_score": 0.029967,
+      "count": 107,
+      "lift": 0.088785,
+      "success_rate": 0.588785
+    },
+    "levels": {
+      "assoc_score": 0.018686,
+      "count": 93,
+      "lift": 0.091398,
+      "success_rate": 0.591398
+    },
+    "life": {
+      "assoc_score": -0.007129,
+      "count": 146,
+      "lift": -0.027397,
+      "success_rate": 0.472603
+    },
+    "lifestyle": {
+      "assoc_score": 0.063693,
+      "count": 10,
+      "lift": 0.1,
+      "success_rate": 0.6
+    },
+    "light": {
+      "assoc_score": 0.028946,
+      "count": 17,
+      "lift": 0.205882,
+      "success_rate": 0.705882
+    },
+    "like": {
+      "assoc_score": 0.032571,
+      "count": 22,
+      "lift": 0.272727,
+      "success_rate": 0.772727
+    },
+    "likely": {
+      "assoc_score": 0.018127,
+      "count": 10,
+      "lift": -0.1,
+      "success_rate": 0.4
+    },
+    "likert": {
+      "assoc_score": 0.041407,
+      "count": 41,
+      "lift": 0.109756,
+      "success_rate": 0.609756
+    },
+    "limb": {
+      "assoc_score": 0.115278,
+      "count": 11,
+      "lift": 0.409091,
+      "success_rate": 0.909091
+    },
+    "limitations": {
+      "assoc_score": 0.048611,
+      "count": 14,
+      "lift": 0.285714,
+      "success_rate": 0.785714
+    },
+    "limited": {
+      "assoc_score": 0.022842,
+      "count": 25,
+      "lift": -0.02,
+      "success_rate": 0.48
+    },
+    "limiting": {
+      "assoc_score": -0.092856,
+      "count": 42,
+      "lift": -0.380952,
+      "success_rate": 0.119048
+    },
+    "line": {
+      "assoc_score": 0.042941,
+      "count": 34,
+      "lift": 0.147059,
+      "success_rate": 0.647059
+    },
+    "linear": {
+      "assoc_score": 0.021519,
+      "count": 13,
+      "lift": 0.269231,
+      "success_rate": 0.769231
+    },
+    "linked": {
+      "assoc_score": 0.059072,
+      "count": 11,
+      "lift": 0.409091,
+      "success_rate": 0.909091
+    },
+    "lipid": {
+      "assoc_score": -0.004003,
+      "count": 15,
+      "lift": 0.166667,
+      "success_rate": 0.666667
+    },
+    "liquid": {
+      "assoc_score": 0.0523,
+      "count": 13,
+      "lift": 0.269231,
+      "success_rate": 0.769231
+    },
+    "literature": {
+      "assoc_score": 0.087649,
+      "count": 19,
+      "lift": 0.5,
+      "success_rate": 1.0
+    },
+    "liver": {
+      "assoc_score": -0.019483,
+      "count": 13,
+      "lift": -0.115385,
+      "success_rate": 0.384615
+    },
+    "living": {
+      "assoc_score": 0.027148,
+      "count": 18,
+      "lift": 0.111111,
+      "success_rate": 0.611111
+    },
+    "local": {
+      "assoc_score": -0.009845,
+      "count": 23,
+      "lift": -0.021739,
+      "success_rate": 0.478261
+    },
+    "long": {
+      "assoc_score": -0.000576,
+      "count": 48,
+      "lift": -0.0625,
+      "success_rate": 0.4375
+    },
+    "loss": {
+      "assoc_score": 0.05484,
+      "count": 31,
+      "lift": 0.209677,
+      "success_rate": 0.709677
+    },
+    "low": {
+      "assoc_score": 0.053798,
+      "count": 46,
+      "lift": 0.217391,
+      "success_rate": 0.717391
+    },
+    "lower": {
+      "assoc_score": 0.055185,
+      "count": 52,
+      "lift": 0.211538,
+      "success_rate": 0.711538
+    },
+    "ltd": {
+      "assoc_score": -0.043674,
+      "count": 23,
+      "lift": 0.065217,
+      "success_rate": 0.565217
+    },
+    "lumbar": {
+      "assoc_score": 0.087863,
+      "count": 13,
+      "lift": 0.346154,
+      "success_rate": 0.846154
+    },
+    "lung": {
+      "assoc_score": -0.032531,
+      "count": 24,
+      "lift": -0.25,
+      "success_rate": 0.25
+    },
+    "lymphoma": {
+      "assoc_score": -0.110836,
+      "count": 13,
+      "lift": -0.346154,
+      "success_rate": 0.153846
+    },
+    "made": {
+      "assoc_score": 0.033409,
+      "count": 17,
+      "lift": 0.088235,
+      "success_rate": 0.588235
+    },
+    "magnetic": {
+      "assoc_score": -0.000374,
+      "count": 21,
+      "lift": -0.214286,
+      "success_rate": 0.285714
+    },
+    "main": {
+      "assoc_score": 0.011092,
+      "count": 63,
+      "lift": 0.119048,
+      "success_rate": 0.619048
+    },
+    "maintain": {
+      "assoc_score": 0.07103,
+      "count": 11,
+      "lift": 0.318182,
+      "success_rate": 0.818182
+    },
+    "maintaining": {
+      "assoc_score": 0.106797,
+      "count": 12,
+      "lift": 0.25,
+      "success_rate": 0.75
+    },
+    "major": {
+      "assoc_score": -0.000329,
+      "count": 25,
+      "lift": -0.06,
+      "success_rate": 0.44
+    },
+    "make": {
+      "assoc_score": 0.027801,
+      "count": 13,
+      "lift": 0.115385,
+      "success_rate": 0.615385
+    },
+    "making": {
+      "assoc_score": 0.043978,
+      "count": 11,
+      "lift": 0.5,
+      "success_rate": 1.0
+    },
+    "male": {
+      "assoc_score": 0.04225,
+      "count": 11,
+      "lift": 0.318182,
+      "success_rate": 0.818182
+    },
+    "malignant": {
+      "assoc_score": -0.059171,
+      "count": 14,
+      "lift": -0.285714,
+      "success_rate": 0.214286
+    },
+    "management": {
+      "assoc_score": 0.025115,
+      "count": 38,
+      "lift": 0.184211,
+      "success_rate": 0.684211
+    },
+    "manual": {
+      "assoc_score": 0.100913,
+      "count": 11,
+      "lift": 0.227273,
+      "success_rate": 0.727273
+    },
+    "many": {
+      "assoc_score": 0.060074,
+      "count": 25,
+      "lift": 0.22,
+      "success_rate": 0.72
+    },
+    "mark": {
+      "assoc_score": 0.064869,
+      "count": 10,
+      "lift": 0.1,
+      "success_rate": 0.6
+    },
+    "marker": {
+      "assoc_score": -0.010017,
+      "count": 11,
+      "lift": -0.227273,
+      "success_rate": 0.272727
+    },
+    "markers": {
+      "assoc_score": -0.023421,
+      "count": 11,
+      "lift": -0.045455,
+      "success_rate": 0.454545
+    },
+    "masking": {
+      "assoc_score": -0.008043,
+      "count": 454,
+      "lift": -0.046256,
+      "success_rate": 0.453744
+    },
+    "mass": {
+      "assoc_score": 0.028727,
+      "count": 25,
+      "lift": 0.06,
+      "success_rate": 0.56
+    },
+    "maximal": {
+      "assoc_score": 0.031977,
+      "count": 16,
+      "lift": 0.125,
+      "success_rate": 0.625
+    },
+    "maximum": {
+      "assoc_score": -0.020848,
+      "count": 124,
+      "lift": 0.032258,
+      "success_rate": 0.532258
+    },
+    "mean": {
+      "assoc_score": 0.007746,
+      "count": 65,
+      "lift": -0.130769,
+      "success_rate": 0.369231
+    },
+    "means": {
+      "assoc_score": 0.018964,
+      "count": 30,
+      "lift": 0.033333,
+      "success_rate": 0.533333
+    },
+    "measurable": {
+      "assoc_score": -0.051074,
+      "count": 13,
+      "lift": -0.038462,
+      "success_rate": 0.461538
+    },
+    "measure": {
+      "assoc_score": 0.037208,
+      "count": 116,
+      "lift": 0.094828,
+      "success_rate": 0.594828
+    },
+    "measured": {
+      "assoc_score": 0.015073,
+      "count": 159,
+      "lift": -0.015723,
+      "success_rate": 0.484277
+    },
+    "measurement": {
+      "assoc_score": 0.045985,
+      "count": 60,
+      "lift": 0.15,
+      "success_rate": 0.65
+    },
+    "measurements": {
+      "assoc_score": 0.051778,
+      "count": 33,
+      "lift": 0.106061,
+      "success_rate": 0.606061
+    },
+    "measures": {
+      "assoc_score": 0.041191,
+      "count": 62,
+      "lift": 0.129032,
+      "success_rate": 0.629032
+    },
+    "measuring": {
+      "assoc_score": 0.051035,
+      "count": 28,
+      "lift": 0.25,
+      "success_rate": 0.75
+    },
+    "mechanical": {
+      "assoc_score": 0.075806,
+      "count": 12,
+      "lift": 0.333333,
+      "success_rate": 0.833333
+    },
+    "medical": {
+      "assoc_score": 0.003877,
+      "count": 105,
+      "lift": -0.033333,
+      "success_rate": 0.466667
+    },
+    "medication": {
+      "assoc_score": -0.000707,
+      "count": 38,
+      "lift": -0.131579,
+      "success_rate": 0.368421
+    },
+    "medications": {
+      "assoc_score": -0.011688,
+      "count": 21,
+      "lift": -0.119048,
+      "success_rate": 0.380952
+    },
+    "medicine": {
+      "assoc_score": 0.003676,
+      "count": 34,
+      "lift": 0.058824,
+      "success_rate": 0.558824
+    },
+    "medium": {
+      "assoc_score": 0.026826,
+      "count": 12,
+      "lift": 0.25,
+      "success_rate": 0.75
+    },
+    "meet": {
+      "assoc_score": 0.010794,
+      "count": 11,
+      "lift": -0.136364,
+      "success_rate": 0.363636
+    },
+    "meeting": {
+      "assoc_score": -0.027889,
+      "count": 12,
+      "lift": 0.0,
+      "success_rate": 0.5
+    },
+    "meier": {
+      "assoc_score": -0.09032,
+      "count": 10,
+      "lift": -0.4,
+      "success_rate": 0.1
+    },
+    "mellitus": {
+      "assoc_score": 0.023924,
+      "count": 17,
+      "lift": 0.264706,
+      "success_rate": 0.764706
+    },
+    "memory": {
+      "assoc_score": 0.043817,
+      "count": 10,
+      "lift": 0.4,
+      "success_rate": 0.9
+    },
+    "men": {
+      "assoc_score": -0.012196,
+      "count": 12,
+      "lift": -0.083333,
+      "success_rate": 0.416667
+    },
+    "mental": {
+      "assoc_score": 0.044612,
+      "count": 28,
+      "lift": 0.214286,
+      "success_rate": 0.714286
+    },
+    "metabolic": {
+      "assoc_score": 0.002396,
+      "count": 15,
+      "lift": 0.1,
+      "success_rate": 0.6
+    },
+    "metabolism": {
+      "assoc_score": 0.009626,
+      "count": 12,
+      "lift": 0.166667,
+      "success_rate": 0.666667
+    },
+    "metabolites": {
+      "assoc_score": -0.027428,
+      "count": 10,
+      "lift": 0.1,
+      "success_rate": 0.6
+    },
+    "metastatic": {
+      "assoc_score": -0.093412,
+      "count": 26,
+      "lift": -0.423077,
+      "success_rate": 0.076923
+    },
+    "meters": {
+      "assoc_score": 0.10614,
+      "count": 10,
+      "lift": 0.3,
+      "success_rate": 0.8
+    },
+    "method": {
+      "assoc_score": 0.026284,
+      "count": 46,
+      "lift": 0.108696,
+      "success_rate": 0.608696
+    },
+    "methods": {
+      "assoc_score": 0.056259,
+      "count": 35,
+      "lift": 0.214286,
+      "success_rate": 0.714286
+    },
+    "mild": {
+      "assoc_score": 0.037017,
+      "count": 33,
+      "lift": 0.075758,
+      "success_rate": 0.575758
+    },
+    "millimeters": {
+      "assoc_score": 0.074787,
+      "count": 10,
+      "lift": 0.2,
+      "success_rate": 0.7
+    },
+    "min": {
+      "assoc_score": 0.049388,
+      "count": 12,
+      "lift": 0.333333,
+      "success_rate": 0.833333
+    },
+    "minimal": {
+      "assoc_score": 0.013925,
+      "count": 23,
+      "lift": 0.065217,
+      "success_rate": 0.565217
+    },
+    "minimum": {
+      "assoc_score": 0.016169,
+      "count": 40,
+      "lift": 0.025,
+      "success_rate": 0.525
+    },
+    "minute": {
+      "assoc_score": 0.058588,
+      "count": 31,
+      "lift": 0.112903,
+      "success_rate": 0.612903
+    },
+    "minutes": {
+      "assoc_score": 0.049943,
+      "count": 40,
+      "lift": 0.2,
+      "success_rate": 0.7
+    },
+    "mmhg": {
+      "assoc_score": 0.022368,
+      "count": 10,
+      "lift": 0.1,
+      "success_rate": 0.6
+    },
+    "mobility": {
+      "assoc_score": 0.077366,
+      "count": 21,
+      "lift": 0.309524,
+      "success_rate": 0.809524
+    },
+    "model": {
+      "assoc_score": -0.000372,
+      "count": 558,
+      "lift": 0.0,
+      "success_rate": 0.5
+    },
+    "moderate": {
+      "assoc_score": 0.023297,
+      "count": 56,
+      "lift": -0.053571,
+      "success_rate": 0.446429
+    },
+    "moderately": {
+      "assoc_score": 0.00912,
+      "count": 15,
+      "lift": -0.1,
+      "success_rate": 0.4
+    },
+    "modified": {
+      "assoc_score": 0.014181,
+      "count": 46,
+      "lift": 0.0,
+      "success_rate": 0.5
+    },
+    "module": {
+      "assoc_score": -0.006767,
+      "count": 12,
+      "lift": -0.25,
+      "success_rate": 0.25
+    },
+    "monitor": {
+      "assoc_score": 0.0239,
+      "count": 17,
+      "lift": 0.205882,
+      "success_rate": 0.705882
+    },
+    "monitored": {
+      "assoc_score": -0.003661,
+      "count": 11,
+      "lift": 0.045455,
+      "success_rate": 0.545455
+    },
+    "monitoring": {
+      "assoc_score": 0.02316,
+      "count": 29,
+      "lift": 0.12069,
+      "success_rate": 0.62069
+    },
+    "month": {
+      "assoc_score": 0.021661,
+      "count": 65,
+      "lift": 0.023077,
+      "success_rate": 0.523077
+    },
+    "months": {
+      "assoc_score": -0.019971,
+      "count": 182,
+      "lift": -0.10989,
+      "success_rate": 0.39011
+    },
+    "mood": {
+      "assoc_score": 0.034996,
+      "count": 14,
+      "lift": 0.071429,
+      "success_rate": 0.571429
+    },
+    "morning": {
+      "assoc_score": 0.04903,
+      "count": 10,
+      "lift": -0.1,
+      "success_rate": 0.4
+    },
+    "morphine": {
+      "assoc_score": 0.043092,
+      "count": 10,
+      "lift": 0.0,
+      "success_rate": 0.5
+    },
+    "mortality": {
+      "assoc_score": 3.2e-05,
+      "count": 31,
+      "lift": 0.048387,
+      "success_rate": 0.548387
+    },
+    "motion": {
+      "assoc_score": 0.122271,
+      "count": 15,
+      "lift": 0.233333,
+      "success_rate": 0.733333
+    },
+    "motor": {
+      "assoc_score": 0.082321,
+      "count": 20,
+      "lift": 0.3,
+      "success_rate": 0.8
+    },
+    "movement": {
+      "assoc_score": 0.085757,
+      "count": 26,
+      "lift": 0.346154,
+      "success_rate": 0.846154
+    },
+    "movements": {
+      "assoc_score": 0.130223,
+      "count": 11,
+      "lift": 0.409091,
+      "success_rate": 0.909091
+    },
+    "mri": {
+      "assoc_score": -0.002357,
+      "count": 27,
+      "lift": -0.203704,
+      "success_rate": 0.296296
+    },
+    "mtd": {
+      "assoc_score": -0.107858,
+      "count": 20,
+      "lift": -0.5,
+      "success_rate": 0.0
+    },
+    "much": {
+      "assoc_score": 0.016362,
+      "count": 34,
+      "lift": 0.058824,
+      "success_rate": 0.558824
+    },
+    "multi": {
+      "assoc_score": -0.010967,
+      "count": 24,
+      "lift": -0.25,
+      "success_rate": 0.25
+    },
+    "multicenter": {
+      "assoc_score": -0.055072,
+      "count": 33,
+      "lift": -0.257576,
+      "success_rate": 0.242424
+    },
+    "multiple": {
+      "assoc_score": -0.018677,
+      "count": 41,
+      "lift": 0.012195,
+      "success_rate": 0.512195
+    },
+    "muscle": {
+      "assoc_score": 0.09597,
+      "count": 28,
+      "lift": 0.357143,
+      "success_rate": 0.857143
+    },
+    "muscles": {
+      "assoc_score": 0.126417,
+      "count": 12,
+      "lift": 0.416667,
+      "success_rate": 0.916667
+    },
+    "must": {
+      "assoc_score": -0.009943,
+      "count": 16,
+      "lift": 0.0,
+      "success_rate": 0.5
+    },
+    "mutation": {
+      "assoc_score": -0.083755,
+      "count": 13,
+      "lift": -0.269231,
+      "success_rate": 0.230769
+    },
+    "myeloid": {
+      "assoc_score": -0.098185,
+      "count": 10,
+      "lift": -0.4,
+      "success_rate": 0.1
+    },
+    "nan": {
+      "assoc_score": 0.007438,
+      "count": 490,
+      "lift": 0.040816,
+      "success_rate": 0.540816
+    },
+    "national": {
+      "assoc_score": -0.03673,
+      "count": 61,
+      "lift": -0.172131,
+      "success_rate": 0.327869
+    },
+    "natural": {
+      "assoc_score": 0.01773,
+      "count": 14,
+      "lift": 0.071429,
+      "success_rate": 0.571429
+    },
+    "nausea": {
+      "assoc_score": 0.040697,
+      "count": 13,
+      "lift": 0.269231,
+      "success_rate": 0.769231
+    },
+    "nci": {
+      "assoc_score": -0.09206,
+      "count": 32,
+      "lift": -0.4375,
+      "success_rate": 0.0625
+    },
+    "neck": {
+      "assoc_score": 0.031275,
+      "count": 28,
+      "lift": 0.0,
+      "success_rate": 0.5
+    },
+    "need": {
+      "assoc_score": 0.039755,
+      "count": 26,
+      "lift": 0.153846,
+      "success_rate": 0.653846
+    },
+    "needed": {
+      "assoc_score": 0.002002,
+      "count": 19,
+      "lift": -0.026316,
+      "success_rate": 0.473684
+    },
+    "needle": {
+      "assoc_score": 0.01676,
+      "count": 10,
+      "lift": 0.1,
+      "success_rate": 0.6
+    },
+    "negative": {
+      "assoc_score": -0.010296,
+      "count": 29,
+      "lift": -0.086207,
+      "success_rate": 0.413793
+    },
+    "nerve": {
+      "assoc_score": 0.056554,
+      "count": 14,
+      "lift": 0.357143,
+      "success_rate": 0.857143
+    },
+    "nervous": {
+      "assoc_score": 0.040858,
+      "count": 10,
+      "lift": 0.2,
+      "success_rate": 0.7
+    },
+    "neurological": {
+      "assoc_score": 0.015256,
+      "count": 14,
+      "lift": 0.142857,
+      "success_rate": 0.642857
+    },
+    "neutral": {
+      "assoc_score": 0.109113,
+      "count": 13,
+      "lift": 0.192308,
+      "success_rate": 0.692308
+    },
+    "never": {
+      "assoc_score": 0.021951,
+      "count": 12,
+      "lift": 0.0,
+      "success_rate": 0.5
+    },
+    "new": {
+      "assoc_score": -0.005364,
+      "count": 53,
+      "lift": -0.009434,
+      "success_rate": 0.490566
+    },
+    "next": {
+      "assoc_score": -0.012808,
+      "count": 18,
+      "lift": -0.055556,
+      "success_rate": 0.444444
+    },
+    "night": {
+      "assoc_score": 0.076216,
+      "count": 10,
+      "lift": 0.1,
+      "success_rate": 0.6
+    },
+    "non": {
+      "assoc_score": -0.016006,
+      "count": 140,
+      "lift": -0.114286,
+      "success_rate": 0.385714
+    },
+    "none": {
+      "assoc_score": -0.030807,
+      "count": 260,
+      "lift": -0.161538,
+      "success_rate": 0.338462
+    },
+    "normal": {
+      "assoc_score": 0.039291,
+      "count": 36,
+      "lift": 0.027778,
+      "success_rate": 0.527778
+    },
+    "novel": {
+      "assoc_score": -0.002445,
+      "count": 14,
+      "lift": 0.071429,
+      "success_rate": 0.571429
+    },
+    "nrs": {
+      "assoc_score": 0.008842,
+      "count": 15,
+      "lift": -0.1,
+      "success_rate": 0.4
+    },
+    "number": {
+      "assoc_score": -0.011625,
+      "count": 173,
+      "lift": -0.060694,
+      "success_rate": 0.439306
+    },
+    "numeric": {
+      "assoc_score": 0.0262,
+      "count": 16,
+      "lift": 0.0625,
+      "success_rate": 0.5625
+    },
+    "numerical": {
+      "assoc_score": 0.047746,
+      "count": 19,
+      "lift": 0.131579,
+      "success_rate": 0.631579
+    },
+    "nutrition": {
+      "assoc_score": 0.051879,
+      "count": 10,
+      "lift": 0.3,
+      "success_rate": 0.8
+    },
+    "obesity": {
+      "assoc_score": 0.033193,
+      "count": 16,
+      "lift": 0.1875,
+      "success_rate": 0.6875
+    },
+    "objective": {
+      "assoc_score": -0.040027,
+      "count": 86,
+      "lift": -0.127907,
+      "success_rate": 0.372093
+    },
+    "objectives": {
+      "assoc_score": -0.005195,
+      "count": 15,
+      "lift": -0.033333,
+      "success_rate": 0.466667
+    },
+    "observation": {
+      "assoc_score": -0.009891,
+      "count": 12,
+      "lift": 0.083333,
+      "success_rate": 0.583333
+    },
+    "observational": {
+      "assoc_score": 0.030388,
+      "count": 107,
+      "lift": 0.182243,
+      "success_rate": 0.682243
+    },
+    "observed": {
+      "assoc_score": -0.03454,
+      "count": 46,
+      "lift": -0.043478,
+      "success_rate": 0.456522
+    },
+    "obstructive": {
+      "assoc_score": 0.034842,
+      "count": 10,
+      "lift": 0.2,
+      "success_rate": 0.7
+    },
+    "obtain": {
+      "assoc_score": 0.029803,
+      "count": 12,
+      "lift": 0.25,
+      "success_rate": 0.75
+    },
+    "obtained": {
+      "assoc_score": 0.041825,
+      "count": 35,
+      "lift": 0.185714,
+      "success_rate": 0.685714
+    },
+    "occur": {
+      "assoc_score": -0.014334,
+      "count": 11,
+      "lift": -0.227273,
+      "success_rate": 0.272727
+    },
+    "occurrence": {
+      "assoc_score": -0.027425,
+      "count": 32,
+      "lift": -0.1875,
+      "success_rate": 0.3125
+    },
+    "occurring": {
+      "assoc_score": -0.014913,
+      "count": 12,
+      "lift": -0.083333,
+      "success_rate": 0.416667
+    },
+    "occurs": {
+      "assoc_score": -0.073526,
+      "count": 35,
+      "lift": -0.3,
+      "success_rate": 0.2
+    },
+    "off": {
+      "assoc_score": 0.035167,
+      "count": 18,
+      "lift": 0.055556,
+      "success_rate": 0.555556
+    },
+    "often": {
+      "assoc_score": 0.054066,
+      "count": 31,
+      "lift": 0.145161,
+      "success_rate": 0.645161
+    },
+    "older": {
+      "assoc_score": 0.039924,
+      "count": 19,
+      "lift": 0.289474,
+      "success_rate": 0.789474
+    },
+    "once": {
+      "assoc_score": -0.006999,
+      "count": 30,
+      "lift": -0.066667,
+      "success_rate": 0.433333
+    },
+    "onset": {
+      "assoc_score": -0.02381,
+      "count": 17,
+      "lift": -0.088235,
+      "success_rate": 0.411765
+    },
+    "open": {
+      "assoc_score": -0.047652,
+      "count": 55,
+      "lift": -0.209091,
+      "success_rate": 0.290909
+    },
+    "operative": {
+      "assoc_score": 0.030636,
+      "count": 15,
+      "lift": -0.1,
+      "success_rate": 0.4
+    },
+    "opioid": {
+      "assoc_score": 0.042667,
+      "count": 16,
+      "lift": 0.25,
+      "success_rate": 0.75
+    },
+    "optimal": {
+      "assoc_score": 0.026871,
+      "count": 12,
+      "lift": 0.083333,
+      "success_rate": 0.583333
+    },
+    "options": {
+      "assoc_score": 0.03101,
+      "count": 15,
+      "lift": 0.033333,
+      "success_rate": 0.533333
+    },
+    "oral": {
+      "assoc_score": -0.013727,
+      "count": 53,
+      "lift": -0.066038,
+      "success_rate": 0.433962
+    },
+    "order": {
+      "assoc_score": 0.043258,
+      "count": 23,
+      "lift": 0.108696,
+      "success_rate": 0.608696
+    },
+    "orr": {
+      "assoc_score": -0.111162,
+      "count": 45,
+      "lift": -0.455556,
+      "success_rate": 0.044444
+    },
+    "others": {
+      "assoc_score": 0.057116,
+      "count": 13,
+      "lift": 0.423077,
+      "success_rate": 0.923077
+    },
+    "outcome": {
+      "assoc_score": 0.014786,
+      "count": 100,
+      "lift": -0.06,
+      "success_rate": 0.44
+    },
+    "outcomes": {
+      "assoc_score": 0.020543,
+      "count": 172,
+      "lift": 0.05814,
+      "success_rate": 0.55814
+    },
+    "overall": {
+      "assoc_score": -0.049395,
+      "count": 112,
+      "lift": -0.25,
+      "success_rate": 0.25
+    },
+    "oxygen": {
+      "assoc_score": 0.034121,
+      "count": 13,
+      "lift": 0.192308,
+      "success_rate": 0.692308
+    },
+    "pain": {
+      "assoc_score": 0.058317,
+      "count": 106,
+      "lift": 0.198113,
+      "success_rate": 0.698113
+    },
+    "pancreatic": {
+      "assoc_score": -0.054111,
+      "count": 13,
+      "lift": -0.269231,
+      "success_rate": 0.230769
+    },
+    "parallel": {
+      "assoc_score": 0.014832,
+      "count": 250,
+      "lift": 0.008,
+      "success_rate": 0.508
+    },
+    "parameter": {
+      "assoc_score": -0.011851,
+      "count": 17,
+      "lift": -0.088235,
+      "success_rate": 0.411765
+    },
+    "parameters": {
+      "assoc_score": -0.003699,
+      "count": 51,
+      "lift": 0.127451,
+      "success_rate": 0.627451
+    },
+    "part": {
+      "assoc_score": -0.020437,
+      "count": 66,
+      "lift": -0.151515,
+      "success_rate": 0.348485
+    },
+    "partial": {
+      "assoc_score": -0.093158,
+      "count": 43,
+      "lift": -0.406977,
+      "success_rate": 0.093023
+    },
+    "participant": {
+      "assoc_score": 0.01528,
+      "count": 220,
+      "lift": 0.068182,
+      "success_rate": 0.568182
+    },
+    "participants": {
+      "assoc_score": -0.004914,
+      "count": 234,
+      "lift": 0.004274,
+      "success_rate": 0.504274
+    },
+    "participate": {
+      "assoc_score": -0.002847,
+      "count": 16,
+      "lift": 0.0,
+      "success_rate": 0.5
+    },
+    "participation": {
+      "assoc_score": 0.046076,
+      "count": 11,
+      "lift": 0.136364,
+      "success_rate": 0.636364
+    },
+    "parts": {
+      "assoc_score": -0.045843,
+      "count": 15,
+      "lift": -0.166667,
+      "success_rate": 0.333333
+    },
+    "passive": {
+      "assoc_score": 0.055277,
+      "count": 10,
+      "lift": 0.4,
+      "success_rate": 0.9
+    },
+    "past": {
+      "assoc_score": 0.029205,
+      "count": 26,
+      "lift": 0.115385,
+      "success_rate": 0.615385
+    },
+    "patient": {
+      "assoc_score": 0.031345,
+      "count": 167,
+      "lift": 0.062874,
+      "success_rate": 0.562874
+    },
+    "patients": {
+      "assoc_score": -0.004051,
+      "count": 271,
+      "lift": -0.031365,
+      "success_rate": 0.468635
+    },
+    "peak": {
+      "assoc_score": -0.029049,
+      "count": 25,
+      "lift": -0.14,
+      "success_rate": 0.36
+    },
+    "pediatric": {
+      "assoc_score": 0.037279,
+      "count": 18,
+      "lift": -0.055556,
+      "success_rate": 0.444444
+    },
+    "pembrolizumab": {
+      "assoc_score": -0.113109,
+      "count": 11,
+      "lift": -0.5,
+      "success_rate": 0.0
+    },
+    "people": {
+      "assoc_score": 0.008844,
+      "count": 37,
+      "lift": 0.067568,
+      "success_rate": 0.567568
+    },
+    "per": {
+      "assoc_score": -0.026816,
+      "count": 76,
+      "lift": -0.065789,
+      "success_rate": 0.434211
+    },
+    "perceived": {
+      "assoc_score": 0.044494,
+      "count": 25,
+      "lift": 0.26,
+      "success_rate": 0.76
+    },
+    "percent": {
+      "assoc_score": -0.014635,
+      "count": 39,
+      "lift": -0.089744,
+      "success_rate": 0.410256
+    },
+    "percentage": {
+      "assoc_score": -0.021593,
+      "count": 80,
+      "lift": -0.15,
+      "success_rate": 0.35
+    },
+    "perception": {
+      "assoc_score": 0.04845,
+      "count": 19,
+      "lift": 0.236842,
+      "success_rate": 0.736842
+    },
+    "perform": {
+      "assoc_score": 0.064489,
+      "count": 25,
+      "lift": 0.3,
+      "success_rate": 0.8
+    },
+    "performance": {
+      "assoc_score": 0.062115,
+      "count": 42,
+      "lift": 0.119048,
+      "success_rate": 0.619048
+    },
+    "performed": {
+      "assoc_score": 0.03653,
+      "count": 66,
+      "lift": 0.227273,
+      "success_rate": 0.727273
+    },
+    "performing": {
+      "assoc_score": 0.036568,
+      "count": 16,
+      "lift": 0.1875,
+      "success_rate": 0.6875
+    },
+    "period": {
+      "assoc_score": -0.00942,
+      "count": 98,
+      "lift": -0.091837,
+      "success_rate": 0.408163
+    },
+    "periods": {
+      "assoc_score": -0.047349,
+      "count": 11,
+      "lift": -0.045455,
+      "success_rate": 0.454545
+    },
+    "peripheral": {
+      "assoc_score": -0.01853,
+      "count": 20,
+      "lift": -0.1,
+      "success_rate": 0.4
+    },
+    "persistent": {
+      "assoc_score": -0.008108,
+      "count": 15,
+      "lift": 0.033333,
+      "success_rate": 0.533333
+    },
+    "person": {
+      "assoc_score": 0.057699,
+      "count": 18,
+      "lift": 0.222222,
+      "success_rate": 0.722222
+    },
+    "perspective": {
+      "assoc_score": 0.031097,
+      "count": 105,
+      "lift": 0.195238,
+      "success_rate": 0.695238
+    },
+    "pet": {
+      "assoc_score": -0.058473,
+      "count": 10,
+      "lift": -0.2,
+      "success_rate": 0.3
+    },
+    "pfs": {
+      "assoc_score": -0.098146,
+      "count": 44,
+      "lift": -0.477273,
+      "success_rate": 0.022727
+    },
+    "pharmaceuticals": {
+      "assoc_score": -0.052014,
+      "count": 27,
+      "lift": -0.240741,
+      "success_rate": 0.259259
+    },
+    "pharmacodynamics": {
+      "assoc_score": -0.054678,
+      "count": 12,
+      "lift": -0.25,
+      "success_rate": 0.25
+    },
+    "pharmacokinetic": {
+      "assoc_score": -0.050491,
+      "count": 17,
+      "lift": -0.147059,
+      "success_rate": 0.352941
+    },
+    "pharmacokinetics": {
+      "assoc_score": -0.066712,
+      "count": 51,
+      "lift": -0.127451,
+      "success_rate": 0.372549
+    },
+    "phase": {
+      "assoc_score": -0.066766,
+      "count": 108,
+      "lift": -0.240741,
+      "success_rate": 0.259259
+    },
+    "phase1": {
+      "assoc_score": -0.076321,
+      "count": 101,
+      "lift": -0.163366,
+      "success_rate": 0.336634
+    },
+    "phase2": {
+      "assoc_score": -0.062687,
+      "count": 116,
+      "lift": -0.284483,
+      "success_rate": 0.215517
+    },
+    "phase3": {
+      "assoc_score": -0.026711,
+      "count": 44,
+      "lift": -0.227273,
+      "success_rate": 0.272727
+    },
+    "phase4": {
+      "assoc_score": -0.00468,
+      "count": 28,
+      "lift": -0.214286,
+      "success_rate": 0.285714
+    },
+    "physical": {
+      "assoc_score": 0.033394,
+      "count": 70,
+      "lift": 0.214286,
+      "success_rate": 0.714286
+    },
+    "physician": {
+      "assoc_score": -0.015906,
+      "count": 14,
+      "lift": -0.214286,
+      "success_rate": 0.285714
+    },
+    "physiological": {
+      "assoc_score": 0.061702,
+      "count": 17,
+      "lift": 0.323529,
+      "success_rate": 0.823529
+    },
+    "pilot": {
+      "assoc_score": 0.004339,
+      "count": 28,
+      "lift": -0.107143,
+      "success_rate": 0.392857
+    },
+    "pittsburgh": {
+      "assoc_score": 0.034602,
+      "count": 13,
+      "lift": 0.115385,
+      "success_rate": 0.615385
+    },
+    "place": {
+      "assoc_score": 0.07889,
+      "count": 11,
+      "lift": 0.136364,
+      "success_rate": 0.636364
+    },
+    "placebo": {
+      "assoc_score": -0.022526,
+      "count": 82,
+      "lift": -0.134146,
+      "success_rate": 0.365854
+    },
+    "placed": {
+      "assoc_score": 0.110348,
+      "count": 14,
+      "lift": 0.357143,
+      "success_rate": 0.857143
+    },
+    "planned": {
+      "assoc_score": -0.014201,
+      "count": 19,
+      "lift": -0.026316,
+      "success_rate": 0.473684
+    },
+    "plasma": {
+      "assoc_score": -0.054801,
+      "count": 69,
+      "lift": -0.050725,
+      "success_rate": 0.449275
+    },
+    "plus": {
+      "assoc_score": -0.023548,
+      "count": 22,
+      "lift": -0.090909,
+      "success_rate": 0.409091
+    },
+    "point": {
+      "assoc_score": 0.029848,
+      "count": 107,
+      "lift": 0.079439,
+      "success_rate": 0.579439
+    },
+    "points": {
+      "assoc_score": 0.043249,
+      "count": 55,
+      "lift": 0.081818,
+      "success_rate": 0.581818
+    },
+    "poor": {
+      "assoc_score": 0.039887,
+      "count": 22,
+      "lift": 0.090909,
+      "success_rate": 0.590909
+    },
+    "population": {
+      "assoc_score": 0.023574,
+      "count": 36,
+      "lift": 0.055556,
+      "success_rate": 0.555556
+    },
+    "position": {
+      "assoc_score": 0.127995,
+      "count": 25,
+      "lift": 0.42,
+      "success_rate": 0.92
+    },
+    "positive": {
+      "assoc_score": -0.025015,
+      "count": 45,
+      "lift": -0.144444,
+      "success_rate": 0.355556
+    },
+    "possible": {
+      "assoc_score": 0.064093,
+      "count": 59,
+      "lift": 0.194915,
+      "success_rate": 0.694915
+    },
+    "post": {
+      "assoc_score": 0.001046,
+      "count": 124,
+      "lift": -0.040323,
+      "success_rate": 0.459677
+    },
+    "posterior": {
+      "assoc_score": 0.055278,
+      "count": 11,
+      "lift": 0.045455,
+      "success_rate": 0.545455
+    },
+    "postoperative": {
+      "assoc_score": 0.058352,
+      "count": 38,
+      "lift": 0.210526,
+      "success_rate": 0.710526
+    },
+    "postoperatively": {
+      "assoc_score": 0.068157,
+      "count": 17,
+      "lift": 0.264706,
+      "success_rate": 0.764706
+    },
+    "potential": {
+      "assoc_score": -0.006065,
+      "count": 33,
+      "lift": 0.045455,
+      "success_rate": 0.545455
+    },
+    "power": {
+      "assoc_score": 0.07165,
+      "count": 10,
+      "lift": 0.3,
+      "success_rate": 0.8
+    },
+    "practice": {
+      "assoc_score": 0.058456,
+      "count": 31,
+      "lift": 0.209677,
+      "success_rate": 0.709677
+    },
+    "pre": {
+      "assoc_score": -0.007948,
+      "count": 67,
+      "lift": -0.097015,
+      "success_rate": 0.402985
+    },
+    "predose": {
+      "assoc_score": -0.062723,
+      "count": 13,
+      "lift": -0.038462,
+      "success_rate": 0.461538
+    },
+    "pregnancy": {
+      "assoc_score": 0.03494,
+      "count": 10,
+      "lift": 0.0,
+      "success_rate": 0.5
+    },
+    "preliminary": {
+      "assoc_score": -0.072368,
+      "count": 18,
+      "lift": -0.444444,
+      "success_rate": 0.055556
+    },
+    "preoperative": {
+      "assoc_score": 0.061243,
+      "count": 12,
+      "lift": 0.25,
+      "success_rate": 0.75
+    },
+    "presence": {
+      "assoc_score": 0.036852,
+      "count": 39,
+      "lift": 0.064103,
+      "success_rate": 0.564103
+    },
+    "present": {
+      "assoc_score": 0.006127,
+      "count": 28,
+      "lift": 0.035714,
+      "success_rate": 0.535714
+    },
+    "presented": {
+      "assoc_score": 0.051904,
+      "count": 16,
+      "lift": 0.0,
+      "success_rate": 0.5
+    },
+    "pressure": {
+      "assoc_score": 0.043349,
+      "count": 42,
+      "lift": 0.214286,
+      "success_rate": 0.714286
+    },
+    "prevalence": {
+      "assoc_score": 0.006706,
+      "count": 16,
+      "lift": 0.125,
+      "success_rate": 0.625
+    },
+    "prevent": {
+      "assoc_score": -0.037485,
+      "count": 12,
+      "lift": -0.166667,
+      "success_rate": 0.333333
+    },
+    "prevention": {
+      "assoc_score": 0.031333,
+      "count": 45,
+      "lift": 0.144444,
+      "success_rate": 0.644444
+    },
+    "previous": {
+      "assoc_score": 0.022448,
+      "count": 25,
+      "lift": -0.02,
+      "success_rate": 0.48
+    },
+    "previously": {
+      "assoc_score": -0.041515,
+      "count": 12,
+      "lift": -0.333333,
+      "success_rate": 0.166667
+    },
+    "primary": {
+      "assoc_score": -0.005694,
+      "count": 481,
+      "lift": -0.036383,
+      "success_rate": 0.463617
+    },
+    "prior": {
+      "assoc_score": -0.016737,
+      "count": 43,
+      "lift": -0.05814,
+      "success_rate": 0.44186
+    },
+    "probe": {
+      "assoc_score": 0.096894,
+      "count": 10,
+      "lift": 0.3,
+      "success_rate": 0.8
+    },
+    "problem": {
+      "assoc_score": 0.053321,
+      "count": 13,
+      "lift": 0.192308,
+      "success_rate": 0.692308
+    },
+    "problems": {
+      "assoc_score": 0.048713,
+      "count": 28,
+      "lift": 0.25,
+      "success_rate": 0.75
+    },
+    "procedure": {
+      "assoc_score": 0.038724,
+      "count": 73,
+      "lift": 0.143836,
+      "success_rate": 0.643836
+    },
+    "procedures": {
+      "assoc_score": 0.042343,
+      "count": 28,
+      "lift": 0.035714,
+      "success_rate": 0.535714
+    },
+    "process": {
+      "assoc_score": 0.056135,
+      "count": 16,
+      "lift": 0.125,
+      "success_rate": 0.625
+    },
+    "processes": {
+      "assoc_score": 0.054466,
+      "count": 11,
+      "lift": 0.409091,
+      "success_rate": 0.909091
+    },
+    "product": {
+      "assoc_score": -0.027715,
+      "count": 37,
+      "lift": -0.094595,
+      "success_rate": 0.405405
+    },
+    "products": {
+      "assoc_score": 0.011502,
+      "count": 15,
+      "lift": 0.1,
+      "success_rate": 0.6
+    },
+    "profile": {
+      "assoc_score": -0.01934,
+      "count": 33,
+      "lift": -0.136364,
+      "success_rate": 0.363636
+    },
+    "program": {
+      "assoc_score": 0.060653,
+      "count": 34,
+      "lift": 0.205882,
+      "success_rate": 0.705882
+    },
+    "progression": {
+      "assoc_score": -0.093077,
+      "count": 75,
+      "lift": -0.433333,
+      "success_rate": 0.066667
+    },
+    "progressive": {
+      "assoc_score": -0.080869,
+      "count": 23,
+      "lift": -0.195652,
+      "success_rate": 0.304348
+    },
+    "project": {
+      "assoc_score": 0.017633,
+      "count": 19,
+      "lift": 0.078947,
+      "success_rate": 0.578947
+    },
+    "promis": {
+      "assoc_score": 0.022875,
+      "count": 10,
+      "lift": -0.1,
+      "success_rate": 0.4
+    },
+    "proportion": {
+      "assoc_score": -0.044351,
+      "count": 77,
+      "lift": -0.253247,
+      "success_rate": 0.246753
+    },
+    "proposed": {
+      "assoc_score": 0.012375,
+      "count": 10,
+      "lift": -0.2,
+      "success_rate": 0.3
+    },
+    "prospective": {
+      "assoc_score": 0.009049,
+      "count": 31,
+      "lift": -0.177419,
+      "success_rate": 0.322581
+    },
+    "prostate": {
+      "assoc_score": -0.036769,
+      "count": 13,
+      "lift": -0.192308,
+      "success_rate": 0.307692
+    },
+    "protein": {
+      "assoc_score": -0.03271,
+      "count": 33,
+      "lift": -0.106061,
+      "success_rate": 0.393939
+    },
+    "protocol": {
+      "assoc_score": -0.01361,
+      "count": 28,
+      "lift": -0.071429,
+      "success_rate": 0.428571
+    },
+    "provide": {
+      "assoc_score": 0.021437,
+      "count": 44,
+      "lift": 0.090909,
+      "success_rate": 0.590909
+    },
+    "provided": {
+      "assoc_score": 0.012621,
+      "count": 16,
+      "lift": 0.0625,
+      "success_rate": 0.5625
+    },
+    "provider": {
+      "assoc_score": -0.005854,
+      "count": 82,
+      "lift": -0.060976,
+      "success_rate": 0.439024
+    },
+    "providers": {
+      "assoc_score": 0.029764,
+      "count": 10,
+      "lift": 0.1,
+      "success_rate": 0.6
+    },
+    "provides": {
+      "assoc_score": 0.0495,
+      "count": 15,
+      "lift": 0.033333,
+      "success_rate": 0.533333
+    },
+    "providing": {
+      "assoc_score": 0.048179,
+      "count": 14,
+      "lift": 0.357143,
+      "success_rate": 0.857143
+    },
+    "psychological": {
+      "assoc_score": 0.040886,
+      "count": 11,
+      "lift": 0.136364,
+      "success_rate": 0.636364
+    },
+    "public": {
+      "assoc_score": 0.044163,
+      "count": 11,
+      "lift": 0.409091,
+      "success_rate": 0.909091
+    },
+    "pulmonary": {
+      "assoc_score": 0.015986,
+      "count": 22,
+      "lift": -0.090909,
+      "success_rate": 0.409091
+    },
+    "pulse": {
+      "assoc_score": 0.016184,
+      "count": 10,
+      "lift": 0.3,
+      "success_rate": 0.8
+    },
+    "purpose": {
+      "assoc_score": -0.007655,
+      "count": 465,
+      "lift": -0.046237,
+      "success_rate": 0.453763
+    },
+    "qol": {
+      "assoc_score": 0.000907,
+      "count": 19,
+      "lift": -0.078947,
+      "success_rate": 0.421053
+    },
+    "quadruple": {
+      "assoc_score": -0.015643,
+      "count": 45,
+      "lift": -0.077778,
+      "success_rate": 0.422222
+    },
+    "qualitative": {
+      "assoc_score": 0.034501,
+      "count": 15,
+      "lift": 0.166667,
+      "success_rate": 0.666667
+    },
+    "quality": {
+      "assoc_score": 0.016838,
+      "count": 111,
+      "lift": -0.022523,
+      "success_rate": 0.477477
+    },
+    "quantifiable": {
+      "assoc_score": -0.068562,
+      "count": 10,
+      "lift": 0.2,
+      "success_rate": 0.7
+    },
+    "quantify": {
+      "assoc_score": 0.034815,
+      "count": 10,
+      "lift": 0.1,
+      "success_rate": 0.6
+    },
+    "quantitative": {
+      "assoc_score": 0.036703,
+      "count": 19,
+      "lift": 0.184211,
+      "success_rate": 0.684211
+    },
+    "question": {
+      "assoc_score": 0.034861,
+      "count": 45,
+      "lift": 0.166667,
+      "success_rate": 0.666667
+    },
+    "questionnaire": {
+      "assoc_score": 0.019318,
+      "count": 122,
+      "lift": -0.032787,
+      "success_rate": 0.467213
+    },
+    "questionnaires": {
+      "assoc_score": 0.016176,
+      "count": 26,
+      "lift": 0.038462,
+      "success_rate": 0.538462
+    },
+    "questions": {
+      "assoc_score": 0.038958,
+      "count": 73,
+      "lift": 0.157534,
+      "success_rate": 0.657534
+    },
+    "radiation": {
+      "assoc_score": -0.031931,
+      "count": 13,
+      "lift": -0.346154,
+      "success_rate": 0.153846
+    },
+    "randomised": {
+      "assoc_score": 0.023548,
+      "count": 12,
+      "lift": -0.25,
+      "success_rate": 0.25
+    },
+    "randomization": {
+      "assoc_score": -0.042382,
+      "count": 19,
+      "lift": -0.394737,
+      "success_rate": 0.105263
+    },
+    "randomized": {
+      "assoc_score": -0.000726,
+      "count": 338,
+      "lift": -0.011834,
+      "success_rate": 0.488166
+    },
+    "randomly": {
+      "assoc_score": 0.034305,
+      "count": 23,
+      "lift": 0.195652,
+      "success_rate": 0.695652
+    },
+    "range": {
+      "assoc_score": 0.045786,
+      "count": 74,
+      "lift": 0.094595,
+      "success_rate": 0.594595
+    },
+    "ranges": {
+      "assoc_score": 0.047673,
+      "count": 38,
+      "lift": 0.157895,
+      "success_rate": 0.657895
+    },
+    "ranging": {
+      "assoc_score": 0.035009,
+      "count": 39,
+      "lift": 0.064103,
+      "success_rate": 0.564103
+    },
+    "rate": {
+      "assoc_score": -0.033793,
+      "count": 178,
+      "lift": -0.162921,
+      "success_rate": 0.337079
+    },
+    "rated": {
+      "assoc_score": 0.020361,
+      "count": 32,
+      "lift": -0.09375,
+      "success_rate": 0.40625
+    },
+    "rates": {
+      "assoc_score": -0.002055,
+      "count": 28,
+      "lift": -0.071429,
+      "success_rate": 0.428571
+    },
+    "rating": {
+      "assoc_score": 0.022645,
+      "count": 50,
+      "lift": -0.06,
+      "success_rate": 0.44
+    },
+    "ratings": {
+      "assoc_score": 0.033806,
+      "count": 10,
+      "lift": 0.1,
+      "success_rate": 0.6
+    },
+    "ratio": {
+      "assoc_score": -0.016259,
+      "count": 35,
+      "lift": 0.014286,
+      "success_rate": 0.514286
+    },
+    "reach": {
+      "assoc_score": -0.009777,
+      "count": 28,
+      "lift": 0.0,
+      "success_rate": 0.5
+    },
+    "reactions": {
+      "assoc_score": 0.001366,
+      "count": 11,
+      "lift": 0.045455,
+      "success_rate": 0.545455
+    },
+    "reactive": {
+      "assoc_score": -0.017006,
+      "count": 15,
+      "lift": -0.033333,
+      "success_rate": 0.466667
+    },
+    "real": {
+      "assoc_score": 0.025575,
+      "count": 17,
+      "lift": 0.147059,
+      "success_rate": 0.647059
+    },
+    "reason": {
+      "assoc_score": -0.044583,
+      "count": 10,
+      "lift": -0.2,
+      "success_rate": 0.3
+    },
+    "receive": {
+      "assoc_score": -0.017734,
+      "count": 60,
+      "lift": -0.116667,
+      "success_rate": 0.383333
+    },
+    "received": {
+      "assoc_score": -0.020327,
+      "count": 19,
+      "lift": -0.078947,
+      "success_rate": 0.421053
+    },
+    "receiving": {
+      "assoc_score": -0.009481,
+      "count": 34,
+      "lift": -0.088235,
+      "success_rate": 0.411765
+    },
+    "recent": {
+      "assoc_score": 0.055192,
+      "count": 19,
+      "lift": 0.131579,
+      "success_rate": 0.631579
+    },
+    "receptor": {
+      "assoc_score": -0.055325,
+      "count": 13,
+      "lift": -0.269231,
+      "success_rate": 0.230769
+    },
+    "recist": {
+      "assoc_score": -0.10705,
+      "count": 36,
+      "lift": -0.472222,
+      "success_rate": 0.027778
+    },
+    "recommended": {
+      "assoc_score": -0.078293,
+      "count": 23,
+      "lift": -0.369565,
+      "success_rate": 0.130435
+    },
+    "record": {
+      "assoc_score": 0.040844,
+      "count": 14,
+      "lift": 0.214286,
+      "success_rate": 0.714286
+    },
+    "recorded": {
+      "assoc_score": 0.073897,
+      "count": 52,
+      "lift": 0.269231,
+      "success_rate": 0.769231
+    },
+    "recording": {
+      "assoc_score": 0.072698,
+      "count": 11,
+      "lift": 0.136364,
+      "success_rate": 0.636364
+    },
+    "records": {
+      "assoc_score": 0.017693,
+      "count": 14,
+      "lift": 0.071429,
+      "success_rate": 0.571429
+    },
+    "recovery": {
+      "assoc_score": -0.019386,
+      "count": 21,
+      "lift": -0.02381,
+      "success_rate": 0.47619
+    },
+    "recruitment": {
+      "assoc_score": 0.001932,
+      "count": 10,
+      "lift": -0.2,
+      "success_rate": 0.3
+    },
+    "recurrence": {
+      "assoc_score": -0.033143,
+      "count": 12,
+      "lift": -0.166667,
+      "success_rate": 0.333333
+    },
+    "recurrent": {
+      "assoc_score": -0.071577,
+      "count": 19,
+      "lift": -0.289474,
+      "success_rate": 0.210526
+    },
+    "reduce": {
+      "assoc_score": 0.025017,
+      "count": 43,
+      "lift": 0.127907,
+      "success_rate": 0.627907
+    },
+    "reduced": {
+      "assoc_score": 0.082333,
+      "count": 13,
+      "lift": 0.269231,
+      "success_rate": 0.769231
+    },
+    "reducing": {
+      "assoc_score": 0.024477,
+      "count": 21,
+      "lift": 0.071429,
+      "success_rate": 0.571429
+    },
+    "reduction": {
+      "assoc_score": 0.001136,
+      "count": 52,
+      "lift": -0.038462,
+      "success_rate": 0.461538
+    },
+    "reference": {
+      "assoc_score": 0.006456,
+      "count": 17,
+      "lift": 0.205882,
+      "success_rate": 0.705882
+    },
+    "referred": {
+      "assoc_score": 0.000441,
+      "count": 10,
+      "lift": 0.2,
+      "success_rate": 0.7
+    },
+    "refractory": {
+      "assoc_score": -0.113677,
+      "count": 25,
+      "lift": -0.42,
+      "success_rate": 0.08
+    },
+    "regarding": {
+      "assoc_score": 0.027928,
+      "count": 19,
+      "lift": -0.078947,
+      "success_rate": 0.421053
+    },
+    "regimen": {
+      "assoc_score": -0.078414,
+      "count": 11,
+      "lift": -0.136364,
+      "success_rate": 0.363636
+    },
+    "region": {
+      "assoc_score": 0.039862,
+      "count": 20,
+      "lift": 0.0,
+      "success_rate": 0.5
+    },
+    "regression": {
+      "assoc_score": 0.004795,
+      "count": 11,
+      "lift": 0.318182,
+      "success_rate": 0.818182
+    },
+    "regular": {
+      "assoc_score": 0.036702,
+      "count": 12,
+      "lift": 0.0,
+      "success_rate": 0.5
+    },
+    "rehabilitation": {
+      "assoc_score": 0.08674,
+      "count": 16,
+      "lift": 0.3125,
+      "success_rate": 0.8125
+    },
+    "relapse": {
+      "assoc_score": -0.075122,
+      "count": 16,
+      "lift": -0.3125,
+      "success_rate": 0.1875
+    },
+    "relapsed": {
+      "assoc_score": -0.110107,
+      "count": 18,
+      "lift": -0.5,
+      "success_rate": 0.0
+    },
+    "related": {
+      "assoc_score": -0.009828,
+      "count": 154,
+      "lift": -0.136364,
+      "success_rate": 0.363636
+    },
+    "relation": {
+      "assoc_score": 0.013159,
+      "count": 11,
+      "lift": -0.045455,
+      "success_rate": 0.454545
+    },
+    "relationship": {
+      "assoc_score": -0.012915,
+      "count": 35,
+      "lift": -0.1,
+      "success_rate": 0.4
+    },
+    "relative": {
+      "assoc_score": -0.011662,
+      "count": 27,
+      "lift": -0.055556,
+      "success_rate": 0.444444
+    },
+    "release": {
+      "assoc_score": -0.008251,
+      "count": 10,
+      "lift": 0.0,
+      "success_rate": 0.5
+    },
+    "relevant": {
+      "assoc_score": 0.017364,
+      "count": 22,
+      "lift": 0.045455,
+      "success_rate": 0.545455
+    },
+    "reliability": {
+      "assoc_score": 0.079567,
+      "count": 26,
+      "lift": 0.269231,
+      "success_rate": 0.769231
+    },
+    "reliable": {
+      "assoc_score": 0.09965,
+      "count": 14,
+      "lift": 0.285714,
+      "success_rate": 0.785714
+    },
+    "remission": {
+      "assoc_score": -0.063298,
+      "count": 24,
+      "lift": -0.416667,
+      "success_rate": 0.083333
+    },
+    "renal": {
+      "assoc_score": -0.040513,
+      "count": 12,
+      "lift": -0.083333,
+      "success_rate": 0.416667
+    },
+    "repeated": {
+      "assoc_score": 0.079999,
+      "count": 18,
+      "lift": 0.055556,
+      "success_rate": 0.555556
+    },
+    "report": {
+      "assoc_score": 0.032369,
+      "count": 39,
+      "lift": -0.064103,
+      "success_rate": 0.435897
+    },
+    "reported": {
+      "assoc_score": 0.020284,
+      "count": 92,
+      "lift": -0.032609,
+      "success_rate": 0.467391
+    },
+    "reporting": {
+      "assoc_score": -0.00818,
+      "count": 15,
+      "lift": -0.166667,
+      "success_rate": 0.333333
+    },
+    "representing": {
+      "assoc_score": 0.038994,
+      "count": 17,
+      "lift": 0.323529,
+      "success_rate": 0.823529
+    },
+    "represents": {
+      "assoc_score": 0.026576,
+      "count": 19,
+      "lift": 0.026316,
+      "success_rate": 0.526316
+    },
+    "require": {
+      "assoc_score": 0.045055,
+      "count": 18,
+      "lift": 0.111111,
+      "success_rate": 0.611111
+    },
+    "required": {
+      "assoc_score": -0.000849,
+      "count": 22,
+      "lift": 0.0,
+      "success_rate": 0.5
+    },
+    "requires": {
+      "assoc_score": 0.052261,
+      "count": 15,
+      "lift": 0.166667,
+      "success_rate": 0.666667
+    },
+    "requiring": {
+      "assoc_score": -0.006699,
+      "count": 17,
+      "lift": 0.088235,
+      "success_rate": 0.588235
+    },
+    "rescue": {
+      "assoc_score": -0.005927,
+      "count": 10,
+      "lift": 0.1,
+      "success_rate": 0.6
+    },
+    "research": {
+      "assoc_score": 0.024429,
+      "count": 114,
+      "lift": 0.096491,
+      "success_rate": 0.596491
+    },
+    "researchers": {
+      "assoc_score": 0.037019,
+      "count": 36,
+      "lift": 0.166667,
+      "success_rate": 0.666667
+    },
+    "residual": {
+      "assoc_score": -0.011442,
+      "count": 14,
+      "lift": 0.071429,
+      "success_rate": 0.571429
+    },
+    "resistance": {
+      "assoc_score": -0.005347,
+      "count": 18,
+      "lift": -0.222222,
+      "success_rate": 0.277778
+    },
+    "resolution": {
+      "assoc_score": 0.001279,
+      "count": 13,
+      "lift": -0.115385,
+      "success_rate": 0.384615
+    },
+    "resonance": {
+      "assoc_score": -0.013401,
+      "count": 19,
+      "lift": -0.236842,
+      "success_rate": 0.263158
+    },
+    "respectively": {
+      "assoc_score": 0.017033,
+      "count": 10,
+      "lift": -0.2,
+      "success_rate": 0.3
+    },
+    "respiratory": {
+      "assoc_score": 0.035016,
+      "count": 24,
+      "lift": 0.125,
+      "success_rate": 0.625
+    },
+    "respond": {
+      "assoc_score": 0.008618,
+      "count": 10,
+      "lift": 0.0,
+      "success_rate": 0.5
+    },
+    "response": {
+      "assoc_score": -0.057587,
+      "count": 121,
+      "lift": -0.252066,
+      "success_rate": 0.247934
+    },
+    "responses": {
+      "assoc_score": 0.008204,
+      "count": 40,
+      "lift": -0.05,
+      "success_rate": 0.45
+    },
+    "rest": {
+      "assoc_score": 0.090019,
+      "count": 14,
+      "lift": 0.214286,
+      "success_rate": 0.714286
+    },
+    "resting": {
+      "assoc_score": 0.054707,
+      "count": 14,
+      "lift": 0.071429,
+      "success_rate": 0.571429
+    },
+    "result": {
+      "assoc_score": 0.03493,
+      "count": 25,
+      "lift": 0.18,
+      "success_rate": 0.68
+    },
+    "resulting": {
+      "assoc_score": 0.024068,
+      "count": 10,
+      "lift": -0.1,
+      "success_rate": 0.4
+    },
+    "results": {
+      "assoc_score": 0.038085,
+      "count": 65,
+      "lift": 0.192308,
+      "success_rate": 0.692308
+    },
+    "retrospective": {
+      "assoc_score": 0.027242,
+      "count": 11,
+      "lift": 0.227273,
+      "success_rate": 0.727273
+    },
+    "return": {
+      "assoc_score": 0.038537,
+      "count": 19,
+      "lift": 0.131579,
+      "success_rate": 0.631579
+    },
+    "review": {
+      "assoc_score": -0.020779,
+      "count": 21,
+      "lift": 0.071429,
+      "success_rate": 0.571429
+    },
+    "right": {
+      "assoc_score": 0.092361,
+      "count": 20,
+      "lift": 0.25,
+      "success_rate": 0.75
+    },
+    "risk": {
+      "assoc_score": 0.011704,
+      "count": 59,
+      "lift": 0.09322,
+      "success_rate": 0.59322
+    },
+    "role": {
+      "assoc_score": 0.05382,
+      "count": 25,
+      "lift": 0.34,
+      "success_rate": 0.84
+    },
+    "routine": {
+      "assoc_score": 0.055471,
+      "count": 18,
+      "lift": 0.055556,
+      "success_rate": 0.555556
+    },
+    "rp2d": {
+      "assoc_score": -0.112047,
+      "count": 12,
+      "lift": -0.5,
+      "success_rate": 0.0
+    },
+    "saes": {
+      "assoc_score": -0.069271,
+      "count": 47,
+      "lift": -0.287234,
+      "success_rate": 0.212766
+    },
+    "safe": {
+      "assoc_score": -0.005011,
+      "count": 19,
+      "lift": -0.184211,
+      "success_rate": 0.315789
+    },
+    "safety": {
+      "assoc_score": -0.047299,
+      "count": 173,
+      "lift": -0.234104,
+      "success_rate": 0.265896
+    },
+    "same": {
+      "assoc_score": 0.054193,
+      "count": 40,
+      "lift": 0.125,
+      "success_rate": 0.625
+    },
+    "sample": {
+      "assoc_score": 0.027916,
+      "count": 39,
+      "lift": 0.217949,
+      "success_rate": 0.717949
+    },
+    "samples": {
+      "assoc_score": -0.013469,
+      "count": 46,
+      "lift": 0.065217,
+      "success_rate": 0.565217
+    },
+    "sampling": {
+      "assoc_score": 0.036994,
+      "count": 13,
+      "lift": 0.423077,
+      "success_rate": 0.923077
+    },
+    "san": {
+      "assoc_score": 0.018097,
+      "count": 11,
+      "lift": 0.045455,
+      "success_rate": 0.545455
+    },
+    "satisfaction": {
+      "assoc_score": 0.0437,
+      "count": 36,
+      "lift": 0.055556,
+      "success_rate": 0.555556
+    },
+    "satisfied": {
+      "assoc_score": 0.059952,
+      "count": 12,
+      "lift": 0.25,
+      "success_rate": 0.75
+    },
+    "scale": {
+      "assoc_score": 0.036613,
+      "count": 197,
+      "lift": 0.048223,
+      "success_rate": 0.548223
+    },
+    "scales": {
+      "assoc_score": 0.025357,
+      "count": 26,
+      "lift": -0.038462,
+      "success_rate": 0.461538
+    },
+    "scan": {
+      "assoc_score": -0.029353,
+      "count": 13,
+      "lift": -0.269231,
+      "success_rate": 0.230769
+    },
+    "scans": {
+      "assoc_score": 0.010379,
+      "count": 12,
+      "lift": 0.083333,
+      "success_rate": 0.583333
+    },
+    "schedule": {
+      "assoc_score": -0.023485,
+      "count": 11,
+      "lift": -0.136364,
+      "success_rate": 0.363636
+    },
+    "scheduled": {
+      "assoc_score": 0.000361,
+      "count": 13,
+      "lift": 0.038462,
+      "success_rate": 0.538462
+    },
+    "school": {
+      "assoc_score": 0.012944,
+      "count": 12,
+      "lift": -0.083333,
+      "success_rate": 0.416667
+    },
+    "science": {
+      "assoc_score": 0.024496,
+      "count": 24,
+      "lift": 0.166667,
+      "success_rate": 0.666667
+    },
+    "sciences": {
+      "assoc_score": -0.00608,
+      "count": 13,
+      "lift": -0.192308,
+      "success_rate": 0.307692
+    },
+    "score": {
+      "assoc_score": 0.031693,
+      "count": 195,
+      "lift": 0.033333,
+      "success_rate": 0.533333
+    },
+    "scored": {
+      "assoc_score": 0.043104,
+      "count": 45,
+      "lift": 0.1,
+      "success_rate": 0.6
+    },
+    "scores": {
+      "assoc_score": 0.034441,
+      "count": 116,
+      "lift": 0.103448,
+      "success_rate": 0.603448
+    },
+    "scoring": {
+      "assoc_score": 0.046191,
+      "count": 23,
+      "lift": 0.195652,
+      "success_rate": 0.695652
+    },
+    "screen": {
+      "assoc_score": 0.014695,
+      "count": 10,
+      "lift": 0.0,
+      "success_rate": 0.5
+    },
+    "screening": {
+      "assoc_score": -0.023241,
+      "count": 45,
+      "lift": -0.055556,
+      "success_rate": 0.444444
+    },
+    "second": {
+      "assoc_score": 0.037052,
+      "count": 38,
+      "lift": 0.131579,
+      "success_rate": 0.631579
+    },
+    "secondary": {
+      "assoc_score": -0.00012,
+      "count": 42,
+      "lift": -0.142857,
+      "success_rate": 0.357143
+    },
+    "seconds": {
+      "assoc_score": 0.101992,
+      "count": 20,
+      "lift": 0.45,
+      "success_rate": 0.95
+    },
+    "section": {
+      "assoc_score": 0.084856,
+      "count": 10,
+      "lift": 0.3,
+      "success_rate": 0.8
+    },
+    "see": {
+      "assoc_score": -0.013011,
+      "count": 21,
+      "lift": -0.119048,
+      "success_rate": 0.380952
+    },
+    "seen": {
+      "assoc_score": 0.016695,
+      "count": 14,
+      "lift": 0.285714,
+      "success_rate": 0.785714
+    },
+    "selected": {
+      "assoc_score": 0.016057,
+      "count": 16,
+      "lift": -0.0625,
+      "success_rate": 0.4375
+    },
+    "self": {
+      "assoc_score": 0.037642,
+      "count": 79,
+      "lift": 0.06962,
+      "success_rate": 0.56962
+    },
+    "sensitivity": {
+      "assoc_score": 0.022897,
+      "count": 25,
+      "lift": 0.06,
+      "success_rate": 0.56
+    },
+    "separately": {
+      "assoc_score": 0.035676,
+      "count": 10,
+      "lift": 0.1,
+      "success_rate": 0.6
+    },
+    "sequential": {
+      "assoc_score": -0.073277,
+      "count": 49,
+      "lift": -0.336735,
+      "success_rate": 0.163265
+    },
+    "serious": {
+      "assoc_score": -0.040836,
+      "count": 70,
+      "lift": -0.257143,
+      "success_rate": 0.242857
+    },
+    "serum": {
+      "assoc_score": -0.045194,
+      "count": 40,
+      "lift": -0.125,
+      "success_rate": 0.375
+    },
+    "service": {
+      "assoc_score": 0.023119,
+      "count": 10,
+      "lift": 0.1,
+      "success_rate": 0.6
+    },
+    "services": {
+      "assoc_score": 0.007386,
+      "count": 17,
+      "lift": 0.205882,
+      "success_rate": 0.705882
+    },
+    "session": {
+      "assoc_score": 0.045683,
+      "count": 12,
+      "lift": 0.25,
+      "success_rate": 0.75
+    },
+    "sessions": {
+      "assoc_score": 0.060849,
+      "count": 24,
+      "lift": 0.208333,
+      "success_rate": 0.708333
+    },
+    "set": {
+      "assoc_score": 0.048298,
+      "count": 15,
+      "lift": 0.3,
+      "success_rate": 0.8
+    },
+    "setting": {
+      "assoc_score": -0.015206,
+      "count": 16,
+      "lift": 0.0,
+      "success_rate": 0.5
+    },
+    "seven": {
+      "assoc_score": 0.053332,
+      "count": 14,
+      "lift": 0.214286,
+      "success_rate": 0.714286
+    },
+    "several": {
+      "assoc_score": 0.047312,
+      "count": 15,
+      "lift": 0.033333,
+      "success_rate": 0.533333
+    },
+    "severe": {
+      "assoc_score": 0.014994,
+      "count": 84,
+      "lift": 0.011905,
+      "success_rate": 0.511905
+    },
+    "severity": {
+      "assoc_score": -0.003015,
+      "count": 105,
+      "lift": -0.080952,
+      "success_rate": 0.419048
+    },
+    "sex": {
+      "assoc_score": 0.052016,
+      "count": 14,
+      "lift": 0.214286,
+      "success_rate": 0.714286
+    },
+    "sexual": {
+      "assoc_score": 0.008605,
+      "count": 15,
+      "lift": -0.166667,
+      "success_rate": 0.333333
+    },
+    "sham": {
+      "assoc_score": 0.020093,
+      "count": 16,
+      "lift": -0.0625,
+      "success_rate": 0.4375
+    },
+    "short": {
+      "assoc_score": 0.020944,
+      "count": 45,
+      "lift": 0.011111,
+      "success_rate": 0.511111
+    },
+    "shoulder": {
+      "assoc_score": 0.139525,
+      "count": 11,
+      "lift": 0.5,
+      "success_rate": 1.0
+    },
+    "show": {
+      "assoc_score": 0.038131,
+      "count": 13,
+      "lift": 0.115385,
+      "success_rate": 0.615385
+    },
+    "shown": {
+      "assoc_score": 0.046335,
+      "count": 23,
+      "lift": 0.108696,
+      "success_rate": 0.608696
+    },
+    "side": {
+      "assoc_score": -0.022174,
+      "count": 35,
+      "lift": -0.185714,
+      "success_rate": 0.314286
+    },
+    "sign": {
+      "assoc_score": -0.017489,
+      "count": 11,
+      "lift": 0.045455,
+      "success_rate": 0.545455
+    },
+    "significant": {
+      "assoc_score": -0.013468,
+      "count": 57,
+      "lift": -0.026316,
+      "success_rate": 0.473684
+    },
+    "signs": {
+      "assoc_score": -0.03315,
+      "count": 42,
+      "lift": -0.071429,
+      "success_rate": 0.428571
+    },
+    "similar": {
+      "assoc_score": 0.052845,
+      "count": 13,
+      "lift": 0.269231,
+      "success_rate": 0.769231
+    },
+    "simple": {
+      "assoc_score": 0.017848,
+      "count": 13,
+      "lift": 0.038462,
+      "success_rate": 0.538462
+    },
+    "since": {
+      "assoc_score": 0.022209,
+      "count": 13,
+      "lift": -0.038462,
+      "success_rate": 0.461538
+    },
+    "single": {
+      "assoc_score": -0.003295,
+      "count": 235,
+      "lift": 0.014894,
+      "success_rate": 0.514894
+    },
+    "site": {
+      "assoc_score": -0.002239,
+      "count": 37,
+      "lift": 0.067568,
+      "success_rate": 0.567568
+    },
+    "sites": {
+      "assoc_score": 0.013042,
+      "count": 14,
+      "lift": 0.0,
+      "success_rate": 0.5
+    },
+    "sitting": {
+      "assoc_score": 0.102057,
+      "count": 12,
+      "lift": 0.416667,
+      "success_rate": 0.916667
+    },
+    "six": {
+      "assoc_score": 0.022252,
+      "count": 26,
+      "lift": 0.0,
+      "success_rate": 0.5
+    },
+    "size": {
+      "assoc_score": 0.015086,
+      "count": 25,
+      "lift": 0.02,
+      "success_rate": 0.52
+    },
+    "skills": {
+      "assoc_score": 0.067486,
+      "count": 19,
+      "lift": 0.342105,
+      "success_rate": 0.842105
+    },
+    "skin": {
+      "assoc_score": 0.000458,
+      "count": 32,
+      "lift": 0.0,
+      "success_rate": 0.5
+    },
+    "sleep": {
+      "assoc_score": 0.03919,
+      "count": 31,
+      "lift": 0.112903,
+      "success_rate": 0.612903
+    },
+    "small": {
+      "assoc_score": -0.014423,
+      "count": 33,
+      "lift": -0.075758,
+      "success_rate": 0.424242
+    },
+    "social": {
+      "assoc_score": 0.045231,
+      "count": 26,
+      "lift": 0.115385,
+      "success_rate": 0.615385
+    },
+    "soft": {
+      "assoc_score": 0.063652,
+      "count": 10,
+      "lift": 0.1,
+      "success_rate": 0.6
+    },
+    "software": {
+      "assoc_score": 0.052935,
+      "count": 17,
+      "lift": 0.147059,
+      "success_rate": 0.647059
+    },
+    "solid": {
+      "assoc_score": -0.087093,
+      "count": 35,
+      "lift": -0.328571,
+      "success_rate": 0.171429
+    },
+    "special": {
+      "assoc_score": -0.031029,
+      "count": 15,
+      "lift": -0.3,
+      "success_rate": 0.2
+    },
+    "specific": {
+      "assoc_score": 0.013675,
+      "count": 71,
+      "lift": 0.035211,
+      "success_rate": 0.535211
+    },
+    "specifically": {
+      "assoc_score": 0.068487,
+      "count": 15,
+      "lift": 0.1,
+      "success_rate": 0.6
+    },
+    "speed": {
+      "assoc_score": 0.106221,
+      "count": 10,
+      "lift": 0.3,
+      "success_rate": 0.8
+    },
+    "spinal": {
+      "assoc_score": 0.097833,
+      "count": 15,
+      "lift": 0.233333,
+      "success_rate": 0.733333
+    },
+    "spontaneous": {
+      "assoc_score": -0.001231,
+      "count": 14,
+      "lift": 0.0,
+      "success_rate": 0.5
+    },
+    "spread": {
+      "assoc_score": -0.098896,
+      "count": 13,
+      "lift": -0.269231,
+      "success_rate": 0.230769
+    },
+    "squamous": {
+      "assoc_score": -0.094175,
+      "count": 10,
+      "lift": -0.5,
+      "success_rate": 0.0
+    },
+    "stability": {
+      "assoc_score": 0.093433,
+      "count": 10,
+      "lift": 0.3,
+      "success_rate": 0.8
+    },
+    "stable": {
+      "assoc_score": -0.061422,
+      "count": 33,
+      "lift": -0.257576,
+      "success_rate": 0.242424
+    },
+    "stage": {
+      "assoc_score": -0.035988,
+      "count": 26,
+      "lift": -0.153846,
+      "success_rate": 0.346154
+    },
+    "standard": {
+      "assoc_score": 0.014285,
+      "count": 85,
+      "lift": -0.088235,
+      "success_rate": 0.411765
+    },
+    "standardized": {
+      "assoc_score": 0.039547,
+      "count": 20,
+      "lift": 0.2,
+      "success_rate": 0.7
+    },
+    "standing": {
+      "assoc_score": 0.110304,
+      "count": 12,
+      "lift": 0.416667,
+      "success_rate": 0.916667
+    },
+    "start": {
+      "assoc_score": -0.024827,
+      "count": 44,
+      "lift": -0.113636,
+      "success_rate": 0.386364
+    },
+    "starting": {
+      "assoc_score": -0.024633,
+      "count": 15,
+      "lift": 0.033333,
+      "success_rate": 0.533333
+    },
+    "state": {
+      "assoc_score": 0.0026,
+      "count": 46,
+      "lift": 0.0,
+      "success_rate": 0.5
+    },
+    "states": {
+      "assoc_score": 0.009283,
+      "count": 16,
+      "lift": 0.0,
+      "success_rate": 0.5
+    },
+    "statistical": {
+      "assoc_score": 0.064004,
+      "count": 13,
+      "lift": 0.423077,
+      "success_rate": 0.923077
+    },
+    "status": {
+      "assoc_score": 0.014778,
+      "count": 55,
+      "lift": -0.063636,
+      "success_rate": 0.436364
+    },
+    "stay": {
+      "assoc_score": 0.026572,
+      "count": 22,
+      "lift": 0.181818,
+      "success_rate": 0.681818
+    },
+    "stem": {
+      "assoc_score": -0.06968,
+      "count": 14,
+      "lift": -0.357143,
+      "success_rate": 0.142857
+    },
+    "stimulation": {
+      "assoc_score": 0.037424,
+      "count": 18,
+      "lift": 0.111111,
+      "success_rate": 0.611111
+    },
+    "stop": {
+      "assoc_score": -0.089421,
+      "count": 15,
+      "lift": -0.3,
+      "success_rate": 0.2
+    },
+    "strategies": {
+      "assoc_score": 0.040875,
+      "count": 10,
+      "lift": 0.4,
+      "success_rate": 0.9
+    },
+    "strategy": {
+      "assoc_score": 0.038392,
+      "count": 10,
+      "lift": 0.1,
+      "success_rate": 0.6
+    },
+    "strength": {
+      "assoc_score": 0.102936,
+      "count": 25,
+      "lift": 0.3,
+      "success_rate": 0.8
+    },
+    "stress": {
+      "assoc_score": 0.047278,
+      "count": 21,
+      "lift": 0.261905,
+      "success_rate": 0.761905
+    },
+    "stroke": {
+      "assoc_score": 0.026943,
+      "count": 28,
+      "lift": 0.035714,
+      "success_rate": 0.535714
+    },
+    "strongly": {
+      "assoc_score": 0.04528,
+      "count": 11,
+      "lift": 0.136364,
+      "success_rate": 0.636364
+    },
+    "structural": {
+      "assoc_score": 0.00642,
+      "count": 10,
+      "lift": -0.1,
+      "success_rate": 0.4
+    },
+    "structure": {
+      "assoc_score": 0.080177,
+      "count": 10,
+      "lift": 0.2,
+      "success_rate": 0.7
+    },
+    "studies": {
+      "assoc_score": 0.029377,
+      "count": 63,
+      "lift": -0.007937,
+      "success_rate": 0.492063
+    },
+    "study": {
+      "assoc_score": -0.004244,
+      "count": 466,
+      "lift": -0.015021,
+      "success_rate": 0.484979
+    },
+    "sub": {
+      "assoc_score": 0.032286,
+      "count": 23,
+      "lift": 0.065217,
+      "success_rate": 0.565217
+    },
+    "subject": {
+      "assoc_score": 0.028912,
+      "count": 37,
+      "lift": 0.013514,
+      "success_rate": 0.513514
+    },
+    "subjective": {
+      "assoc_score": 0.049875,
+      "count": 21,
+      "lift": 0.166667,
+      "success_rate": 0.666667
+    },
+    "subjects": {
+      "assoc_score": -0.017956,
+      "count": 96,
+      "lift": -0.135417,
+      "success_rate": 0.364583
+    },
+    "subscale": {
+      "assoc_score": 0.02964,
+      "count": 18,
+      "lift": 0.0,
+      "success_rate": 0.5
+    },
+    "subscales": {
+      "assoc_score": 0.047884,
+      "count": 14,
+      "lift": 0.214286,
+      "success_rate": 0.714286
+    },
+    "subsequent": {
+      "assoc_score": -0.006892,
+      "count": 13,
+      "lift": -0.192308,
+      "success_rate": 0.307692
+    },
+    "substance": {
+      "assoc_score": -0.023567,
+      "count": 10,
+      "lift": -0.1,
+      "success_rate": 0.4
+    },
+    "success": {
+      "assoc_score": 0.054056,
+      "count": 10,
+      "lift": 0.1,
+      "success_rate": 0.6
+    },
+    "successful": {
+      "assoc_score": 0.010446,
+      "count": 13,
+      "lift": 0.038462,
+      "success_rate": 0.538462
+    },
+    "sum": {
+      "assoc_score": -0.000946,
+      "count": 17,
+      "lift": -0.029412,
+      "success_rate": 0.470588
+    },
+    "summary": {
+      "assoc_score": 0.027458,
+      "count": 16,
+      "lift": 0.0625,
+      "success_rate": 0.5625
+    },
+    "supplement": {
+      "assoc_score": 0.02369,
+      "count": 14,
+      "lift": 0.214286,
+      "success_rate": 0.714286
+    },
+    "support": {
+      "assoc_score": 0.048221,
+      "count": 20,
+      "lift": 0.3,
+      "success_rate": 0.8
+    },
+    "supportive": {
+      "assoc_score": 0.034589,
+      "count": 23,
+      "lift": 0.108696,
+      "success_rate": 0.608696
+    },
+    "surface": {
+      "assoc_score": 0.021958,
+      "count": 27,
+      "lift": 0.12963,
+      "success_rate": 0.62963
+    },
+    "surgery": {
+      "assoc_score": 0.044412,
+      "count": 49,
+      "lift": 0.071429,
+      "success_rate": 0.571429
+    },
+    "surgical": {
+      "assoc_score": 0.035569,
+      "count": 42,
+      "lift": 0.0,
+      "success_rate": 0.5
+    },
+    "survey": {
+      "assoc_score": 0.035358,
+      "count": 28,
+      "lift": 0.142857,
+      "success_rate": 0.642857
+    },
+    "surveys": {
+      "assoc_score": 0.026915,
+      "count": 10,
+      "lift": 0.4,
+      "success_rate": 0.9
+    },
+    "survival": {
+      "assoc_score": -0.085575,
+      "count": 79,
+      "lift": -0.398734,
+      "success_rate": 0.101266
+    },
+    "symptom": {
+      "assoc_score": 0.001417,
+      "count": 47,
+      "lift": -0.031915,
+      "success_rate": 0.468085
+    },
+    "symptoms": {
+      "assoc_score": 0.019615,
+      "count": 96,
+      "lift": 0.010417,
+      "success_rate": 0.510417
+    },
+    "syndrome": {
+      "assoc_score": -0.012159,
+      "count": 29,
+      "lift": 0.017241,
+      "success_rate": 0.517241
+    },
+    "system": {
+      "assoc_score": 0.018577,
+      "count": 84,
+      "lift": -0.02381,
+      "success_rate": 0.47619
+    },
+    "systemic": {
+      "assoc_score": -0.060703,
+      "count": 19,
+      "lift": -0.131579,
+      "success_rate": 0.368421
+    },
+    "systems": {
+      "assoc_score": 0.012232,
+      "count": 16,
+      "lift": 0.1875,
+      "success_rate": 0.6875
+    },
+    "systolic": {
+      "assoc_score": 0.01363,
+      "count": 16,
+      "lift": 0.0625,
+      "success_rate": 0.5625
+    },
+    "tablet": {
+      "assoc_score": -0.000535,
+      "count": 14,
+      "lift": 0.0,
+      "success_rate": 0.5
+    },
+    "tablets": {
+      "assoc_score": -0.020399,
+      "count": 17,
+      "lift": 0.147059,
+      "success_rate": 0.647059
+    },
+    "take": {
+      "assoc_score": 0.001476,
+      "count": 35,
+      "lift": 0.042857,
+      "success_rate": 0.542857
+    },
+    "taken": {
+      "assoc_score": 0.035146,
+      "count": 34,
+      "lift": 0.117647,
+      "success_rate": 0.617647
+    },
+    "taking": {
+      "assoc_score": -0.013389,
+      "count": 18,
+      "lift": -0.111111,
+      "success_rate": 0.388889
+    },
+    "target": {
+      "assoc_score": -0.015142,
+      "count": 26,
+      "lift": -0.192308,
+      "success_rate": 0.307692
+    },
+    "targeted": {
+      "assoc_score": -0.00773,
+      "count": 16,
+      "lift": 0.0,
+      "success_rate": 0.5
+    },
+    "task": {
+      "assoc_score": 0.064154,
+      "count": 13,
+      "lift": 0.192308,
+      "success_rate": 0.692308
+    },
+    "tasks": {
+      "assoc_score": 0.090471,
+      "count": 12,
+      "lift": 0.416667,
+      "success_rate": 0.916667
+    },
+    "teaes": {
+      "assoc_score": -0.063497,
+      "count": 29,
+      "lift": -0.258621,
+      "success_rate": 0.241379
+    },
+    "team": {
+      "assoc_score": 0.014202,
+      "count": 13,
+      "lift": -0.038462,
+      "success_rate": 0.461538
+    },
+    "technique": {
+      "assoc_score": 0.077806,
+      "count": 33,
+      "lift": 0.378788,
+      "success_rate": 0.878788
+    },
+    "techniques": {
+      "assoc_score": 0.065913,
+      "count": 23,
+      "lift": 0.23913,
+      "success_rate": 0.73913
+    },
+    "technology": {
+      "assoc_score": 0.001666,
+      "count": 14,
+      "lift": 0.071429,
+      "success_rate": 0.571429
+    },
+    "temperature": {
+      "assoc_score": 0.017544,
+      "count": 12,
+      "lift": 0.166667,
+      "success_rate": 0.666667
+    },
+    "ten": {
+      "assoc_score": 0.043166,
+      "count": 11,
+      "lift": 0.227273,
+      "success_rate": 0.727273
+    },
+    "term": {
+      "assoc_score": -0.002616,
+      "count": 44,
+      "lift": -0.136364,
+      "success_rate": 0.363636
+    },
+    "terminal": {
+      "assoc_score": -0.048859,
+      "count": 29,
+      "lift": -0.017241,
+      "success_rate": 0.482759
+    },
+    "terminology": {
+      "assoc_score": -0.090465,
+      "count": 21,
+      "lift": -0.5,
+      "success_rate": 0.0
+    },
+    "terms": {
+      "assoc_score": 0.046298,
+      "count": 14,
+      "lift": 0.0,
+      "success_rate": 0.5
+    },
+    "test": {
+      "assoc_score": 0.028765,
+      "count": 134,
+      "lift": 0.141791,
+      "success_rate": 0.641791
+    },
+    "tested": {
+      "assoc_score": 0.038276,
+      "count": 14,
+      "lift": 0.0,
+      "success_rate": 0.5
+    },
+    "testing": {
+      "assoc_score": 0.026253,
+      "count": 25,
+      "lift": 0.02,
+      "success_rate": 0.52
+    },
+    "tests": {
+      "assoc_score": 0.012117,
+      "count": 26,
+      "lift": 0.115385,
+      "success_rate": 0.615385
+    },
+    "therapeutic": {
+      "assoc_score": 0.005189,
+      "count": 13,
+      "lift": -0.192308,
+      "success_rate": 0.307692
+    },
+    "therapeutics": {
+      "assoc_score": -0.050372,
+      "count": 22,
+      "lift": -0.272727,
+      "success_rate": 0.227273
+    },
+    "therapies": {
+      "assoc_score": -0.061582,
+      "count": 12,
+      "lift": -0.416667,
+      "success_rate": 0.083333
+    },
+    "therapy": {
+      "assoc_score": -0.036627,
+      "count": 118,
+      "lift": -0.101695,
+      "success_rate": 0.398305
+    },
+    "therefore": {
+      "assoc_score": 0.057565,
+      "count": 25,
+      "lift": 0.1,
+      "success_rate": 0.6
+    },
+    "third": {
+      "assoc_score": 0.054584,
+      "count": 17,
+      "lift": 0.147059,
+      "success_rate": 0.647059
+    },
+    "threatening": {
+      "assoc_score": -0.017218,
+      "count": 10,
+      "lift": 0.0,
+      "success_rate": 0.5
+    },
+    "three": {
+      "assoc_score": 0.054944,
+      "count": 60,
+      "lift": 0.216667,
+      "success_rate": 0.716667
+    },
+    "threshold": {
+      "assoc_score": 0.038492,
+      "count": 13,
+      "lift": 0.038462,
+      "success_rate": 0.538462
+    },
+    "through": {
+      "assoc_score": 0.010785,
+      "count": 116,
+      "lift": 0.034483,
+      "success_rate": 0.534483
+    },
+    "throughout": {
+      "assoc_score": 0.026598,
+      "count": 22,
+      "lift": 0.136364,
+      "success_rate": 0.636364
+    },
+    "time": {
+      "assoc_score": -0.001521,
+      "count": 304,
+      "lift": 0.009868,
+      "success_rate": 0.509868
+    },
+    "times": {
+      "assoc_score": 0.05905,
+      "count": 32,
+      "lift": 0.28125,
+      "success_rate": 0.78125
+    },
+    "tissue": {
+      "assoc_score": 0.026262,
+      "count": 31,
+      "lift": 0.080645,
+      "success_rate": 0.580645
+    },
+    "tissues": {
+      "assoc_score": 0.052476,
+      "count": 10,
+      "lift": 0.3,
+      "success_rate": 0.8
+    },
+    "tmax": {
+      "assoc_score": -0.072293,
+      "count": 41,
+      "lift": -0.036585,
+      "success_rate": 0.463415
+    },
+    "together": {
+      "assoc_score": -0.032742,
+      "count": 14,
+      "lift": -0.285714,
+      "success_rate": 0.214286
+    },
+    "tolerability": {
+      "assoc_score": -0.064081,
+      "count": 79,
+      "lift": -0.221519,
+      "success_rate": 0.278481
+    },
+    "tolerated": {
+      "assoc_score": -0.08759,
+      "count": 24,
+      "lift": -0.375,
+      "success_rate": 0.125
+    },
+    "tomography": {
+      "assoc_score": -0.032162,
+      "count": 23,
+      "lift": -0.195652,
+      "success_rate": 0.304348
+    },
+    "tool": {
+      "assoc_score": 0.047439,
+      "count": 37,
+      "lift": 0.22973,
+      "success_rate": 0.72973
+    },
+    "tools": {
+      "assoc_score": 0.090834,
+      "count": 11,
+      "lift": 0.5,
+      "success_rate": 1.0
+    },
+    "total": {
+      "assoc_score": 0.009787,
+      "count": 161,
+      "lift": 0.046584,
+      "success_rate": 0.546584
+    },
+    "towards": {
+      "assoc_score": 0.081943,
+      "count": 12,
+      "lift": 0.416667,
+      "success_rate": 0.916667
+    },
+    "toxicities": {
+      "assoc_score": -0.104666,
+      "count": 33,
+      "lift": -0.469697,
+      "success_rate": 0.030303
+    },
+    "toxicity": {
+      "assoc_score": -0.099478,
+      "count": 30,
+      "lift": -0.433333,
+      "success_rate": 0.066667
+    },
+    "tract": {
+      "assoc_score": -0.021245,
+      "count": 10,
+      "lift": -0.1,
+      "success_rate": 0.4
+    },
+    "traditional": {
+      "assoc_score": 0.059082,
+      "count": 14,
+      "lift": 0.285714,
+      "success_rate": 0.785714
+    },
+    "training": {
+      "assoc_score": 0.070764,
+      "count": 29,
+      "lift": 0.396552,
+      "success_rate": 0.896552
+    },
+    "transplant": {
+      "assoc_score": -0.058662,
+      "count": 14,
+      "lift": -0.428571,
+      "success_rate": 0.071429
+    },
+    "treat": {
+      "assoc_score": 0.000797,
+      "count": 20,
+      "lift": -0.05,
+      "success_rate": 0.45
+    },
+    "treated": {
+      "assoc_score": -0.04877,
+      "count": 48,
+      "lift": -0.25,
+      "success_rate": 0.25
+    },
+    "treating": {
+      "assoc_score": -0.085724,
+      "count": 19,
+      "lift": -0.236842,
+      "success_rate": 0.263158
+    },
+    "treatment": {
+      "assoc_score": -0.01578,
+      "count": 404,
+      "lift": -0.064356,
+      "success_rate": 0.435644
+    },
+    "treatments": {
+      "assoc_score": 0.033595,
+      "count": 22,
+      "lift": 0.090909,
+      "success_rate": 0.590909
+    },
+    "trial": {
+      "assoc_score": -0.020531,
+      "count": 144,
+      "lift": -0.118056,
+      "success_rate": 0.381944
+    },
+    "trials": {
+      "assoc_score": 0.027768,
+      "count": 23,
+      "lift": 0.065217,
+      "success_rate": 0.565217
+    },
+    "triple": {
+      "assoc_score": 0.011183,
+      "count": 41,
+      "lift": 0.012195,
+      "success_rate": 0.512195
+    },
+    "trough": {
+      "assoc_score": -0.070562,
+      "count": 12,
+      "lift": -0.416667,
+      "success_rate": 0.083333
+    },
+    "tumor": {
+      "assoc_score": -0.091028,
+      "count": 54,
+      "lift": -0.37037,
+      "success_rate": 0.12963
+    },
+    "tumors": {
+      "assoc_score": -0.100948,
+      "count": 35,
+      "lift": -0.442857,
+      "success_rate": 0.057143
+    },
+    "turkish": {
+      "assoc_score": 0.063177,
+      "count": 12,
+      "lift": 0.5,
+      "success_rate": 1.0
+    },
+    "twice": {
+      "assoc_score": 0.0481,
+      "count": 16,
+      "lift": 0.0625,
+      "success_rate": 0.5625
+    },
+    "two": {
+      "assoc_score": 0.026569,
+      "count": 108,
+      "lift": 0.12963,
+      "success_rate": 0.62963
+    },
+    "type": {
+      "assoc_score": 0.007332,
+      "count": 71,
+      "lift": 0.105634,
+      "success_rate": 0.605634
+    },
+    "types": {
+      "assoc_score": -0.001685,
+      "count": 21,
+      "lift": -0.119048,
+      "success_rate": 0.380952
+    },
+    "typically": {
+      "assoc_score": 0.064822,
+      "count": 11,
+      "lift": 0.318182,
+      "success_rate": 0.818182
+    },
+    "ultrasound": {
+      "assoc_score": 0.062303,
+      "count": 22,
+      "lift": 0.136364,
+      "success_rate": 0.636364
+    },
+    "undergo": {
+      "assoc_score": 0.025473,
+      "count": 14,
+      "lift": 0.0,
+      "success_rate": 0.5
+    },
+    "undergoing": {
+      "assoc_score": 0.043306,
+      "count": 33,
+      "lift": 0.045455,
+      "success_rate": 0.545455
+    },
+    "underlying": {
+      "assoc_score": 0.012954,
+      "count": 12,
+      "lift": 0.0,
+      "success_rate": 0.5
+    },
+    "understand": {
+      "assoc_score": 0.038163,
+      "count": 17,
+      "lift": 0.147059,
+      "success_rate": 0.647059
+    },
+    "unit": {
+      "assoc_score": 0.042083,
+      "count": 28,
+      "lift": 0.285714,
+      "success_rate": 0.785714
+    },
+    "united": {
+      "assoc_score": 0.001588,
+      "count": 13,
+      "lift": 0.115385,
+      "success_rate": 0.615385
+    },
+    "units": {
+      "assoc_score": 0.07387,
+      "count": 13,
+      "lift": 0.346154,
+      "success_rate": 0.846154
+    },
+    "university": {
+      "assoc_score": 0.044143,
+      "count": 189,
+      "lift": 0.208995,
+      "success_rate": 0.708995
+    },
+    "until": {
+      "assoc_score": -0.034291,
+      "count": 54,
+      "lift": -0.166667,
+      "success_rate": 0.333333
+    },
+    "untoward": {
+      "assoc_score": -0.050849,
+      "count": 11,
+      "lift": -0.318182,
+      "success_rate": 0.181818
+    },
+    "upon": {
+      "assoc_score": 0.004738,
+      "count": 18,
+      "lift": -0.111111,
+      "success_rate": 0.388889
+    },
+    "upper": {
+      "assoc_score": 0.091817,
+      "count": 26,
+      "lift": 0.307692,
+      "success_rate": 0.807692
+    },
+    "uptake": {
+      "assoc_score": -0.026612,
+      "count": 10,
+      "lift": -0.2,
+      "success_rate": 0.3
+    },
+    "urinary": {
+      "assoc_score": 0.020746,
+      "count": 14,
+      "lift": -0.142857,
+      "success_rate": 0.357143
+    },
+    "urine": {
+      "assoc_score": -0.006785,
+      "count": 28,
+      "lift": -0.107143,
+      "success_rate": 0.392857
+    },
+    "use": {
+      "assoc_score": 0.020451,
+      "count": 128,
+      "lift": 0.023438,
+      "success_rate": 0.523438
+    },
+    "used": {
+      "assoc_score": 0.045082,
+      "count": 158,
+      "lift": 0.126582,
+      "success_rate": 0.626582
+    },
+    "using": {
+      "assoc_score": 0.021466,
+      "count": 217,
+      "lift": 0.029954,
+      "success_rate": 0.529954
+    },
+    "usual": {
+      "assoc_score": 0.007724,
+      "count": 17,
+      "lift": 0.029412,
+      "success_rate": 0.529412
+    },
+    "valid": {
+      "assoc_score": 0.077621,
+      "count": 11,
+      "lift": 0.227273,
+      "success_rate": 0.727273
+    },
+    "validate": {
+      "assoc_score": 0.022185,
+      "count": 11,
+      "lift": 0.227273,
+      "success_rate": 0.727273
+    },
+    "validated": {
+      "assoc_score": 0.03252,
+      "count": 26,
+      "lift": 0.0,
+      "success_rate": 0.5
+    },
+    "validity": {
+      "assoc_score": 0.086516,
+      "count": 14,
+      "lift": 0.428571,
+      "success_rate": 0.928571
+    },
+    "value": {
+      "assoc_score": 0.025466,
+      "count": 47,
+      "lift": 0.138298,
+      "success_rate": 0.638298
+    },
+    "values": {
+      "assoc_score": 0.019743,
+      "count": 46,
+      "lift": 0.065217,
+      "success_rate": 0.565217
+    },
+    "variables": {
+      "assoc_score": 0.027962,
+      "count": 19,
+      "lift": 0.184211,
+      "success_rate": 0.684211
+    },
+    "various": {
+      "assoc_score": 0.065348,
+      "count": 24,
+      "lift": 0.208333,
+      "success_rate": 0.708333
+    },
+    "vas": {
+      "assoc_score": 0.055663,
+      "count": 29,
+      "lift": 0.189655,
+      "success_rate": 0.689655
+    },
+    "vein": {
+      "assoc_score": -0.066088,
+      "count": 12,
+      "lift": -0.416667,
+      "success_rate": 0.083333
+    },
+    "venous": {
+      "assoc_score": -0.00071,
+      "count": 10,
+      "lift": 0.2,
+      "success_rate": 0.7
+    },
+    "version": {
+      "assoc_score": -0.025263,
+      "count": 51,
+      "lift": -0.068627,
+      "success_rate": 0.431373
+    },
+    "versus": {
+      "assoc_score": -0.007259,
+      "count": 63,
+      "lift": -0.134921,
+      "success_rate": 0.365079
+    },
+    "vertical": {
+      "assoc_score": 0.063552,
+      "count": 13,
+      "lift": 0.192308,
+      "success_rate": 0.692308
+    },
+    "very": {
+      "assoc_score": 0.020694,
+      "count": 45,
+      "lift": -0.122222,
+      "success_rate": 0.377778
+    },
+    "via": {
+      "assoc_score": 0.016628,
+      "count": 35,
+      "lift": 0.042857,
+      "success_rate": 0.542857
+    },
+    "visit": {
+      "assoc_score": -0.005244,
+      "count": 74,
+      "lift": -0.027027,
+      "success_rate": 0.472973
+    },
+    "visits": {
+      "assoc_score": -0.019079,
+      "count": 40,
+      "lift": -0.025,
+      "success_rate": 0.475
+    },
+    "visual": {
+      "assoc_score": 0.050894,
+      "count": 53,
+      "lift": 0.103774,
+      "success_rate": 0.603774
+    },
+    "vital": {
+      "assoc_score": -0.02982,
+      "count": 41,
+      "lift": -0.085366,
+      "success_rate": 0.414634
+    },
+    "volume": {
+      "assoc_score": -0.025977,
+      "count": 52,
+      "lift": -0.096154,
+      "success_rate": 0.403846
+    },
+    "volunteers": {
+      "assoc_score": 0.002862,
+      "count": 14,
+      "lift": 0.428571,
+      "success_rate": 0.928571
+    },
+    "vomiting": {
+      "assoc_score": 0.035338,
+      "count": 11,
+      "lift": 0.318182,
+      "success_rate": 0.818182
+    },
+    "walk": {
+      "assoc_score": 0.050459,
+      "count": 19,
+      "lift": 0.026316,
+      "success_rate": 0.526316
+    },
+    "walking": {
+      "assoc_score": 0.091676,
+      "count": 16,
+      "lift": 0.1875,
+      "success_rate": 0.6875
+    },
+    "wave": {
+      "assoc_score": 0.052528,
+      "count": 10,
+      "lift": 0.0,
+      "success_rate": 0.5
+    },
+    "way": {
+      "assoc_score": 0.038225,
+      "count": 19,
+      "lift": 0.184211,
+      "success_rate": 0.684211
+    },
+    "week": {
+      "assoc_score": 0.004466,
+      "count": 146,
+      "lift": -0.041096,
+      "success_rate": 0.458904
+    },
+    "weekly": {
+      "assoc_score": -0.004057,
+      "count": 18,
+      "lift": -0.222222,
+      "success_rate": 0.277778
+    },
+    "weeks": {
+      "assoc_score": 0.000427,
+      "count": 174,
+      "lift": -0.04023,
+      "success_rate": 0.45977
+    },
+    "weight": {
+      "assoc_score": 0.033325,
+      "count": 35,
+      "lift": 0.1,
+      "success_rate": 0.6
+    },
+    "well": {
+      "assoc_score": 0.009412,
+      "count": 91,
+      "lift": -0.005495,
+      "success_rate": 0.494505
+    },
+    "where": {
+      "assoc_score": 0.032227,
+      "count": 69,
+      "lift": 0.07971,
+      "success_rate": 0.57971
+    },
+    "whether": {
+      "assoc_score": 0.013839,
+      "count": 79,
+      "lift": 0.082278,
+      "success_rate": 0.582278
+    },
+    "whichever": {
+      "assoc_score": -0.098746,
+      "count": 28,
+      "lift": -0.357143,
+      "success_rate": 0.142857
+    },
+    "while": {
+      "assoc_score": 0.051921,
+      "count": 55,
+      "lift": 0.190909,
+      "success_rate": 0.690909
+    },
+    "whole": {
+      "assoc_score": -0.019693,
+      "count": 11,
+      "lift": -0.136364,
+      "success_rate": 0.363636
+    },
+    "widely": {
+      "assoc_score": 0.066023,
+      "count": 18,
+      "lift": 0.388889,
+      "success_rate": 0.888889
+    },
+    "will": {
+      "assoc_score": 0.006539,
+      "count": 387,
+      "lift": 0.011628,
+      "success_rate": 0.511628
+    },
+    "withdrawal": {
+      "assoc_score": -0.066062,
+      "count": 11,
+      "lift": 0.045455,
+      "success_rate": 0.545455
+    },
+    "within": {
+      "assoc_score": 0.004155,
+      "count": 93,
+      "lift": 0.016129,
+      "success_rate": 0.516129
+    },
+    "without": {
+      "assoc_score": 0.003679,
+      "count": 70,
+      "lift": 0.028571,
+      "success_rate": 0.528571
+    },
+    "women": {
+      "assoc_score": 0.020104,
+      "count": 36,
+      "lift": -0.083333,
+      "success_rate": 0.416667
+    },
+    "work": {
+      "assoc_score": 0.013616,
+      "count": 35,
+      "lift": 0.014286,
+      "success_rate": 0.514286
+    },
+    "working": {
+      "assoc_score": 0.003361,
+      "count": 11,
+      "lift": -0.045455,
+      "success_rate": 0.454545
+    },
+    "works": {
+      "assoc_score": -0.027133,
+      "count": 13,
+      "lift": -0.192308,
+      "success_rate": 0.307692
+    },
+    "world": {
+      "assoc_score": 0.003617,
+      "count": 14,
+      "lift": 0.071429,
+      "success_rate": 0.571429
+    },
+    "worse": {
+      "assoc_score": 0.013209,
+      "count": 37,
+      "lift": 0.094595,
+      "success_rate": 0.594595
+    },
+    "worst": {
+      "assoc_score": 0.032452,
+      "count": 57,
+      "lift": -0.008772,
+      "success_rate": 0.491228
+    },
+    "year": {
+      "assoc_score": -0.011474,
+      "count": 76,
+      "lift": -0.157895,
+      "success_rate": 0.342105
+    },
+    "years": {
+      "assoc_score": -0.015449,
+      "count": 117,
+      "lift": -0.106838,
+      "success_rate": 0.393162
+    },
+    "yes": {
+      "assoc_score": 0.032053,
+      "count": 24,
+      "lift": 0.291667,
+      "success_rate": 0.791667
+    },
+    "young": {
+      "assoc_score": -0.005503,
+      "count": 15,
+      "lift": -0.166667,
+      "success_rate": 0.333333
+    },
+    "zero": {
+      "assoc_score": -0.028051,
+      "count": 20,
+      "lift": 0.05,
+      "success_rate": 0.55
+    }
+  },
+  "meta": {
+    "global_success_rate": 0.5,
+    "label_source": "ctg-studies + ctg-studies-completed",
+    "min_count": 10,
+    "success_definition": "COMPLETED dataset",
+    "total_trials": 558
+  }
+}
