@@ -126,6 +126,38 @@ h1 {
   font-size: 0.95rem;
 }
 
+.suggestions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 10px;
+  min-height: 34px;
+}
+
+.suggestion-chip {
+  border: 1px solid rgba(27, 26, 24, 0.14);
+  background: #fff;
+  color: var(--ink);
+  border-radius: 999px;
+  padding: 6px 12px;
+  font-family: "EB Garamond", "Garamond", "Georgia", serif;
+  font-size: 0.95rem;
+  line-height: 1;
+  cursor: pointer;
+  transition: transform 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.suggestion-chip:hover {
+  transform: translateY(-1px);
+  border-color: rgba(217, 143, 73, 0.55);
+  box-shadow: 0 6px 14px rgba(27, 26, 24, 0.08);
+}
+
+.suggestion-chip:focus-visible {
+  outline: 2px solid rgba(217, 143, 73, 0.45);
+  outline-offset: 2px;
+}
+
 .analysis-result {
   background: #fff;
   border-radius: 18px;
@@ -304,7 +336,8 @@ h1 {
   .card,
   .lightbox,
   .lightbox-dialog,
-  .input-row button {
+  .input-row button,
+  .suggestion-chip {
     transition: none;
   }
 }

@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Trial2Vec Model Explainability</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -35,6 +36,7 @@
             <input id="word-input" type="text" placeholder="e.g., oncology" autocomplete="off" />
             <button id="word-button" type="button">Analyze</button>
           </div>
+          <div id="word-suggestions" class="suggestions" aria-live="polite" aria-label="Word suggestions"></div>
           <p class="hint">Powered by ctg-studies.csv and labeled embeddings.</p>
         </div>
         <div id="word-result" class="analysis-result" aria-live="polite">
@@ -44,7 +46,7 @@
     </section>
     <section class="gallery">
       <figure class="card">
-        <img src="../model_explainability_outputs/feature_importances.png" alt="Feature importances chart" />
+        <img src="images/feature_importances.png" alt="Feature importances chart" />
         <figcaption>
           <strong>Feature Importances.</strong> Think of this as a ranked list of what the model pays
           attention to most. The higher a feature appears, the more it influenced the model’s
@@ -53,7 +55,7 @@
       </figure>
 
       <figure class="card">
-        <img src="../model_explainability_outputs/permutation_topK_importances.png" alt="Permutation importance plot" />
+        <img src="images/permutation_topK_importances.png" alt="Permutation importance plot" />
         <figcaption>
           <strong>Permutation Importance.</strong> Here we randomly scramble one feature at a time to
           see how much the model’s accuracy drops. If the drop is large, that feature was important.
@@ -62,7 +64,7 @@
       </figure>
 
       <figure class="card">
-        <img src="../model_explainability_outputs/fanova_importances.png" alt="fANOVA importances" />
+        <img src="images/fanova_importances.png" alt="fANOVA importances" />
         <figcaption>
           <strong>fANOVA Importances.</strong> This chart estimates how much each factor matters on its
           own, without mixing it with others. It is another way to highlight the strongest signals
@@ -71,7 +73,7 @@
       </figure>
 
       <figure class="card">
-        <img src="../model_explainability_outputs/shap_summary.png" alt="SHAP summary plot" />
+        <img src="images/shap_summary.png" alt="SHAP summary plot" />
         <figcaption>
           <strong>SHAP Summary.</strong> This gives a bird’s-eye view of how different factors push
           predictions up or down. Each point represents a trial, and the spread shows how much that
@@ -80,7 +82,7 @@
       </figure>
 
       <figure class="card">
-        <img src="../model_explainability_outputs/shap_waterfall.png" alt="SHAP waterfall plot" />
+        <img src="images/shap_waterfall.png" alt="SHAP waterfall plot" />
         <figcaption>
           <strong>SHAP Waterfall.</strong> This explains a single example step by step. You can see how
           each factor nudges the prediction higher or lower until it reaches the final result.
@@ -88,7 +90,7 @@
       </figure>
 
       <figure class="card">
-        <img src="../model_explainability_outputs/probe_coefficients.png" alt="Probe coefficients" />
+        <img src="images/probe_coefficients.png" alt="Probe coefficients" />
         <figcaption>
           <strong>Probe Coefficients.</strong> This highlights which hidden patterns inside the model’s
           internal representation are most aligned with success or failure. Think of it as a peek
@@ -97,7 +99,7 @@
       </figure>
 
       <figure class="card">
-        <img src="../model_explainability_outputs/roc_curve.png" alt="ROC curve" />
+        <img src="images/roc_curve.png" alt="ROC curve" />
         <figcaption>
           <strong>ROC Curve.</strong> This summarizes how well the model separates success from failure
           across different decision cutoffs. Curves that hug the top-left corner indicate stronger
@@ -106,7 +108,7 @@
       </figure>
 
       <figure class="card">
-        <img src="../model_explainability_outputs/pr_curve.png" alt="Precision-recall curve" />
+        <img src="images/pr_curve.png" alt="Precision-recall curve" />
         <figcaption>
           <strong>Precision-Recall Curve.</strong> This focuses on how many of the model’s positive
           predictions are correct, and how many positives it manages to find. It is especially
@@ -117,7 +119,7 @@
   </main>
 
   <footer class="footer">
-    <p>Images loaded from model_explainability_outputs.</p>
+    <p>Images loaded from site/images.</p>
   </footer>
   <div id="lightbox" class="lightbox" aria-hidden="true">
     <div class="lightbox-backdrop" data-lightbox-close></div>

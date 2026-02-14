@@ -1,9 +1,11 @@
 const input = document.getElementById("word-input");
 const button = document.getElementById("word-button");
 const result = document.getElementById("word-result");
+const suggestions = document.getElementById("word-suggestions");
 
 let scoresPromise = null;
 let scoresData = null;
+let topSuggestedWords = [];
 
 function renderMessage(message) {
   result.innerHTML = `<p class="message">${message}</p>`;
@@ -42,6 +44,11 @@ function loadScores() {
     })
     .then((data) => {
       scoresData = data;
+      const entries = Object.entries(data.data || {});
+      topSuggestedWords = entries
+        .sort((a, b) => (b[1].count || 0) - (a[1].count || 0))
+        .slice(0, 24)
+        .map(([word]) => word);
       return data;
     })
     .catch(() => {
@@ -51,6 +58,79 @@ function loadScores() {
       throw new Error("Missing word_scores.json");
     });
   return scoresPromise;
+}
+
+function getSuggestionWords(rawValue) {
+  if (!scoresData || !scoresData.data) {
+    return [];
+  }
+
+  const trimmed = rawValue.trim().toLowerCase();
+  if (!trimmed) {
+    return topSuggestedWords.slice(0, 8);
+  }
+
+  if (!/^[a-z0-9]+$/.test(trimmed)) {
+    return [];
+  }
+
+  const prefixMatches = [];
+  for (const word of topSuggestedWords) {
+    if (word.startsWith(trimmed) && word !== trimmed) {
+      prefixMatches.push(word);
+    }
+    if (prefixMatches.length >= 8) {
+      break;
+    }
+  }
+
+  if (prefixMatches.length >= 8) {
+    return prefixMatches;
+  }
+
+  for (const word of Object.keys(scoresData.data)) {
+    if (!word.startsWith(trimmed) || word === trimmed) {
+      continue;
+    }
+    if (prefixMatches.includes(word)) {
+      continue;
+    }
+    prefixMatches.push(word);
+    if (prefixMatches.length >= 8) {
+      break;
+    }
+  }
+
+  return prefixMatches;
+}
+
+function renderSuggestions() {
+  if (!suggestions) {
+    return;
+  }
+
+  suggestions.innerHTML = "";
+  const words = getSuggestionWords(input.value);
+  if (words.length === 0) {
+    return;
+  }
+
+  const fragment = document.createDocumentFragment();
+  words.forEach((word) => {
+    const chip = document.createElement("button");
+    chip.type = "button";
+    chip.className = "suggestion-chip";
+    chip.textContent = word;
+    chip.addEventListener("click", () => {
+      input.value = word;
+      analyzeWord();
+      renderSuggestions();
+      input.focus();
+    });
+    fragment.appendChild(chip);
+  });
+
+  suggestions.appendChild(fragment);
 }
 
 function renderStats(word, entry, meta) {
@@ -114,8 +194,10 @@ input.addEventListener("keydown", (event) => {
     analyzeWord();
   }
 });
+input.addEventListener("input", renderSuggestions);
 
 renderMessage("Type a word to see results.");
+loadScores().then(renderSuggestions).catch(() => {});
 
 const lightbox = document.getElementById("lightbox");
 const lightboxImage = document.getElementById("lightbox-image");
