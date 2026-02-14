@@ -6,6 +6,133 @@ const suggestions = document.getElementById("word-suggestions");
 let scoresPromise = null;
 let scoresData = null;
 let topSuggestedWords = [];
+let healthChipWordsPromise = null;
+
+const MAX_SUGGESTION_CHIPS = 45;
+
+const HEALTH_SUGGESTION_SEEDS = [
+  "brain",
+  "heart",
+  "muscle",
+  "eye",
+  "lung",
+  "liver",
+  "kidney",
+  "blood",
+  "cancer",
+  "tumor",
+  "stroke",
+  "diabetes",
+  "obesity",
+  "pain",
+  "immune",
+  "infection",
+  "vaccine",
+  "therapy",
+  "neuro",
+  "cardiac",
+  "oncology",
+  "retina",
+  "vascular",
+  "arthritis",
+  "cardiovascular",
+  "pulmonary",
+  "respiratory",
+  "renal",
+  "bone",
+  "joint",
+  "breast",
+  "prostate",
+  "lipid",
+  "metabolic",
+  "arterial",
+  "gastrointestinal",
+  "neurological",
+  "cholesterol",
+  "mental",
+  "depression",
+  "anxiety",
+  "sleep",
+  "pediatric",
+  "pregnancy",
+  "diabetic",
+  "infections",
+  "infectious",
+  "electrocardiogram"
+];
+
+const HEALTH_WORD_PATTERNS = [
+  /^brain$/,
+  /^heart$/,
+  /^muscle/,
+  /^eye$/,
+  /^lung/,
+  /^liver$/,
+  /^kidney$/,
+  /^renal/,
+  /^blood$/,
+  /^cancer/,
+  /^tumor/,
+  /^stroke$/,
+  /^diabet/,
+  /^obes/,
+  /^pain$/,
+  /^immune/,
+  /^infect/,
+  /^vaccine/,
+  /^therapy/,
+  /^neuro/,
+  /^card/,
+  /^oncolog/,
+  /^retina/,
+  /^vascular/,
+  /^arthritis$/,
+  /^respirat/,
+  /^pulmon/,
+  /^bone$/,
+  /^joint/,
+  /^cardiovascular/,
+  /^breast$/,
+  /^prostate$/,
+  /^lipid/,
+  /^metabolic/,
+  /^arterial/,
+  /^gastrointestinal/,
+  /^neurolog/,
+  /^cholesterol/,
+  /^pregnancy$/,
+  /^mental$/,
+  /^depress/,
+  /^anxiety$/,
+  /^sleep$/,
+  /^pediatric$/,
+  /^electrocardiogram$/
+];
+
+const HEALTH_WORD_EXCLUSIONS = new Set([
+  "masking",
+  "experimental",
+  "delivery",
+  "concomitant"
+]);
+
+function isValidSuggestionWord(word) {
+  return (
+    typeof word === "string" &&
+    /^[a-z0-9]+$/.test(word) &&
+    word.length > 1 &&
+    word !== "nan" &&
+    word !== "null" &&
+    word !== "none"
+  );
+}
+
+function isHealthThemeWord(word) {
+  if (!isValidSuggestionWord(word) || HEALTH_WORD_EXCLUSIONS.has(word)) {
+    return false;
+  }
+  return HEALTH_WORD_PATTERNS.some((pattern) => pattern.test(word));
+}
 
 function renderMessage(message) {
   result.innerHTML = `<p class="message">${message}</p>`;
@@ -31,6 +158,29 @@ function normalizeWord(value) {
   return tokens[0];
 }
 
+function loadHealthChipWords() {
+  if (healthChipWordsPromise) {
+    return healthChipWordsPromise;
+  }
+
+  healthChipWordsPromise = fetch("chip_words_health_filtered.txt")
+    .then((response) => {
+      if (!response.ok) {
+        throw new Error("Missing chip_words_health_filtered.txt");
+      }
+      return response.text();
+    })
+    .then((text) => {
+      return text
+        .split(/\r?\n/)
+        .map((word) => word.trim().toLowerCase())
+        .filter((word) => isValidSuggestionWord(word));
+    })
+    .catch(() => []);
+
+  return healthChipWordsPromise;
+}
+
 function loadScores() {
   if (scoresPromise) {
     return scoresPromise;
@@ -45,11 +195,28 @@ function loadScores() {
     .then((data) => {
       scoresData = data;
       const entries = Object.entries(data.data || {});
-      topSuggestedWords = entries
+      const rankedWords = entries
+        .filter(([word, entry]) => isValidSuggestionWord(word) && (entry.count || 0) > 0)
         .sort((a, b) => (b[1].count || 0) - (a[1].count || 0))
-        .slice(0, 24)
         .map(([word]) => word);
-      return data;
+
+      const healthWords = HEALTH_SUGGESTION_SEEDS.filter(
+        (word) => data.data && data.data[word] && isValidSuggestionWord(word)
+      );
+
+      const healthWordsFromData = rankedWords
+        .filter((word) => isHealthThemeWord(word))
+        .slice(0, 80);
+
+      const fallbackWords = [
+        ...new Set([...healthWords, ...healthWordsFromData, ...rankedWords])
+      ].slice(0, 80);
+
+      return loadHealthChipWords().then((fileWords) => {
+        const fileBackedWords = fileWords.filter((word) => data.data && data.data[word]);
+        topSuggestedWords = fileBackedWords.length > 0 ? fileBackedWords : fallbackWords;
+        return data;
+      });
     })
     .catch(() => {
       renderMessage(
@@ -65,13 +232,21 @@ function getSuggestionWords(rawValue) {
     return [];
   }
 
+  const defaultSuggestions = topSuggestedWords.slice(0, MAX_SUGGESTION_CHIPS);
+
   const trimmed = rawValue.trim().toLowerCase();
   if (!trimmed) {
-    return topSuggestedWords.slice(0, 8);
+    return defaultSuggestions;
   }
 
   if (!/^[a-z0-9]+$/.test(trimmed)) {
-    return [];
+    return defaultSuggestions;
+  }
+
+  if (scoresData.data && scoresData.data[trimmed]) {
+    return defaultSuggestions
+      .filter((word) => word !== trimmed)
+      .slice(0, MAX_SUGGESTION_CHIPS);
   }
 
   const prefixMatches = [];
@@ -79,29 +254,22 @@ function getSuggestionWords(rawValue) {
     if (word.startsWith(trimmed) && word !== trimmed) {
       prefixMatches.push(word);
     }
-    if (prefixMatches.length >= 8) {
+    if (prefixMatches.length >= MAX_SUGGESTION_CHIPS) {
       break;
     }
   }
 
-  if (prefixMatches.length >= 8) {
+  if (prefixMatches.length >= MAX_SUGGESTION_CHIPS) {
     return prefixMatches;
   }
 
-  for (const word of Object.keys(scoresData.data)) {
-    if (!word.startsWith(trimmed) || word === trimmed) {
-      continue;
-    }
-    if (prefixMatches.includes(word)) {
-      continue;
-    }
-    prefixMatches.push(word);
-    if (prefixMatches.length >= 8) {
-      break;
-    }
+  if (prefixMatches.length > 0) {
+    return prefixMatches;
   }
 
-  return prefixMatches;
+  return defaultSuggestions
+    .filter((word) => word !== trimmed)
+    .slice(0, MAX_SUGGESTION_CHIPS);
 }
 
 function renderSuggestions() {
