@@ -366,6 +366,23 @@ h1 {
     grid-template-columns: 1fr;
   }
 
+  .suggestions {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 4px;
+  }
+
+  .suggestion-chip {
+    flex: 0 0 auto;
+    white-space: nowrap;
+  }
+
+  .suggestions::-webkit-scrollbar {
+    height: 6px;
+  }
+
   .card {
     padding: 14px;
   }
