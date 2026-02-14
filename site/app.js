@@ -116,3 +116,62 @@ input.addEventListener("keydown", (event) => {
 });
 
 renderMessage("Type a word to see results.");
+
+const lightbox = document.getElementById("lightbox");
+const lightboxImage = document.getElementById("lightbox-image");
+const lightboxCaption = document.getElementById("lightbox-caption");
+const lightboxClosers = document.querySelectorAll("[data-lightbox-close]");
+const cards = document.querySelectorAll(".gallery .card");
+
+function openLightbox(image, captionText) {
+  lightboxImage.src = image.src;
+  lightboxImage.alt = image.alt || "Expanded visualization";
+  lightboxCaption.textContent = captionText;
+  lightbox.classList.add("open");
+  lightbox.setAttribute("aria-hidden", "false");
+  document.body.style.overflow = "hidden";
+}
+
+function closeLightbox() {
+  lightbox.classList.remove("open");
+  lightbox.setAttribute("aria-hidden", "true");
+  lightboxImage.src = "";
+  lightboxCaption.textContent = "";
+  document.body.style.overflow = "";
+}
+
+cards.forEach((card) => {
+  card.setAttribute("tabindex", "0");
+  card.setAttribute("role", "button");
+
+  const img = card.querySelector("img");
+  const caption = card.querySelector("figcaption");
+  const captionText = caption ? caption.textContent.trim() : "";
+
+  card.addEventListener("click", () => {
+    if (!img) {
+      return;
+    }
+    openLightbox(img, captionText);
+  });
+
+  card.addEventListener("keydown", (event) => {
+    if (event.key === "Enter" || event.key === " ") {
+      event.preventDefault();
+      if (!img) {
+        return;
+      }
+      openLightbox(img, captionText);
+    }
+  });
+});
+
+lightboxClosers.forEach((closer) => {
+  closer.addEventListener("click", closeLightbox);
+});
+
+document.addEventListener("keydown", (event) => {
+  if (event.key === "Escape" && lightbox.classList.contains("open")) {
+    closeLightbox();
+  }
+});

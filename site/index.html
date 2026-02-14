@@ -46,64 +46,71 @@
       <figure class="card">
         <img src="../model_explainability_outputs/feature_importances.png" alt="Feature importances chart" />
         <figcaption>
-          <strong>Feature Importances.</strong> Shows which input features contribute most to model
-          decisions, ranked by overall impact.
+          <strong>Feature Importances.</strong> Think of this as a ranked list of what the model pays
+          attention to most. The higher a feature appears, the more it influenced the model’s
+          decisions overall. It is a helpful, high-level summary of the biggest drivers.
         </figcaption>
       </figure>
 
       <figure class="card">
         <img src="../model_explainability_outputs/permutation_topK_importances.png" alt="Permutation importance plot" />
         <figcaption>
-          <strong>Permutation Importance.</strong> Estimates how performance drops when each feature
-          is shuffled, highlighting robust drivers.
+          <strong>Permutation Importance.</strong> Here we randomly scramble one feature at a time to
+          see how much the model’s accuracy drops. If the drop is large, that feature was important.
+          This makes it easy to spot which signals the model truly relies on.
         </figcaption>
       </figure>
 
       <figure class="card">
         <img src="../model_explainability_outputs/fanova_importances.png" alt="fANOVA importances" />
         <figcaption>
-          <strong>fANOVA Importances.</strong> Quantifies main-effect contribution per feature, useful
-          for ranking dominant signals.
+          <strong>fANOVA Importances.</strong> This chart estimates how much each factor matters on its
+          own, without mixing it with others. It is another way to highlight the strongest signals
+          the model is picking up.
         </figcaption>
       </figure>
 
       <figure class="card">
         <img src="../model_explainability_outputs/shap_summary.png" alt="SHAP summary plot" />
         <figcaption>
-          <strong>SHAP Summary.</strong> Global view of feature effects; color indicates feature value
-          while position indicates impact on prediction.
+          <strong>SHAP Summary.</strong> This gives a bird’s-eye view of how different factors push
+          predictions up or down. Each point represents a trial, and the spread shows how much that
+          factor can sway the outcome.
         </figcaption>
       </figure>
 
       <figure class="card">
         <img src="../model_explainability_outputs/shap_waterfall.png" alt="SHAP waterfall plot" />
         <figcaption>
-          <strong>SHAP Waterfall.</strong> Breaks down one prediction into additive feature
-          contributions from baseline to final score.
+          <strong>SHAP Waterfall.</strong> This explains a single example step by step. You can see how
+          each factor nudges the prediction higher or lower until it reaches the final result.
         </figcaption>
       </figure>
 
       <figure class="card">
         <img src="../model_explainability_outputs/probe_coefficients.png" alt="Probe coefficients" />
         <figcaption>
-          <strong>Probe Coefficients.</strong> Linear probe weights indicating which latent dimensions
-          align with outcomes.
+          <strong>Probe Coefficients.</strong> This highlights which hidden patterns inside the model’s
+          internal representation are most aligned with success or failure. Think of it as a peek
+          into which internal signals seem meaningful.
         </figcaption>
       </figure>
 
       <figure class="card">
         <img src="../model_explainability_outputs/roc_curve.png" alt="ROC curve" />
         <figcaption>
-          <strong>ROC Curve.</strong> Separability across thresholds; higher curve indicates better
-          true-positive vs false-positive tradeoff.
+          <strong>ROC Curve.</strong> This summarizes how well the model separates success from failure
+          across different decision cutoffs. Curves that hug the top-left corner indicate stronger
+          overall separation.
         </figcaption>
       </figure>
 
       <figure class="card">
         <img src="../model_explainability_outputs/pr_curve.png" alt="Precision-recall curve" />
         <figcaption>
-          <strong>Precision-Recall Curve.</strong> Precision vs recall across thresholds; especially
-          informative for class-imbalanced settings.
+          <strong>Precision-Recall Curve.</strong> This focuses on how many of the model’s positive
+          predictions are correct, and how many positives it manages to find. It is especially
+          useful when successes are rarer than failures.
         </figcaption>
       </figure>
     </section>
@@ -112,6 +119,18 @@
   <footer class="footer">
     <p>Images loaded from model_explainability_outputs.</p>
   </footer>
+  <div id="lightbox" class="lightbox" aria-hidden="true">
+    <div class="lightbox-backdrop" data-lightbox-close></div>
+    <div class="lightbox-dialog" role="dialog" aria-modal="true" aria-label="Expanded visualization">
+      <button class="lightbox-close" type="button" aria-label="Close" data-lightbox-close>
+        Close
+      </button>
+      <figure class="lightbox-figure">
+        <img id="lightbox-image" src="" alt="" />
+        <figcaption id="lightbox-caption"></figcaption>
+      </figure>
+    </div>
+  </div>
   <script src="app.js"></script>
 </body>
 </html>
