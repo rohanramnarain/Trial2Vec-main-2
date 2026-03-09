@@ -4,6 +4,24 @@
 ![GitHub Repo stars](https://img.shields.io/github/stars/ryanwangzf/trial2vec)
 ![GitHub Repo forks](https://img.shields.io/github/forks/ryanwangzf/trial2vec)
 
+## Site Hosting (Dual)
+
+This repository hosts the explainability site from the `site/` directory on both Firebase Hosting and GitHub Pages.
+
+- Firebase URL: `https://clintrialcapstoneramnarain.web.app`
+- GitHub Pages URL: `https://rohanramnarain.github.io/Trial2Vec-main-2/`
+
+### Deploy to Firebase (manual)
+
+```bash
+firebase deploy --only hosting
+```
+
+### Deploy to GitHub Pages (automatic)
+
+GitHub Pages is deployed by Actions using `.github/workflows/deploy-pages.yml`.
+Any push to `main` triggers deployment of the `site/` directory.
+
 Wang, Zifeng and Sun, Jimeng. (2022). Trial2Vec: Zero-Shot Clinical Trial Document Similarity Search using Self-Supervision. Findings of EMNLP'22.
 
 # News
