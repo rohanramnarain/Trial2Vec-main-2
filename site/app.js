@@ -306,10 +306,29 @@ function renderStats(word, entry, meta) {
     ? formatPercent(meta.global_success_rate)
     : "n/a";
   const assoc = entry.assoc_score.toFixed(3);
+  const baselineRate = meta && typeof meta.global_success_rate === "number"
+    ? meta.global_success_rate
+    : null;
+  const baselineText = baselineRate === null
+    ? "not available"
+    : formatPercent(baselineRate);
 
   result.innerHTML = `
     <div>
-      <strong>${word}</strong>
+      <div class="result-title-row">
+        <strong>${word}</strong>
+        <details class="metric-help">
+          <summary aria-label="Explain metrics" title="Explain metrics">i</summary>
+          <div class="metric-help-popover">
+            <p><strong>What these metrics mean</strong></p>
+            <p><strong>Baseline success:</strong> the overall success rate across all labeled trials (${baselineText}).</p>
+            <p><strong>Trials containing word:</strong> how many trials include this keyword in title/summary/fields.</p>
+            <p><strong>Success rate:</strong> among trials containing this word, the share labeled successful.</p>
+            <p><strong>Lift vs baseline:</strong> success rate minus baseline, shown in percentage points (pp).</p>
+            <p><strong>Embedding association:</strong> similarity to the success embedding centroid minus similarity to the failure centroid. Positive means closer to success patterns.</p>
+          </div>
+        </details>
+      </div>
       <span class="message">Based on ${entry.count} trials. Baseline success: ${baseline}.</span>
     </div>
     <div class="metrics">
