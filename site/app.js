@@ -307,47 +307,64 @@ function renderStats(word, entry, meta) {
     : "n/a";
   const assoc = entry.assoc_score.toFixed(3);
   const baselineRate = meta && typeof meta.global_success_rate === "number"
-    ? meta.global_success_rate
-    : null;
-  const baselineText = baselineRate === null
-    ? "not available"
-    : formatPercent(baselineRate);
+    ? formatPercent(meta.global_success_rate)
+    : "the overall average";
+
+  const metricCards = [
+    {
+      label: "Trials containing word",
+      value: entry.count,
+      iconClass: "icon-trials",
+      iconText: "#",
+      tooltip: "How many study records mention this word. Bigger number means this word shows up more often in the dataset."
+    },
+    {
+      label: "Success rate",
+      value: formatPercent(entry.success_rate),
+      iconClass: "icon-success",
+      iconText: "%",
+      tooltip: "Out of trials that mention this word, this is the share marked successful."
+    },
+    {
+      label: "Lift vs baseline",
+      value: formatPoints(entry.lift),
+      iconClass: "icon-lift",
+      iconText: "+",
+      tooltip: `How much this word's success rate is above or below the typical rate (${baselineRate}). Positive is better than average; negative is lower than average.`
+    },
+    {
+      label: "Embedding association",
+      value: assoc,
+      iconClass: "icon-association",
+      iconText: "~",
+      tooltip: "A pattern-match score: positive means this word appears in studies that look more like successful ones; negative means it looks more like unsuccessful ones."
+    }
+  ];
+
+  const metricMarkup = metricCards
+    .map((metric) => `
+      <div class="metric">
+        <div class="metric-label-row">
+          <span class="label">${metric.label}</span>
+          <span class="metric-tooltip-wrap" tabindex="0" aria-label="About ${metric.label}">
+            <span class="metric-info-icon ${metric.iconClass}" aria-hidden="true">${metric.iconText}</span>
+            <span class="metric-tooltip" role="tooltip">${metric.tooltip}</span>
+          </span>
+        </div>
+        <span class="value">${metric.value}</span>
+      </div>
+    `)
+    .join("");
 
   result.innerHTML = `
     <div>
       <div class="result-title-row">
         <strong>${word}</strong>
-        <details class="metric-help">
-          <summary aria-label="Explain metrics" title="Explain metrics">i</summary>
-          <div class="metric-help-popover">
-            <p><strong>What these metrics mean</strong></p>
-            <p><strong>Baseline success:</strong> the overall success rate across all labeled trials (${baselineText}).</p>
-            <p><strong>Trials containing word:</strong> how many trials include this keyword in title/summary/fields.</p>
-            <p><strong>Success rate:</strong> among trials containing this word, the share labeled successful.</p>
-            <p><strong>Lift vs baseline:</strong> success rate minus baseline, shown in percentage points (pp).</p>
-            <p><strong>Embedding association:</strong> similarity to the success embedding centroid minus similarity to the failure centroid. Positive means closer to success patterns.</p>
-          </div>
-        </details>
       </div>
       <span class="message">Based on ${entry.count} trials. Baseline success: ${baseline}.</span>
     </div>
     <div class="metrics">
-      <div class="metric">
-        <span class="label">Trials containing word</span>
-        <span class="value">${entry.count}</span>
-      </div>
-      <div class="metric">
-        <span class="label">Success rate</span>
-        <span class="value">${formatPercent(entry.success_rate)}</span>
-      </div>
-      <div class="metric">
-        <span class="label">Lift vs baseline</span>
-        <span class="value">${formatPoints(entry.lift)}</span>
-      </div>
-      <div class="metric">
-        <span class="label">Embedding association</span>
-        <span class="value">${assoc}</span>
-      </div>
+      ${metricMarkup}
     </div>
   `;
 }
