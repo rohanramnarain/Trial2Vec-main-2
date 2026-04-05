@@ -199,10 +199,6 @@ h1 {
   border: 1px solid rgba(27, 26, 24, 0.08);
 }
 
-.metric span {
-  display: block;
-}
-
 .metric-label-row {
   display: flex;
   align-items: center;
@@ -211,6 +207,7 @@ h1 {
 }
 
 .metric .label {
+  display: block;
   font-size: 0.9rem;
   color: var(--muted);
   margin-bottom: 4px;
@@ -293,6 +290,7 @@ h1 {
 }
 
 .metric .value {
+  display: block;
   font-size: 1.2rem;
   font-weight: 600;
 }

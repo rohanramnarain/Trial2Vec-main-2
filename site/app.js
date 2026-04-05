@@ -315,28 +315,28 @@ function renderStats(word, entry, meta) {
       label: "Trials containing word",
       value: entry.count,
       iconClass: "icon-trials",
-      iconText: "#",
+      iconText: "i",
       tooltip: "How many study records mention this word. Bigger number means this word shows up more often in the dataset."
     },
     {
       label: "Success rate",
       value: formatPercent(entry.success_rate),
       iconClass: "icon-success",
-      iconText: "%",
+      iconText: "i",
       tooltip: "Out of trials that mention this word, this is the share marked successful."
     },
     {
       label: "Lift vs baseline",
       value: formatPoints(entry.lift),
       iconClass: "icon-lift",
-      iconText: "+",
+      iconText: "i",
       tooltip: `How much this word's success rate is above or below the typical rate (${baselineRate}). Positive is better than average; negative is lower than average.`
     },
     {
       label: "Embedding association",
       value: assoc,
       iconClass: "icon-association",
-      iconText: "~",
+      iconText: "i",
       tooltip: "A pattern-match score: positive means this word appears in studies that look more like successful ones; negative means it looks more like unsuccessful ones."
     }
   ];
